@@ -22,23 +22,24 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} min-h-screen flex flex-col bg-brand-light text-brand-dark overflow-x-hidden`}>
-        {/* Floating Header */}
-        <header className="absolute top-6 left-0 right-0 z-50 flex justify-center w-full px-6">
-          <div className="bg-[#1a1a1a]/70 backdrop-blur-lg rounded-full pl-6 pr-3 py-3 flex justify-between items-center w-full max-w-5xl border border-white/5">
+        {/* Standard Top-Aligned Header */}
+        <header className="sticky top-0 z-50 w-full bg-brand-white border-b border-brand-dark/5">
+          <div className="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl">
             <Link href="/" className="flex items-center gap-3">
-              <Image src="/logo.png" alt="The Roadsides Logo" width={32} height={32} className="object-contain" />
-              <span className="text-white font-extrabold text-xl tracking-tight">The Roadsides</span>
+              <Image src="/logo.png" alt="The Roadsides Logo" width={40} height={40} className="object-contain" />
+              <span className="text-brand-dark font-extrabold text-2xl tracking-tight">The Roadsides</span>
             </Link>
             
-            <nav className="hidden md:flex gap-8 items-center text-sm font-medium text-white/90">
-              <Link href="/about" className="hover:text-white transition-colors">About</Link>
-              <Link href="/founder" className="hover:text-white transition-colors">Founder</Link>
-              <Link href="/work" className="hover:text-white transition-colors">Our Work</Link>
-              <Link href="/insights" className="hover:text-white transition-colors">Insights</Link>
-              <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
+            <nav className="hidden md:flex gap-8 items-center text-sm font-bold text-brand-dark/70 tracking-wide">
+              <Link href="/about" className="hover:text-brand-dark transition-colors">About</Link>
+              <Link href="/founder" className="hover:text-brand-dark transition-colors">Founder</Link>
+              <Link href="/work" className="hover:text-brand-dark transition-colors">Our Work</Link>
+              <Link href="/gallery" className="hover:text-brand-dark transition-colors">Gallery</Link>
+              <Link href="/insights" className="hover:text-brand-dark transition-colors">Insights</Link>
+              <Link href="/contact" className="hover:text-brand-dark transition-colors">Contact</Link>
             </nav>
 
-            <Link href="/get-involved" className="bg-brand-primary text-white px-6 py-2.5 rounded-full hover:bg-[#7ab136] transition-colors text-sm font-bold">
+            <Link href="/get-involved" className="bg-brand-primary text-white px-6 py-3 rounded-full hover:bg-brand-dark transition-colors text-sm font-bold tracking-wide">
               Get Involved
             </Link>
           </div>

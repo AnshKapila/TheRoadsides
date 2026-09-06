@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Play, HeartHandshake, Leaf, Users } from "lucide-react";
 
 export default function Home() {
@@ -59,8 +60,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1 */}
-            <div className="relative rounded-[2rem] overflow-hidden aspect-square md:aspect-[4/5] bg-brand-dark flex flex-col justify-end p-8">
-              <div className="absolute inset-0 bg-[#2a2a2a]" /> {/* Placeholder for image */}
+            <div className="relative rounded-[2rem] overflow-hidden aspect-square md:aspect-[4/5] bg-brand-dark flex flex-col justify-end p-8 group">
+              <Image src="/gallery/gallery_0.jpg" alt="Impact 1" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <div className="relative z-10">
                 <div className="text-5xl md:text-6xl font-bold text-white mb-2">[XX]</div>
@@ -70,8 +71,8 @@ export default function Home() {
             </div>
 
             {/* Card 2 */}
-            <div className="relative rounded-[2rem] overflow-hidden aspect-square md:aspect-[4/5] bg-brand-dark flex flex-col justify-end p-8">
-              <div className="absolute inset-0 bg-[#2a2a2a]" /> {/* Placeholder for image */}
+            <div className="relative rounded-[2rem] overflow-hidden aspect-square md:aspect-[4/5] bg-brand-dark flex flex-col justify-end p-8 group">
+              <Image src="/gallery/gallery_1.jpg" alt="Impact 2" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <div className="relative z-10">
                 <div className="text-5xl md:text-6xl font-bold text-white mb-2">[XX,XXX]</div>
@@ -81,8 +82,8 @@ export default function Home() {
             </div>
 
             {/* Card 3 */}
-            <div className="relative rounded-[2rem] overflow-hidden aspect-square md:aspect-[4/5] bg-brand-dark flex flex-col justify-end p-8">
-              <div className="absolute inset-0 bg-[#2a2a2a]" /> {/* Placeholder for image */}
+            <div className="relative rounded-[2rem] overflow-hidden aspect-square md:aspect-[4/5] bg-brand-dark flex flex-col justify-end p-8 group">
+              <Image src="/gallery/gallery_2.jpg" alt="Impact 3" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <div className="relative z-10">
                 <div className="text-5xl md:text-6xl font-bold text-white mb-2">[XX]</div>
@@ -129,9 +130,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Case Study 1 */}
             <Link href="/work" className="group block">
-              <article className="bg-brand-white rounded-[2rem] p-4 h-full flex flex-col border border-brand-dark/5">
-                <div className="aspect-[4/3] bg-brand-light rounded-[1.5rem] flex items-center justify-center text-brand-dark/30 overflow-hidden relative mb-8">
-                  <span className="font-medium">Photo: Ballabgarh Plantation</span>
+              <article className="bg-brand-white rounded-[2rem] p-4 h-full flex flex-col border border-brand-dark/5 shadow-sm hover:shadow-xl transition-shadow duration-300">
+                <div className="aspect-[4/3] bg-brand-light rounded-[1.5rem] flex items-center justify-center overflow-hidden relative mb-8">
+                  <Image src="/gallery/gallery_3.jpg" alt="Ballabgarh Plantation" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                 </div>
                 <div className="px-6 pb-6 flex flex-col flex-grow">
                   <span className="text-brand-primary text-xs font-bold uppercase tracking-widest mb-3">Plantation & Nurturing</span>
@@ -146,9 +147,9 @@ export default function Home() {
 
             {/* Case Study 2 */}
             <Link href="/work" className="group block">
-              <article className="bg-brand-white rounded-[2rem] p-4 h-full flex flex-col border border-brand-dark/5">
-                <div className="aspect-[4/3] bg-brand-light rounded-[1.5rem] flex items-center justify-center text-brand-dark/30 overflow-hidden relative mb-8">
-                  <span className="font-medium">Photo: Textile Waste Collection</span>
+              <article className="bg-brand-white rounded-[2rem] p-4 h-full flex flex-col border border-brand-dark/5 shadow-sm hover:shadow-xl transition-shadow duration-300">
+                <div className="aspect-[4/3] bg-brand-light rounded-[1.5rem] flex items-center justify-center overflow-hidden relative mb-8">
+                  <Image src="/gallery/gallery_4.jpg" alt="Textile Waste" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                 </div>
                 <div className="px-6 pb-6 flex flex-col flex-grow">
                   <span className="text-brand-primary text-xs font-bold uppercase tracking-widest mb-3">Circular Economy</span>
@@ -168,8 +169,8 @@ export default function Home() {
       <section className="py-32 px-6">
         <div className="container mx-auto max-w-7xl">
           <div className="bg-brand-dark rounded-[3rem] p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-[#1A1A1A] rounded-[2.5rem] min-h-[500px] flex items-center justify-center text-white/30">
-              Founder Photo
+            <div className="bg-[#1A1A1A] rounded-[2.5rem] min-h-[500px] flex items-center justify-center text-white/30 relative overflow-hidden">
+              <Image src="/gallery/gallery_5.jpg" alt="Founder" fill className="object-cover opacity-80" unoptimized />
             </div>
             <div className="p-10 md:p-16 flex flex-col justify-center">
               <div className="flex items-center gap-2 mb-4">
@@ -221,13 +222,15 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { tag: 'From the Book', title: 'The Power of Consistency', desc: 'How small, daily environmental habits multiply across communities to create lasting impact.' },
-              { tag: 'On-Ground Stories', title: 'Nurturing After Planting', desc: 'Why our work in Faridabad doesn\'t stop on planting day, and how we maintain saplings year-round.' },
-              { tag: 'Founder\'s Perspective', title: 'India\'s Urban Future Needs a Shift', desc: 'Our cities are growing fast. Why the focus must return to the immediate roadsides we navigate daily.' }
+              { tag: 'From the Book', title: 'The Power of Consistency', desc: 'How small, daily environmental habits multiply across communities to create lasting impact.', img: 'gallery_6.jpg' },
+              { tag: 'On-Ground Stories', title: 'Nurturing After Planting', desc: 'Why our work in Faridabad doesn\'t stop on planting day, and how we maintain saplings year-round.', img: 'gallery_7.jpg' },
+              { tag: 'Founder\'s Perspective', title: 'India\'s Urban Future Needs a Shift', desc: 'Our cities are growing fast. Why the focus must return to the immediate roadsides we navigate daily.', img: 'gallery_8.jpg' }
             ].map((post, i) => (
               <Link href="/insights" key={i} className="group block">
                 <article className="h-full flex flex-col">
-                  <div className="aspect-[4/3] bg-brand-light rounded-[2rem] mb-6 overflow-hidden relative border border-brand-dark/5" />
+                  <div className="aspect-[4/3] bg-brand-light rounded-[2rem] mb-6 overflow-hidden relative border border-brand-dark/5">
+                    <Image src={`/gallery/${post.img}`} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+                  </div>
                   <span className="text-brand-primary text-xs font-bold uppercase tracking-widest mb-3">{post.tag}</span>
                   <h4 className="text-2xl font-bold mb-3 tracking-tight group-hover:text-brand-primary transition-colors">{post.title}</h4>
                   <p className="text-brand-dark/60 mb-6 flex-grow leading-relaxed">{post.desc}</p>
@@ -249,8 +252,8 @@ export default function Home() {
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 h-auto lg:h-[600px]">
             <div className="lg:col-span-8 relative bg-brand-white border border-brand-dark/5 rounded-[2rem] overflow-hidden group cursor-pointer flex items-center justify-center aspect-video lg:aspect-auto">
-              <span className="text-brand-dark/40 font-medium">Video Thumbnail: The Roadsides Anthem</span>
-              <div className="absolute inset-0 bg-brand-dark/5 group-hover:bg-brand-dark/10 transition-colors flex items-center justify-center">
+              <Image src="/gallery/gallery_9.jpg" alt="Video Thumbnail" fill className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" unoptimized />
+              <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-brand-dark/30 transition-colors flex items-center justify-center">
                 <div className="w-24 h-24 bg-brand-primary rounded-full flex items-center justify-center text-white transition-transform">
                   <Play className="w-10 h-10 ml-1 fill-current" />
                 </div>
@@ -258,8 +261,12 @@ export default function Home() {
             </div>
             
             <div className="lg:col-span-4 grid grid-rows-3 gap-6 h-[600px] lg:h-auto">
-              <div className="bg-brand-white border border-brand-dark/5 rounded-[2rem] flex items-center justify-center text-brand-dark/30 font-medium">Photo</div>
-              <div className="bg-brand-white border border-brand-dark/5 rounded-[2rem] flex items-center justify-center text-brand-dark/30 font-medium">Photo</div>
+              <div className="bg-brand-white border border-brand-dark/5 rounded-[2rem] overflow-hidden relative">
+                <Image src="/gallery/gallery_10.jpg" alt="Gallery Photo" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
+              </div>
+              <div className="bg-brand-white border border-brand-dark/5 rounded-[2rem] overflow-hidden relative">
+                <Image src="/gallery/gallery_11.jpg" alt="Gallery Photo" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
+              </div>
               <Link href="/gallery" className="bg-brand-dark rounded-[2rem] flex items-center justify-center text-white hover:bg-brand-primary transition-colors group">
                 <div className="flex flex-col items-center">
                   <span className="font-bold text-lg mb-2">View Full Gallery</span>
