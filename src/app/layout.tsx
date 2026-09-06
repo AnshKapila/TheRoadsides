@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "The Roadsides | Vibrant Walkable Roadsides Foundation",
   description: "A Section 8 Not-For-Profit creating safer, cleaner, greener roadside environments.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -18,22 +21,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen flex flex-col bg-brand-white text-brand-dark`}>
-        {/* Header */}
-        <header className="sticky top-0 z-50 w-full border-b border-brand-dark/5 bg-brand-white/95 backdrop-blur-md">
-          <div className="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl">
+      <body className={`${inter.className} min-h-screen flex flex-col bg-brand-light text-brand-dark overflow-x-hidden`}>
+        {/* Floating Header */}
+        <header className="absolute top-6 left-0 right-0 z-50 flex justify-center w-full px-6">
+          <div className="bg-[#1a1a1a]/70 backdrop-blur-lg rounded-full pl-6 pr-3 py-3 flex justify-between items-center w-full max-w-5xl border border-white/5">
             <Link href="/" className="flex items-center gap-3">
-              <Image src="/logo.png" alt="The Roadsides Logo" width={48} height={48} className="object-contain" />
+              <Image src="/logo.png" alt="The Roadsides Logo" width={32} height={32} className="object-contain" />
+              <span className="text-white font-extrabold text-xl tracking-tight">The Roadsides</span>
             </Link>
-            <nav className="hidden md:flex gap-8 items-center text-sm font-semibold tracking-wide">
-              <Link href="/about" className="hover:text-brand-primary transition-colors">About</Link>
-              <Link href="/founder" className="hover:text-brand-primary transition-colors">Founder</Link>
-              <Link href="/work" className="hover:text-brand-primary transition-colors">Our Work</Link>
-              <Link href="/insights" className="hover:text-brand-primary transition-colors">Insights</Link>
-              <Link href="/get-involved" className="bg-brand-primary text-brand-white px-6 py-2.5 rounded-full hover:bg-brand-dark transition-all shadow-[0_4px_14px_0_rgba(140,198,63,0.39)] hover:shadow-none">
-                Get Involved
-              </Link>
+            
+            <nav className="hidden md:flex gap-8 items-center text-sm font-medium text-white/90">
+              <Link href="/about" className="hover:text-white transition-colors">About</Link>
+              <Link href="/founder" className="hover:text-white transition-colors">Founder</Link>
+              <Link href="/work" className="hover:text-white transition-colors">Our Work</Link>
+              <Link href="/insights" className="hover:text-white transition-colors">Insights</Link>
+              <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
             </nav>
+
+            <Link href="/get-involved" className="bg-brand-primary text-white px-6 py-2.5 rounded-full hover:bg-[#7ab136] transition-colors text-sm font-bold">
+              Get Involved
+            </Link>
           </div>
         </header>
 
