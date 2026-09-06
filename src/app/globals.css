@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #8CC63F; /* Bright vibrant green from logo */
+  --color-brand-dark: #000000;
+  --color-brand-light: #F9F9F9;
+  --color-brand-white: #FFFFFF;
+}
+
+@layer base {
+  :root {
+    --background: #FAF8F5;
+    --foreground: #23211E;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-brand-dark;
+  }
+}
