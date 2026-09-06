@@ -7,10 +7,9 @@ export default function Home() {
     <div className="flex flex-col">
       {/* 1. Hero */}
       <section className="relative w-full min-h-screen flex items-center pt-32 pb-20 px-6">
-        {/* Background Image Placeholder with Overlay */}
+        {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0 bg-[#1a1a1a]">
-          {/* We use a dark color as placeholder since no specific image is provided, 
-              but in reality this would be an <Image> tag with object-cover */}
+          <Image src="/hero-bg.jpg" alt="Roadside sapling" fill priority className="object-cover" unoptimized />
           <div className="absolute inset-0 bg-black/50" /> 
         </div>
         
