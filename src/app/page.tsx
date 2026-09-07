@@ -13,28 +13,27 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/50" /> 
         </div>
         
-        <div className="container mx-auto max-w-7xl relative z-10">
+        <div className="container mx-auto max-w-7xl relative z-10 pt-10">
           <div className="max-w-2xl">
-            <h2 className="text-brand-primary font-bold text-lg mb-4">
-              A Section 8 Not-For-Profit
+            <h2 className="text-[#00D053] font-semibold text-lg mb-2 tracking-wide">
+              Together, We Create Impact
             </h2>
             
-            <h1 className="text-white text-6xl md:text-8xl font-bold tracking-tight leading-[1.05] mb-6">
-              One person's habit.<br />
-              One sector of road.<br />
-              Multiplied.
+            <h1 className="text-white text-7xl md:text-8xl font-bold tracking-tighter leading-[1.0] mb-6">
+              Unite. Act.<br />
+              Transform
             </h1>
             
-            <p className="text-white/80 text-lg md:text-xl max-w-lg mb-10 leading-relaxed">
-              The "baby steps" approach to a green revolution. Small, correct daily actions — done consistently and multiplied across a population — create real, systemic change for our environment.
+            <p className="text-[#D3D3D3] text-base md:text-lg max-w-md mb-10 leading-relaxed font-medium">
+              Your support powers life changing missions feeding families & rebuilding hope.
             </p>
             
             <div className="flex flex-wrap items-center gap-4">
-              <Link href="/get-involved" className="inline-flex items-center justify-center bg-brand-primary text-white font-bold px-8 py-4 rounded-full hover:bg-[#7ab136] transition-colors">
-                Get Involved <ArrowRight className="ml-2 w-5 h-5" />
+              <Link href="/get-involved" className="inline-flex items-center justify-center bg-[#00D053] text-white font-semibold px-6 py-3.5 rounded-full hover:bg-[#00b347] transition-colors text-[15px]">
+                Donate Now <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
-              <Link href="/about" className="inline-flex items-center justify-center bg-white text-brand-dark font-bold px-8 py-4 rounded-full hover:bg-gray-100 transition-colors">
-                Learn About Our Mission
+              <Link href="/about" className="inline-flex items-center justify-center bg-white text-black font-semibold px-6 py-3.5 rounded-full hover:bg-gray-100 transition-colors text-[15px]">
+                Learn About Us
               </Link>
             </div>
           </div>
