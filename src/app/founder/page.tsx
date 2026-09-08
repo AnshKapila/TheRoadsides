@@ -31,7 +31,7 @@ export default function FounderPage() {
                 <div className="bg-[var(--white)] border border-[var(--line)] rounded-[3px] p-[16px]">
                   <div className="aspect-[3/4] relative rounded-[3px] overflow-hidden">
                     <Image 
-                      src="/gallery/gallery_118.jpg" 
+                      src="/founder.jpg" 
                       alt="Seema Chowdhry Dhawan" 
                       fill 
                       className="object-cover" 

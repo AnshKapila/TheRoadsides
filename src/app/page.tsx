@@ -88,66 +88,12 @@ export default function Home() {
         />
       </section>
 
-      {/* 4. Our Work Preview */}
-      <section className="py-[64px] px-[32px] bg-[var(--white)] rounded-[3px] mx-[16px] my-[32px] border border-[var(--line)]">
-        <div className="container mx-auto max-w-7xl">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-[48px] gap-[32px]">
-            <div className="max-w-2xl">
-              <div className="flex items-center gap-[8px] mb-[12px]">
-                <span className="w-3 h-3 rounded-[3px] bg-[var(--moss)]" />
-                <span className="text-[var(--charcoal)] font-semibold text-[14px]">Our Work</span>
-              </div>
-              <h2 className="text-[32px] font-semibold tracking-tight text-[var(--charcoal)] leading-[1.2]">Creating safer, cleaner, greener roadside environments.</h2>
-            </div>
-            <Link href="/work" className="inline-flex items-center justify-center bg-transparent border-[1.5px] border-[var(--charcoal)] text-[var(--charcoal)] font-semibold px-[24px] py-[11.5px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--paper)] transition-colors shrink-0 min-h-[44px]">
-              View all initiatives
-            </Link>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[32px]">
-            {/* Case Study 1 */}
-            <Link href="/work" className="group block">
-              <article className="bg-[var(--paper)] rounded-[3px] p-[16px] h-full flex flex-col border border-[var(--line)] hover:border-[var(--charcoal)] transition-colors duration-300">
-                <div className="aspect-[4/3] bg-[var(--white)] rounded-[3px] flex items-center justify-center overflow-hidden relative mb-[32px]">
-                  <Image src="/gallery/gallery_107.jpg" alt="Ballabgarh Plantation" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
-                </div>
-                <div className="px-[24px] pb-[24px] flex flex-col flex-grow">
-                  <span className="text-[var(--brick)] text-[12px] font-semibold uppercase tracking-[0.01em] mb-[12px]">Plantation & Nurturing</span>
-                  <h3 className="text-[24px] font-semibold mb-[16px] leading-[1.3] text-[var(--charcoal)]">Ballabgarh & Faridabad Drives</h3>
-                  <p className="text-[var(--muted)] mb-[32px] flex-grow leading-[1.65] text-[16px] font-normal">Going beyond just planting saplings to establishing a system of continued nurturing, in partnership with local community and environmental groups.</p>
-                  <div className="w-12 h-12 rounded-[3px] border border-[var(--line)] flex items-center justify-center group-hover:bg-[var(--charcoal)] group-hover:border-[var(--charcoal)] group-hover:text-[var(--paper)] transition-all mt-auto text-[var(--charcoal)]">
-                    <ArrowRight className="w-5 h-5" />
-                  </div>
-                </div>
-              </article>
-            </Link>
-
-            {/* Case Study 2 */}
-            <Link href="/work" className="group block">
-              <article className="bg-[var(--paper)] rounded-[3px] p-[16px] h-full flex flex-col border border-[var(--line)] hover:border-[var(--charcoal)] transition-colors duration-300">
-                <div className="aspect-[4/3] bg-[var(--white)] rounded-[3px] flex items-center justify-center overflow-hidden relative mb-[32px]">
-                  <Image src="/gallery/gallery_112.jpg" alt="Textile Waste" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
-                </div>
-                <div className="px-[24px] pb-[24px] flex flex-col flex-grow">
-                  <span className="text-[var(--brick)] text-[12px] font-semibold uppercase tracking-[0.01em] mb-[12px]">Circular Economy</span>
-                  <h3 className="text-[24px] font-semibold mb-[16px] leading-[1.3] text-[var(--charcoal)]">2025 Textile Waste Initiative</h3>
-                  <p className="text-[var(--muted)] mb-[32px] flex-grow leading-[1.65] text-[16px] font-normal">Mobilizing students and citizens for zero-waste practices alongside The Modern School, K.L. Mehta College for Women, and Saahas Zero Waste.</p>
-                  <div className="w-12 h-12 rounded-[3px] border border-[var(--line)] flex items-center justify-center group-hover:bg-[var(--charcoal)] group-hover:border-[var(--charcoal)] group-hover:text-[var(--paper)] transition-all mt-auto text-[var(--charcoal)]">
-                    <ArrowRight className="w-5 h-5" />
-                  </div>
-                </div>
-              </article>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* 5. Founder Spotlight */}
       <section className="py-[64px] px-[32px]">
         <div className="container mx-auto max-w-7xl">
           <div className="bg-[var(--charcoal)] rounded-[3px] p-[16px] grid grid-cols-1 md:grid-cols-2 gap-[16px]">
             <div className="bg-[var(--white)] rounded-[3px] min-h-[500px] flex items-center justify-center relative overflow-hidden">
-              <Image src="/gallery/gallery_118.jpg" alt="Founder" fill className="object-cover opacity-80" unoptimized />
+              <Image src="/founder.jpg" alt="Founder" fill className="object-cover opacity-80" unoptimized />
             </div>
             <div className="p-[48px] flex flex-col justify-center">
               <div className="flex items-center gap-[8px] mb-[16px]">
