@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Play, HeartHandshake, Leaf, Users } from "lucide-react";
+import ScrollRevealText from "@/components/ScrollRevealText";
 
 export default function Home() {
   return (
@@ -94,18 +95,12 @@ export default function Home() {
       </section>
 
       {/* 3. Mission */}
-      <section className="py-32 px-6">
-        <div className="container mx-auto max-w-4xl text-center">
-          <div className="flex items-center justify-center gap-2 mb-6">
-            <span className="w-3 h-3 rounded-full bg-brand-primary" />
-            <span className="text-brand-dark font-medium text-sm">Our Mission</span>
-          </div>
-          <p className="text-3xl md:text-4xl lg:text-5xl leading-tight font-extrabold mb-12 text-brand-dark tracking-tight">
-            "For the people... of the people... a combined united commitment... by the people of India... a conscious effort by one and all towards our cities, towns, roads, and roadsides."
-          </p>
-          <Link href="/about" className="inline-flex items-center gap-2 font-bold text-lg hover:text-brand-primary transition-colors pb-1 border-b-2 border-brand-dark hover:border-brand-primary">
-            Read our full story
-          </Link>
+      <section className="py-40 md:py-56 px-6 bg-white flex flex-col items-center justify-center">
+        <ScrollRevealText text='"For the people... of the people... a combined united commitment... by the people of India... a conscious effort by one and all towards our cities, towns, roads, and roadsides."' />
+        
+        <div className="text-center mt-12">
+          <h4 className="text-xl md:text-2xl font-bold text-brand-dark tracking-tight mb-2">The Roadsides</h4>
+          <p className="text-lg md:text-xl text-brand-dark/60 font-medium">Vibrant Walkable Roadsides Foundation</p>
         </div>
       </section>
 
