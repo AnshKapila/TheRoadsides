@@ -9,8 +9,8 @@ export default function Home() {
       {/* 1. Hero */}
       <section className="relative w-full min-h-screen flex items-center pt-32 pb-20 px-6">
         {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0 bg-[#1a1a1a]">
-          <Image src="/hero-bg.jpg" alt="Roadside sapling" fill priority className="object-cover" unoptimized />
+        <div className="absolute inset-0 z-0 bg-[#1a1a1a] overflow-hidden">
+          <Image src="/hero-bg.jpg" alt="Roadside sapling" fill priority className="object-cover scale-[1.15]" unoptimized />
           <div className="absolute inset-0 bg-black/50" /> 
         </div>
         
@@ -69,7 +69,7 @@ export default function Home() {
 
             {/* Card 3 */}
             <div className="relative rounded-[3px] overflow-hidden aspect-square md:aspect-[4/5] bg-[var(--charcoal)] flex flex-col justify-end p-[32px] group">
-              <Image src="/gallery/gallery_2.jpg" alt="Impact 3" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
+              <Image src="/gallery/gallery_103.jpg" alt="Impact 3" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <div className="relative z-10">
                 <div className="text-[48px] font-bold text-[var(--white)] tracking-[-0.01em] leading-[1.15] mb-[8px]">[XX]</div>
@@ -109,7 +109,7 @@ export default function Home() {
             <Link href="/work" className="group block">
               <article className="bg-[var(--paper)] rounded-[3px] p-[16px] h-full flex flex-col border border-[var(--line)] hover:border-[var(--charcoal)] transition-colors duration-300">
                 <div className="aspect-[4/3] bg-[var(--white)] rounded-[3px] flex items-center justify-center overflow-hidden relative mb-[32px]">
-                  <Image src="/gallery/gallery_3.jpg" alt="Ballabgarh Plantation" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+                  <Image src="/gallery/gallery_107.jpg" alt="Ballabgarh Plantation" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                 </div>
                 <div className="px-[24px] pb-[24px] flex flex-col flex-grow">
                   <span className="text-[var(--brick)] text-[12px] font-semibold uppercase tracking-[0.01em] mb-[12px]">Plantation & Nurturing</span>
@@ -126,7 +126,7 @@ export default function Home() {
             <Link href="/work" className="group block">
               <article className="bg-[var(--paper)] rounded-[3px] p-[16px] h-full flex flex-col border border-[var(--line)] hover:border-[var(--charcoal)] transition-colors duration-300">
                 <div className="aspect-[4/3] bg-[var(--white)] rounded-[3px] flex items-center justify-center overflow-hidden relative mb-[32px]">
-                  <Image src="/gallery/gallery_4.jpg" alt="Textile Waste" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+                  <Image src="/gallery/gallery_112.jpg" alt="Textile Waste" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                 </div>
                 <div className="px-[24px] pb-[24px] flex flex-col flex-grow">
                   <span className="text-[var(--brick)] text-[12px] font-semibold uppercase tracking-[0.01em] mb-[12px]">Circular Economy</span>
@@ -147,7 +147,7 @@ export default function Home() {
         <div className="container mx-auto max-w-7xl">
           <div className="bg-[var(--charcoal)] rounded-[3px] p-[16px] grid grid-cols-1 md:grid-cols-2 gap-[16px]">
             <div className="bg-[var(--white)] rounded-[3px] min-h-[500px] flex items-center justify-center relative overflow-hidden">
-              <Image src="/gallery/gallery_5.jpg" alt="Founder" fill className="object-cover opacity-80" unoptimized />
+              <Image src="/gallery/gallery_118.jpg" alt="Founder" fill className="object-cover opacity-80" unoptimized />
             </div>
             <div className="p-[48px] flex flex-col justify-center">
               <div className="flex items-center gap-[8px] mb-[16px]">
@@ -229,7 +229,7 @@ export default function Home() {
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-[24px] h-auto lg:h-[600px]">
             <div className="lg:col-span-8 relative bg-[var(--paper)] border border-[var(--line)] rounded-[3px] overflow-hidden group cursor-pointer flex items-center justify-center aspect-video lg:aspect-auto">
-              <Image src="/gallery/gallery_1.jpg" alt="Video Thumbnail" fill className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" unoptimized />
+              <Image src="/gallery/gallery_133.jpg" alt="Video Thumbnail" fill className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" unoptimized />
               <div className="absolute inset-0 bg-[var(--charcoal)]/20 group-hover:bg-[var(--charcoal)]/30 transition-colors flex items-center justify-center">
                 <div className="w-[64px] h-[64px] bg-[var(--moss)] rounded-[3px] flex items-center justify-center text-[var(--paper)] transition-transform">
                   <Play className="w-[32px] h-[32px] ml-1 fill-current" />
@@ -239,10 +239,10 @@ export default function Home() {
             
             <div className="lg:col-span-4 grid grid-rows-3 gap-[24px] h-[600px] lg:h-auto">
               <div className="bg-[var(--paper)] border border-[var(--line)] rounded-[3px] overflow-hidden relative">
-                <Image src="/gallery/gallery_1.jpg" alt="Gallery Photo" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
+                <Image src="/gallery/gallery_137.jpg" alt="Gallery Photo" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
               </div>
               <div className="bg-[var(--paper)] border border-[var(--line)] rounded-[3px] overflow-hidden relative">
-                <Image src="/gallery/gallery_1.jpg" alt="Gallery Photo" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
+                <Image src="/gallery/gallery_141.jpg" alt="Gallery Photo" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
               </div>
               <Link href="/gallery" className="bg-[var(--charcoal)] rounded-[3px] flex items-center justify-center text-[var(--paper)] hover:bg-[var(--moss)] transition-colors group">
                 <div className="flex flex-col items-center">
@@ -273,7 +273,7 @@ export default function Home() {
               
               {/* Card 1: Donate */}
               <div className="relative rounded-[3px] overflow-hidden group h-[400px] lg:h-[350px] flex flex-col justify-between p-[32px]">
-                <Image src="/gallery/gallery_6.jpg" alt="Donate" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+                <Image src="/gallery/gallery_122.jpg" alt="Donate" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-black/60" />
                 <div className="relative z-10">
                   <h3 className="text-[32px] font-bold text-[var(--white)] tracking-tight mb-[16px] leading-[1.2]">Donate</h3>
@@ -292,7 +292,7 @@ export default function Home() {
             <div className="flex flex-col justify-end h-full mt-[24px] lg:mt-0">
               {/* Card 2: Volunteer */}
               <div className="relative rounded-[3px] overflow-hidden group h-[400px] lg:h-[500px] flex flex-col justify-between p-[32px]">
-                <Image src="/gallery/gallery_7.jpg" alt="Volunteer" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+                <Image src="/gallery/gallery_126.jpg" alt="Volunteer" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-black/60" />
                 <div className="relative z-10">
                   <h3 className="text-[32px] font-bold text-[var(--white)] tracking-tight mb-[16px] leading-[1.2]">Volunteer</h3>
@@ -311,7 +311,7 @@ export default function Home() {
             <div className="flex flex-col h-full mt-[24px] lg:mt-0">
               {/* Card 3: Partner */}
               <div className="relative rounded-[3px] overflow-hidden group h-[400px] lg:h-full flex flex-col justify-between p-[32px]">
-                <Image src="/gallery/gallery_8.jpg" alt="Partner With Us" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+                <Image src="/gallery/gallery_130.jpg" alt="Partner With Us" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-black/60" />
                 <div className="relative z-10">
                   <h3 className="text-[32px] font-bold text-[var(--white)] tracking-tight mb-[16px] leading-[1.2]">Partner With Us</h3>
