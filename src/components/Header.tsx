@@ -32,7 +32,6 @@ export default function Header() {
         <nav className="hidden md:flex gap-8 items-center text-[16px] leading-[1.65] font-normal text-white/90 tracking-wide">
           <Link href="/about" className="hover:text-[var(--moss)] transition-colors">About</Link>
           <Link href="/founder" className="hover:text-[var(--moss)] transition-colors">Founder</Link>
-          <Link href="/work" className="hover:text-[var(--moss)] transition-colors">Our Work</Link>
           <Link href="/gallery" className="hover:text-[var(--moss)] transition-colors">Gallery</Link>
           <Link href="/insights" className="hover:text-[var(--moss)] transition-colors">Insights</Link>
           <Link href="/contact" className="hover:text-[var(--moss)] transition-colors">Contact</Link>
