@@ -115,18 +115,29 @@ export default function Home() {
       {/* 6. Recognition Strip */}
       <section className="py-[48px] px-[32px] border-y border-[var(--line)]">
         <div className="container mx-auto max-w-7xl">
-          <p className="text-center text-[12px] font-semibold uppercase tracking-[0.01em] text-[var(--muted)] mb-[32px]">Recognized & Featured By</p>
-          <div className="flex flex-wrap justify-center items-center gap-[48px] md:gap-[96px] opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-            <div className="flex items-center gap-[12px]">
-              <div className="w-8 h-8 rounded-[3px] bg-[var(--moss)]/20 shrink-0 flex items-center justify-center text-[var(--moss)]">★</div>
-              <div>
-                <div className="font-semibold text-[var(--charcoal)] leading-[1.2]">UN Environment Programme</div>
-                <div className="text-[12px] font-normal text-[var(--muted)]">World Environment Day 2026</div>
+          <p className="text-center text-[12px] font-semibold uppercase tracking-[0.01em] text-[var(--muted)] mb-[40px]">Recognized & Featured By</p>
+          <div className="flex flex-wrap justify-center items-center gap-[48px] md:gap-[80px] opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+            {/* UN Logo Block */}
+            <div className="flex items-center gap-[16px]">
+              <div className="relative w-[48px] h-[48px] shrink-0">
+                <Image src="/un-logo.svg" alt="UN Environment Programme" fill className="object-contain mix-blend-multiply" unoptimized />
+              </div>
+              <div className="flex flex-col">
+                <div className="font-bold text-[var(--charcoal)] leading-[1.2] text-[18px]">UN Environment Programme</div>
+                <div className="text-[12px] font-semibold text-[var(--muted)] uppercase tracking-wide">World Environment Day</div>
               </div>
             </div>
-            <div className="font-semibold text-[24px] text-[var(--charcoal)] leading-[1.3]">CEO India Magazine</div>
-            <div className="font-semibold text-[24px] text-[var(--charcoal)] leading-[1.3]">YourZourney</div>
-            <div className="font-semibold text-[24px] text-[var(--charcoal)] leading-[1.3]">Advaita Awards</div>
+            
+            {/* Partner Logos */}
+            <div className="relative h-[36px] w-[160px]">
+              <Image src="/ceo-india.png" alt="CEO India Magazine" fill className="object-contain mix-blend-multiply" unoptimized />
+            </div>
+            <div className="relative h-[36px] w-[140px]">
+              <Image src="/zourney.png" alt="Zourney" fill className="object-contain mix-blend-multiply" unoptimized />
+            </div>
+            <div className="relative h-[48px] w-[120px]">
+              <Image src="/advaita.png" alt="Advaita Awards" fill className="object-contain mix-blend-multiply" unoptimized />
+            </div>
           </div>
         </div>
       </section>
