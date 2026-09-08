@@ -91,11 +91,11 @@ export default function Home() {
       {/* 5. Founder Spotlight */}
       <section className="py-[64px] px-[32px]">
         <div className="container mx-auto max-w-7xl">
-          <div className="bg-[var(--charcoal)] rounded-[3px] p-[16px] grid grid-cols-1 md:grid-cols-2 gap-[16px]">
-            <div className="bg-[var(--white)] rounded-[3px] min-h-[500px] flex items-center justify-center relative overflow-hidden">
+          <div className="bg-[var(--charcoal)] rounded-[3px] p-[16px] flex flex-col md:flex-row gap-[32px] h-auto lg:h-[60vh]">
+            <div className="bg-[var(--white)] rounded-[3px] w-full md:w-auto md:h-full aspect-square relative overflow-hidden shrink-0 mx-auto md:mx-0">
               <Image src="/founder.jpg" alt="Founder" fill className="object-cover opacity-80" unoptimized />
             </div>
-            <div className="p-[48px] flex flex-col justify-center">
+            <div className="py-[32px] md:py-[0] md:pr-[48px] flex flex-col justify-center flex-grow overflow-y-auto">
               <div className="flex items-center gap-[8px] mb-[16px]">
                 <span className="w-3 h-3 rounded-[3px] bg-[var(--moss)]" />
                 <span className="text-[var(--white)] font-semibold text-[14px]">Our Founder</span>
