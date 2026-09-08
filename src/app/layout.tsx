@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
 
-const inter = Inter({ subsets: ["latin"] });
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 import Header from "@/components/Header";
 
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen flex flex-col bg-brand-light text-brand-dark overflow-x-hidden`}>
+      <body className={`${jakarta.className} min-h-screen flex flex-col bg-[var(--paper)] text-[var(--charcoal)] overflow-x-hidden`}>
         <Header />
 
         {/* Main Content */}

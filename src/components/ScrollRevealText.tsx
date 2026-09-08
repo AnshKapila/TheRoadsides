@@ -22,7 +22,7 @@ export default function ScrollRevealText({ text }: ScrollRevealTextProps) {
   return (
     <div 
       ref={container} 
-      className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.3] font-medium text-brand-dark tracking-tight text-center max-w-6xl mx-auto flex flex-wrap justify-center mb-16"
+      className="text-[24px] leading-[1.45] font-medium italic text-[var(--moss)] text-center max-w-4xl mx-auto flex flex-wrap justify-center mb-16"
     >
       {words.map((word, i) => {
         const start = i / words.length;

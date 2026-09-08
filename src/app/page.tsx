@@ -16,24 +16,24 @@ export default function Home() {
         
         <div className="container mx-auto max-w-7xl relative z-10 pt-10">
           <div className="max-w-2xl">
-            <h2 className="text-[#00D053] font-semibold text-lg mb-2 tracking-wide">
+            <h2 className="text-[var(--brick)] font-semibold text-[14px] mb-[10px] tracking-wide uppercase">
               Together, We Create Impact
             </h2>
             
-            <h1 className="text-white text-7xl md:text-8xl font-bold tracking-tighter leading-[1.0] mb-6">
+            <h1 className="text-[var(--white)] text-[48px] font-bold tracking-[-0.01em] leading-[1.15] mb-6">
               Unite. Act.<br />
               Transform
             </h1>
             
-            <p className="text-[#D3D3D3] text-base md:text-lg max-w-md mb-10 leading-relaxed font-medium">
+            <p className="text-[var(--paper)] text-[16px] leading-[1.65] max-w-md mb-10 font-normal">
               Your support powers life changing missions feeding families & rebuilding hope.
             </p>
             
-            <div className="flex flex-wrap items-center gap-4">
-              <Link href="/get-involved" className="inline-flex items-center justify-center bg-[#00D053] text-white font-semibold px-6 py-3.5 rounded-full hover:bg-[#00b347] transition-colors text-[15px]">
+            <div className="flex flex-wrap items-center gap-[14px]">
+              <Link href="/get-involved" className="inline-flex items-center justify-center bg-[var(--moss)] text-[var(--paper)] font-semibold px-[26px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--white)] transition-colors text-[16px] min-h-[44px]">
                 Donate Now <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
-              <Link href="/about" className="inline-flex items-center justify-center bg-white text-black font-semibold px-6 py-3.5 rounded-full hover:bg-gray-100 transition-colors text-[15px]">
+              <Link href="/about" className="inline-flex items-center justify-center bg-transparent border-[1.5px] border-[var(--white)] text-[var(--white)] font-semibold px-[24px] py-[11.5px] rounded-[3px] hover:bg-[var(--white)] hover:text-[var(--charcoal)] transition-colors text-[16px] min-h-[44px]">
                 Learn About Us
               </Link>
             </div>
@@ -50,44 +50,40 @@ export default function Home() {
                 <span className="w-3 h-3 rounded-full bg-brand-primary" />
                 <span className="text-brand-dark font-medium text-sm">Our Impact</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-brand-dark tracking-tight">The Baby Steps Impact</h2>
-            </div>
-            <p className="text-brand-dark/70 max-w-sm text-sm leading-relaxed">
-              Small, correct daily actions — done consistently and multiplied across a population — create real, systemic change.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {/* 2. Impact Numbers */}
+      <section className="py-[64px] px-[32px]">
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
             {/* Card 1 */}
-            <div className="relative rounded-[2rem] overflow-hidden aspect-square md:aspect-[4/5] bg-brand-dark flex flex-col justify-end p-8 group">
+            <div className="relative rounded-[3px] overflow-hidden aspect-square md:aspect-[4/5] bg-[var(--charcoal)] flex flex-col justify-end p-[32px] group">
               <Image src="/gallery/gallery_0.jpg" alt="Impact 1" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <div className="relative z-10">
-                <div className="text-5xl md:text-6xl font-bold text-white mb-2">[XX]</div>
-                <div className="text-xl font-bold text-white mb-1">Sectors Covered</div>
-                <div className="text-white/70 text-sm">Across Faridabad and beyond.</div>
+                <div className="text-[48px] font-bold text-[var(--white)] tracking-[-0.01em] leading-[1.15] mb-[8px]">[XX]</div>
+                <div className="text-[24px] font-semibold text-[var(--white)] leading-[1.3] mb-[8px]">Sectors Covered</div>
+                <div className="text-[var(--paper)] text-[16px] leading-[1.65]">Across Faridabad and beyond.</div>
               </div>
             </div>
 
             {/* Card 2 */}
-            <div className="relative rounded-[2rem] overflow-hidden aspect-square md:aspect-[4/5] bg-brand-dark flex flex-col justify-end p-8 group">
+            <div className="relative rounded-[3px] overflow-hidden aspect-square md:aspect-[4/5] bg-[var(--charcoal)] flex flex-col justify-end p-[32px] group">
               <Image src="/gallery/gallery_1.jpg" alt="Impact 2" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <div className="relative z-10">
-                <div className="text-5xl md:text-6xl font-bold text-white mb-2">[XX,XXX]</div>
-                <div className="text-xl font-bold text-white mb-1">Trees Planted</div>
-                <div className="text-white/70 text-sm">Nurtured for long-term survival.</div>
+                <div className="text-[48px] font-bold text-[var(--white)] tracking-[-0.01em] leading-[1.15] mb-[8px]">[XX,XXX]</div>
+                <div className="text-[24px] font-semibold text-[var(--white)] leading-[1.3] mb-[8px]">Trees Planted</div>
+                <div className="text-[var(--paper)] text-[16px] leading-[1.65]">Nurtured for long-term survival.</div>
               </div>
             </div>
 
             {/* Card 3 */}
-            <div className="relative rounded-[2rem] overflow-hidden aspect-square md:aspect-[4/5] bg-brand-dark flex flex-col justify-end p-8 group">
+            <div className="relative rounded-[3px] overflow-hidden aspect-square md:aspect-[4/5] bg-[var(--charcoal)] flex flex-col justify-end p-[32px] group">
               <Image src="/gallery/gallery_2.jpg" alt="Impact 3" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <div className="relative z-10">
-                <div className="text-5xl md:text-6xl font-bold text-white mb-2">[XX]</div>
-                <div className="text-xl font-bold text-white mb-1">Community Events</div>
-                <div className="text-white/70 text-sm">Mobilizing local citizens.</div>
+                <div className="text-[48px] font-bold text-[var(--white)] tracking-[-0.01em] leading-[1.15] mb-[8px]">[XX]</div>
+                <div className="text-[24px] font-semibold text-[var(--white)] leading-[1.3] mb-[8px]">Community Events</div>
+                <div className="text-[var(--paper)] text-[16px] leading-[1.65]">Mobilizing local citizens.</div>
               </div>
             </div>
           </div>
@@ -105,33 +101,33 @@ export default function Home() {
       </section>
 
       {/* 4. Our Work Preview */}
-      <section className="py-32 px-6 bg-brand-light rounded-[3rem] mx-4 my-8">
+      <section className="py-[64px] px-[32px] bg-[var(--white)] rounded-[3px] mx-[16px] my-[32px] border border-[var(--line)]">
         <div className="container mx-auto max-w-7xl">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-[48px] gap-[32px]">
             <div className="max-w-2xl">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="w-3 h-3 rounded-full bg-brand-primary" />
-                <span className="text-brand-dark font-medium text-sm">Our Work</span>
+              <div className="flex items-center gap-[8px] mb-[12px]">
+                <span className="w-3 h-3 rounded-[3px] bg-[var(--moss)]" />
+                <span className="text-[var(--charcoal)] font-semibold text-[14px]">Our Work</span>
               </div>
-              <h3 className="text-4xl md:text-5xl font-extrabold tracking-tight">Creating safer, cleaner, greener roadside environments.</h3>
+              <h2 className="text-[32px] font-semibold tracking-tight text-[var(--charcoal)] leading-[1.2]">Creating safer, cleaner, greener roadside environments.</h2>
             </div>
-            <Link href="/work" className="inline-flex items-center justify-center bg-brand-white border border-brand-dark/10 text-brand-dark font-bold px-6 py-3 rounded-full hover:bg-gray-50 transition-colors shrink-0">
+            <Link href="/work" className="inline-flex items-center justify-center bg-transparent border-[1.5px] border-[var(--charcoal)] text-[var(--charcoal)] font-semibold px-[24px] py-[11.5px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--paper)] transition-colors shrink-0 min-h-[44px]">
               View all initiatives
             </Link>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[32px]">
             {/* Case Study 1 */}
             <Link href="/work" className="group block">
-              <article className="bg-brand-white rounded-[2rem] p-4 h-full flex flex-col border border-brand-dark/5 shadow-sm hover:shadow-xl transition-shadow duration-300">
-                <div className="aspect-[4/3] bg-brand-light rounded-[1.5rem] flex items-center justify-center overflow-hidden relative mb-8">
+              <article className="bg-[var(--paper)] rounded-[3px] p-[16px] h-full flex flex-col border border-[var(--line)] hover:border-[var(--charcoal)] transition-colors duration-300">
+                <div className="aspect-[4/3] bg-[var(--white)] rounded-[3px] flex items-center justify-center overflow-hidden relative mb-[32px]">
                   <Image src="/gallery/gallery_3.jpg" alt="Ballabgarh Plantation" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                 </div>
-                <div className="px-6 pb-6 flex flex-col flex-grow">
-                  <span className="text-brand-primary text-xs font-bold uppercase tracking-widest mb-3">Plantation & Nurturing</span>
-                  <h4 className="text-3xl font-bold mb-4 tracking-tight group-hover:text-brand-primary transition-colors">Ballabgarh & Faridabad Drives</h4>
-                  <p className="text-brand-dark/60 mb-8 flex-grow leading-relaxed text-lg">Going beyond just planting saplings to establishing a system of continued nurturing, in partnership with local community and environmental groups.</p>
-                  <div className="w-12 h-12 rounded-full border border-brand-dark/10 flex items-center justify-center group-hover:bg-brand-primary group-hover:border-brand-primary group-hover:text-white transition-all mt-auto">
+                <div className="px-[24px] pb-[24px] flex flex-col flex-grow">
+                  <span className="text-[var(--brick)] text-[12px] font-semibold uppercase tracking-[0.01em] mb-[12px]">Plantation & Nurturing</span>
+                  <h3 className="text-[24px] font-semibold mb-[16px] leading-[1.3] text-[var(--charcoal)]">Ballabgarh & Faridabad Drives</h3>
+                  <p className="text-[var(--muted)] mb-[32px] flex-grow leading-[1.65] text-[16px] font-normal">Going beyond just planting saplings to establishing a system of continued nurturing, in partnership with local community and environmental groups.</p>
+                  <div className="w-12 h-12 rounded-[3px] border border-[var(--line)] flex items-center justify-center group-hover:bg-[var(--charcoal)] group-hover:border-[var(--charcoal)] group-hover:text-[var(--paper)] transition-all mt-auto text-[var(--charcoal)]">
                     <ArrowRight className="w-5 h-5" />
                   </div>
                 </div>
@@ -140,15 +136,15 @@ export default function Home() {
 
             {/* Case Study 2 */}
             <Link href="/work" className="group block">
-              <article className="bg-brand-white rounded-[2rem] p-4 h-full flex flex-col border border-brand-dark/5 shadow-sm hover:shadow-xl transition-shadow duration-300">
-                <div className="aspect-[4/3] bg-brand-light rounded-[1.5rem] flex items-center justify-center overflow-hidden relative mb-8">
+              <article className="bg-[var(--paper)] rounded-[3px] p-[16px] h-full flex flex-col border border-[var(--line)] hover:border-[var(--charcoal)] transition-colors duration-300">
+                <div className="aspect-[4/3] bg-[var(--white)] rounded-[3px] flex items-center justify-center overflow-hidden relative mb-[32px]">
                   <Image src="/gallery/gallery_4.jpg" alt="Textile Waste" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                 </div>
-                <div className="px-6 pb-6 flex flex-col flex-grow">
-                  <span className="text-brand-primary text-xs font-bold uppercase tracking-widest mb-3">Circular Economy</span>
-                  <h4 className="text-3xl font-bold mb-4 tracking-tight group-hover:text-brand-primary transition-colors">2025 Textile Waste Initiative</h4>
-                  <p className="text-brand-dark/60 mb-8 flex-grow leading-relaxed text-lg">Mobilizing students and citizens for zero-waste practices alongside The Modern School, K.L. Mehta College for Women, and Saahas Zero Waste.</p>
-                  <div className="w-12 h-12 rounded-full border border-brand-dark/10 flex items-center justify-center group-hover:bg-brand-primary group-hover:border-brand-primary group-hover:text-white transition-all mt-auto">
+                <div className="px-[24px] pb-[24px] flex flex-col flex-grow">
+                  <span className="text-[var(--brick)] text-[12px] font-semibold uppercase tracking-[0.01em] mb-[12px]">Circular Economy</span>
+                  <h3 className="text-[24px] font-semibold mb-[16px] leading-[1.3] text-[var(--charcoal)]">2025 Textile Waste Initiative</h3>
+                  <p className="text-[var(--muted)] mb-[32px] flex-grow leading-[1.65] text-[16px] font-normal">Mobilizing students and citizens for zero-waste practices alongside The Modern School, K.L. Mehta College for Women, and Saahas Zero Waste.</p>
+                  <div className="w-12 h-12 rounded-[3px] border border-[var(--line)] flex items-center justify-center group-hover:bg-[var(--charcoal)] group-hover:border-[var(--charcoal)] group-hover:text-[var(--paper)] transition-all mt-auto text-[var(--charcoal)]">
                     <ArrowRight className="w-5 h-5" />
                   </div>
                 </div>
@@ -159,22 +155,22 @@ export default function Home() {
       </section>
 
       {/* 5. Founder Spotlight */}
-      <section className="py-32 px-6">
+      <section className="py-[64px] px-[32px]">
         <div className="container mx-auto max-w-7xl">
-          <div className="bg-brand-dark rounded-[3rem] p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-[#1A1A1A] rounded-[2.5rem] min-h-[500px] flex items-center justify-center text-white/30 relative overflow-hidden">
+          <div className="bg-[var(--charcoal)] rounded-[3px] p-[16px] grid grid-cols-1 md:grid-cols-2 gap-[16px]">
+            <div className="bg-[var(--white)] rounded-[3px] min-h-[500px] flex items-center justify-center relative overflow-hidden">
               <Image src="/gallery/gallery_5.jpg" alt="Founder" fill className="object-cover opacity-80" unoptimized />
             </div>
-            <div className="p-10 md:p-16 flex flex-col justify-center">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="w-3 h-3 rounded-full bg-brand-primary" />
-                <span className="text-white font-medium text-sm">Our Founder</span>
+            <div className="p-[48px] flex flex-col justify-center">
+              <div className="flex items-center gap-[8px] mb-[16px]">
+                <span className="w-3 h-3 rounded-[3px] bg-[var(--moss)]" />
+                <span className="text-[var(--white)] font-semibold text-[14px]">Our Founder</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">Seema Chowdhry Dhawan</h2>
-              <p className="text-lg text-white/70 mb-10 leading-relaxed">
+              <h2 className="text-[32px] font-semibold text-[var(--white)] mb-[24px] leading-[1.2]">Seema Chowdhry Dhawan</h2>
+              <p className="text-[16px] text-[var(--paper)] mb-[40px] leading-[1.65] font-normal">
                 It started by noticing what everyone else walks past. An alumnus of IIM Calcutta and Wharton Online with a deep background in ESG strategy, Seema founded The Roadsides to translate corporate sustainability principles into hyperlocal, citizen-led action.
               </p>
-              <Link href="/founder" className="inline-flex items-center justify-center bg-brand-primary text-white font-bold px-8 py-4 rounded-full hover:bg-[#7ab136] transition-colors w-fit text-lg">
+              <Link href="/founder" className="inline-flex items-center justify-center bg-[var(--moss)] text-[var(--paper)] font-semibold px-[26px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--white)] transition-colors w-fit text-[16px] min-h-[44px]">
                 Read Seema's Story
               </Link>
             </div>
@@ -183,37 +179,37 @@ export default function Home() {
       </section>
 
       {/* 6. Recognition Strip */}
-      <section className="py-20 px-6 border-y border-brand-dark/5">
+      <section className="py-[48px] px-[32px] border-y border-[var(--line)]">
         <div className="container mx-auto max-w-7xl">
-          <p className="text-center text-xs font-bold uppercase tracking-widest text-brand-dark/40 mb-12">Recognized & Featured By</p>
-          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-brand-primary/20 shrink-0 flex items-center justify-center text-brand-primary">★</div>
+          <p className="text-center text-[12px] font-semibold uppercase tracking-[0.01em] text-[var(--muted)] mb-[32px]">Recognized & Featured By</p>
+          <div className="flex flex-wrap justify-center items-center gap-[48px] md:gap-[96px] opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+            <div className="flex items-center gap-[12px]">
+              <div className="w-8 h-8 rounded-[3px] bg-[var(--moss)]/20 shrink-0 flex items-center justify-center text-[var(--moss)]">★</div>
               <div>
-                <div className="font-bold text-brand-dark leading-tight">UN Environment Programme</div>
-                <div className="text-xs font-medium text-brand-dark/60">World Environment Day 2026</div>
+                <div className="font-semibold text-[var(--charcoal)] leading-[1.2]">UN Environment Programme</div>
+                <div className="text-[12px] font-normal text-[var(--muted)]">World Environment Day 2026</div>
               </div>
             </div>
-            <div className="font-bold text-xl text-brand-dark">CEO India Magazine</div>
-            <div className="font-bold text-xl text-brand-dark">YourZourney</div>
-            <div className="font-bold text-xl text-brand-dark">Advaita Awards</div>
+            <div className="font-semibold text-[24px] text-[var(--charcoal)] leading-[1.3]">CEO India Magazine</div>
+            <div className="font-semibold text-[24px] text-[var(--charcoal)] leading-[1.3]">YourZourney</div>
+            <div className="font-semibold text-[24px] text-[var(--charcoal)] leading-[1.3]">Advaita Awards</div>
           </div>
         </div>
       </section>
 
       {/* 7. Blog Preview */}
-      <section className="py-32 px-6">
+      <section className="py-[64px] px-[32px]">
         <div className="container mx-auto max-w-7xl">
-          <div className="text-center max-w-2xl mx-auto mb-20">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <span className="w-3 h-3 rounded-full bg-brand-primary" />
-              <span className="text-brand-dark font-medium text-sm">Insights</span>
+          <div className="text-center max-w-2xl mx-auto mb-[48px]">
+            <div className="flex items-center justify-center gap-[8px] mb-[12px]">
+              <span className="w-3 h-3 rounded-[3px] bg-[var(--moss)]" />
+              <span className="text-[var(--charcoal)] font-semibold text-[14px]">Insights</span>
             </div>
-            <h3 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Stories and perspectives.</h3>
-            <p className="text-lg text-brand-dark/60">Excerpts from "Baby Steps to Green Revolution" and on-ground case studies.</p>
+            <h2 className="text-[32px] font-semibold tracking-tight mb-[16px] leading-[1.2]">Stories and perspectives.</h2>
+            <p className="text-[16px] text-[var(--muted)] leading-[1.65]">Excerpts from "Baby Steps to Green Revolution" and on-ground case studies.</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[32px]">
             {[
               { tag: 'From the Book', title: 'The Power of Consistency', desc: 'How small, daily environmental habits multiply across communities to create lasting impact.', img: 'gallery_6.jpg' },
               { tag: 'On-Ground Stories', title: 'Nurturing After Planting', desc: 'Why our work in Faridabad doesn\'t stop on planting day, and how we maintain saplings year-round.', img: 'gallery_7.jpg' },
@@ -221,12 +217,12 @@ export default function Home() {
             ].map((post, i) => (
               <Link href="/insights" key={i} className="group block">
                 <article className="h-full flex flex-col">
-                  <div className="aspect-[4/3] bg-brand-light rounded-[2rem] mb-6 overflow-hidden relative border border-brand-dark/5">
+                  <div className="aspect-[4/3] bg-[var(--white)] rounded-[3px] mb-[24px] overflow-hidden relative border border-[var(--line)]">
                     <Image src={`/gallery/${post.img}`} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                   </div>
-                  <span className="text-brand-primary text-xs font-bold uppercase tracking-widest mb-3">{post.tag}</span>
-                  <h4 className="text-2xl font-bold mb-3 tracking-tight group-hover:text-brand-primary transition-colors">{post.title}</h4>
-                  <p className="text-brand-dark/60 mb-6 flex-grow leading-relaxed">{post.desc}</p>
+                  <span className="text-[var(--brick)] text-[12px] font-semibold uppercase tracking-[0.01em] mb-[12px]">{post.tag}</span>
+                  <h3 className="text-[24px] font-semibold mb-[12px] leading-[1.3] group-hover:text-[var(--brick)] transition-colors">{post.title}</h3>
+                  <p className="text-[var(--muted)] mb-[24px] flex-grow leading-[1.65] text-[16px]">{post.desc}</p>
                 </article>
               </Link>
             ))}
@@ -235,34 +231,34 @@ export default function Home() {
       </section>
 
       {/* 8. Gallery Preview */}
-      <section className="py-32 px-6 bg-brand-light rounded-[3rem] mx-4 mb-32">
+      <section className="py-[64px] px-[32px] bg-[var(--white)] rounded-[3px] mx-[16px] mb-[64px] border border-[var(--line)]">
         <div className="container mx-auto max-w-7xl text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="w-3 h-3 rounded-full bg-brand-primary" />
-            <span className="text-brand-dark font-medium text-sm">Gallery</span>
+          <div className="flex items-center justify-center gap-[8px] mb-[12px]">
+            <span className="w-3 h-3 rounded-[3px] bg-[var(--moss)]" />
+            <span className="text-[var(--charcoal)] font-semibold text-[14px]">Gallery</span>
           </div>
-          <h3 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-16">Community in Action</h3>
+          <h2 className="text-[32px] font-semibold tracking-tight mb-[48px] leading-[1.2]">Community in Action</h2>
           
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 h-auto lg:h-[600px]">
-            <div className="lg:col-span-8 relative bg-brand-white border border-brand-dark/5 rounded-[2rem] overflow-hidden group cursor-pointer flex items-center justify-center aspect-video lg:aspect-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-[24px] h-auto lg:h-[600px]">
+            <div className="lg:col-span-8 relative bg-[var(--paper)] border border-[var(--line)] rounded-[3px] overflow-hidden group cursor-pointer flex items-center justify-center aspect-video lg:aspect-auto">
               <Image src="/gallery/gallery_9.jpg" alt="Video Thumbnail" fill className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" unoptimized />
-              <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-brand-dark/30 transition-colors flex items-center justify-center">
-                <div className="w-24 h-24 bg-brand-primary rounded-full flex items-center justify-center text-white transition-transform">
-                  <Play className="w-10 h-10 ml-1 fill-current" />
+              <div className="absolute inset-0 bg-[var(--charcoal)]/20 group-hover:bg-[var(--charcoal)]/30 transition-colors flex items-center justify-center">
+                <div className="w-[64px] h-[64px] bg-[var(--moss)] rounded-[3px] flex items-center justify-center text-[var(--paper)] transition-transform">
+                  <Play className="w-[32px] h-[32px] ml-1 fill-current" />
                 </div>
               </div>
             </div>
             
-            <div className="lg:col-span-4 grid grid-rows-3 gap-6 h-[600px] lg:h-auto">
-              <div className="bg-brand-white border border-brand-dark/5 rounded-[2rem] overflow-hidden relative">
+            <div className="lg:col-span-4 grid grid-rows-3 gap-[24px] h-[600px] lg:h-auto">
+              <div className="bg-[var(--paper)] border border-[var(--line)] rounded-[3px] overflow-hidden relative">
                 <Image src="/gallery/gallery_10.jpg" alt="Gallery Photo" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
               </div>
-              <div className="bg-brand-white border border-brand-dark/5 rounded-[2rem] overflow-hidden relative">
+              <div className="bg-[var(--paper)] border border-[var(--line)] rounded-[3px] overflow-hidden relative">
                 <Image src="/gallery/gallery_11.jpg" alt="Gallery Photo" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
               </div>
-              <Link href="/gallery" className="bg-brand-dark rounded-[2rem] flex items-center justify-center text-white hover:bg-brand-primary transition-colors group">
+              <Link href="/gallery" className="bg-[var(--charcoal)] rounded-[3px] flex items-center justify-center text-[var(--paper)] hover:bg-[var(--moss)] transition-colors group">
                 <div className="flex flex-col items-center">
-                  <span className="font-bold text-lg mb-2">View Full Gallery</span>
+                  <span className="font-semibold text-[16px] mb-[8px]">View Full Gallery</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
