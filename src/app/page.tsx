@@ -268,44 +268,73 @@ export default function Home() {
       </section>
 
       {/* 9. Get Involved */}
-      <section className="py-32 px-6">
+      <section className="py-[64px] px-[32px]">
         <div className="container mx-auto max-w-7xl">
-          <div className="bg-brand-primary rounded-[3rem] p-10 md:p-20 text-center text-white">
-            <h2 className="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight">Be Part of the Solution</h2>
-            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-16 font-medium">
-              Join us in creating safer, cleaner, greener environments. Every contribution—time, resources, or partnership—multiplies our impact.
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-              <div className="bg-brand-white rounded-[2rem] p-8 md:p-10 text-brand-dark flex flex-col hover:-translate-y-2 transition-transform duration-300">
-                <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 text-brand-primary flex items-center justify-center mb-6">
-                  <HeartHandshake className="w-7 h-7" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 tracking-tight">Donate</h3>
-                <p className="text-brand-dark/60 mb-8 flex-grow leading-relaxed">Your contributions directly fund our on-ground planting, nurturing, and civic improvement initiatives.</p>
-                <Link href="/get-involved#donate" className="inline-flex font-bold hover:text-brand-primary transition-colors items-center gap-2 mt-auto">
-                  Make a Donation <ArrowRight className="w-4 h-4" />
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-[24px] lg:h-[750px]">
+            {/* Column 1 */}
+            <div className="flex flex-col justify-between h-full gap-[32px] lg:gap-0">
+              <div className="pt-[16px]">
+                <div className="text-[var(--charcoal)] text-[16px] font-semibold tracking-wide mb-[16px]">Be Part of the Solution</div>
+                <h2 className="text-[48px] font-bold text-[var(--charcoal)] tracking-[-0.01em] leading-[1.15] mb-[32px] max-w-md">
+                  Join us in creating safer, cleaner, greener environments.
+                </h2>
+                <Link href="/get-involved" className="inline-flex items-center justify-center bg-[var(--moss)] text-[var(--paper)] px-[26px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--white)] transition-colors text-[16px] font-semibold w-fit min-h-[44px]">
+                  Get involved <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </div>
-              <div className="bg-brand-white rounded-[2rem] p-8 md:p-10 text-brand-dark flex flex-col hover:-translate-y-2 transition-transform duration-300">
-                <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 text-brand-primary flex items-center justify-center mb-6">
-                  <Users className="w-7 h-7" />
+              
+              {/* Card 1: Donate */}
+              <div className="relative rounded-[3px] overflow-hidden group h-[400px] lg:h-[350px] flex flex-col justify-between p-[32px]">
+                <Image src="/gallery/gallery_6.jpg" alt="Donate" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-black/60" />
+                <div className="relative z-10">
+                  <h3 className="text-[32px] font-bold text-[var(--white)] tracking-tight mb-[16px] leading-[1.2]">Donate</h3>
+                  <p className="text-[var(--paper)] text-[16px] leading-[1.65] font-normal">
+                    Your contributions directly fund our on-ground planting, nurturing, and civic improvement initiatives.
+                  </p>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 tracking-tight">Volunteer</h3>
-                <p className="text-brand-dark/60 mb-8 flex-grow leading-relaxed">Join our community drives and help us execute sustainable practices at the hyperlocal level.</p>
-                <Link href="/get-involved#volunteer" className="inline-flex font-bold hover:text-brand-primary transition-colors items-center gap-2 mt-auto">
-                  Sign Up <ArrowRight className="w-4 h-4" />
-                </Link>
+                <div className="relative z-10 flex gap-[12px] flex-wrap mt-[32px]">
+                  <span className="bg-[var(--paper)] text-[var(--charcoal)] px-[16px] py-[6px] rounded-[3px] text-[13px] font-semibold">Funding</span>
+                  <span className="bg-[var(--paper)] text-[var(--charcoal)] px-[16px] py-[6px] rounded-[3px] text-[13px] font-semibold">Civic Impact</span>
+                </div>
               </div>
-              <div className="bg-brand-white rounded-[2rem] p-8 md:p-10 text-brand-dark flex flex-col hover:-translate-y-2 transition-transform duration-300">
-                <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 text-brand-primary flex items-center justify-center mb-6">
-                  <Leaf className="w-7 h-7" />
+            </div>
+
+            {/* Column 2 */}
+            <div className="flex flex-col justify-end h-full mt-[24px] lg:mt-0">
+              {/* Card 2: Volunteer */}
+              <div className="relative rounded-[3px] overflow-hidden group h-[400px] lg:h-[500px] flex flex-col justify-between p-[32px]">
+                <Image src="/gallery/gallery_7.jpg" alt="Volunteer" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-black/60" />
+                <div className="relative z-10">
+                  <h3 className="text-[32px] font-bold text-[var(--white)] tracking-tight mb-[16px] leading-[1.2]">Volunteer</h3>
+                  <p className="text-[var(--paper)] text-[16px] leading-[1.65] font-normal">
+                    Join our community drives and help us execute sustainable practices at the hyperlocal level.
+                  </p>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 tracking-tight">Partner With Us</h3>
-                <p className="text-brand-dark/60 mb-8 flex-grow leading-relaxed">We offer advisory services and collaborate with organizations committed to sustainable development.</p>
-                <Link href="/get-involved#partner" className="inline-flex font-bold hover:text-brand-primary transition-colors items-center gap-2 mt-auto">
-                  Explore Partnerships <ArrowRight className="w-4 h-4" />
-                </Link>
+                <div className="relative z-10 flex gap-[12px] flex-wrap mt-[32px]">
+                  <span className="bg-[var(--paper)] text-[var(--charcoal)] px-[16px] py-[6px] rounded-[3px] text-[13px] font-semibold">Community</span>
+                  <span className="bg-[var(--paper)] text-[var(--charcoal)] px-[16px] py-[6px] rounded-[3px] text-[13px] font-semibold">On-Ground</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Column 3 */}
+            <div className="flex flex-col h-full mt-[24px] lg:mt-0">
+              {/* Card 3: Partner */}
+              <div className="relative rounded-[3px] overflow-hidden group h-[400px] lg:h-full flex flex-col justify-between p-[32px]">
+                <Image src="/gallery/gallery_8.jpg" alt="Partner With Us" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-black/60" />
+                <div className="relative z-10">
+                  <h3 className="text-[32px] font-bold text-[var(--white)] tracking-tight mb-[16px] leading-[1.2]">Partner With Us</h3>
+                  <p className="text-[var(--paper)] text-[16px] leading-[1.65] font-normal">
+                    We offer advisory services and collaborate with organizations committed to sustainable development.
+                  </p>
+                </div>
+                <div className="relative z-10 flex gap-[12px] flex-wrap mt-[32px]">
+                  <span className="bg-[var(--paper)] text-[var(--charcoal)] px-[16px] py-[6px] rounded-[3px] text-[13px] font-semibold">Advisory</span>
+                  <span className="bg-[var(--paper)] text-[var(--charcoal)] px-[16px] py-[6px] rounded-[3px] text-[13px] font-semibold">Collaboration</span>
+                </div>
               </div>
             </div>
           </div>
