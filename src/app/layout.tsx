@@ -32,39 +32,40 @@ export default function RootLayout({
         </main>
 
         {/* Footer */}
-        <footer className="bg-brand-dark text-brand-white py-24 pb-8">
-          <div className="container mx-auto px-6 max-w-7xl">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <footer className="bg-black text-[var(--paper)] py-[96px] pb-[32px]">
+          <div className="container mx-auto px-[32px] max-w-7xl">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-[48px] mb-[64px]">
               <div className="md:col-span-2">
-                <Image src="/logo.png" alt="The Roadsides Logo" width={64} height={64} className="object-contain mb-6 grayscale brightness-0 invert" />
-                <p className="text-white/60 max-w-sm leading-relaxed">
+                <Link href="/" className="inline-block mb-[24px]">
+                  <Image src="/logo.png" alt="The Roadsides Logo" width={48} height={48} className="object-contain" />
+                </Link>
+                <p className="text-[var(--paper)]/60 max-w-sm leading-[1.65] text-[16px]">
                   Vibrant Walkable Roadsides Foundation. A Section 8 Not-For-Profit based in Faridabad, Haryana, India.
                 </p>
               </div>
               <div>
-                <h4 className="text-white font-bold mb-6 tracking-wide uppercase text-xs">Explore</h4>
-                <ul className="space-y-4">
-                  <li><Link href="/about" className="text-white/60 hover:text-brand-primary transition-colors font-medium">About</Link></li>
-                  <li><Link href="/founder" className="text-white/60 hover:text-brand-primary transition-colors font-medium">Founder</Link></li>
-                  <li><Link href="/work" className="text-white/60 hover:text-brand-primary transition-colors font-medium">Our Work</Link></li>
-                  <li><Link href="/gallery" className="text-white/60 hover:text-brand-primary transition-colors font-medium">Gallery</Link></li>
-                  <li><Link href="/insights" className="text-white/60 hover:text-brand-primary transition-colors font-medium">Insights</Link></li>
+                <h4 className="text-[var(--white)] font-bold mb-[24px] tracking-[0.01em] uppercase text-[12px]">Explore</h4>
+                <ul className="flex flex-col gap-[16px]">
+                  <li><Link href="/about" className="text-[var(--paper)]/70 hover:text-[var(--moss)] transition-colors font-medium text-[16px]">About</Link></li>
+                  <li><Link href="/founder" className="text-[var(--paper)]/70 hover:text-[var(--moss)] transition-colors font-medium text-[16px]">Founder</Link></li>
+                  <li><Link href="/gallery" className="text-[var(--paper)]/70 hover:text-[var(--moss)] transition-colors font-medium text-[16px]">Gallery</Link></li>
+                  <li><Link href="/insights" className="text-[var(--paper)]/70 hover:text-[var(--moss)] transition-colors font-medium text-[16px]">Insights</Link></li>
                 </ul>
               </div>
               <div>
-                <h4 className="text-white font-bold mb-6 tracking-wide uppercase text-xs">Connect</h4>
-                <ul className="space-y-4 mb-8">
-                  <li><Link href="/contact" className="text-white/60 hover:text-brand-primary transition-colors font-medium">Contact Us</Link></li>
-                  <li><Link href="/get-involved" className="text-white/60 hover:text-brand-primary transition-colors font-medium">Get Involved</Link></li>
-                  <li><a href="#" className="text-white/60 hover:text-brand-primary transition-colors font-medium">LinkedIn</a></li>
+                <h4 className="text-[var(--white)] font-bold mb-[24px] tracking-[0.01em] uppercase text-[12px]">Connect</h4>
+                <ul className="flex flex-col gap-[16px] mb-[32px]">
+                  <li><Link href="/contact" className="text-[var(--paper)]/70 hover:text-[var(--moss)] transition-colors font-medium text-[16px]">Contact Us</Link></li>
+                  <li><Link href="/get-involved" className="text-[var(--paper)]/70 hover:text-[var(--moss)] transition-colors font-medium text-[16px]">Get Involved</Link></li>
+                  <li><a href="#" className="text-[var(--paper)]/70 hover:text-[var(--moss)] transition-colors font-medium text-[16px]">LinkedIn</a></li>
                 </ul>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-xs font-medium text-white/40 tracking-wide">
+            <div className="flex flex-col md:flex-row justify-between items-center pt-[32px] border-t border-[var(--paper)]/10 text-[12px] font-medium text-[var(--paper)]/40 tracking-wide">
               <div>&copy; {new Date().getFullYear()} Vibrant Walkable Roadsides Foundation. All rights reserved.</div>
-              <div className="flex gap-6 mt-4 md:mt-0">
-                <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                <a href="#" className="hover:text-white transition-colors">Terms of Use</a>
+              <div className="flex gap-[24px] mt-[16px] md:mt-0">
+                <a href="#" className="hover:text-[var(--white)] transition-colors">Privacy Policy</a>
+                <a href="#" className="hover:text-[var(--white)] transition-colors">Terms of Use</a>
               </div>
             </div>
           </div>
