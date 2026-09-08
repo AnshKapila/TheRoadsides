@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Roadsides — Design System v2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --moss: #5C6B47;
+    --brick: #96432E;
+    --charcoal: #25231F;
+    --paper: #FAF8F5;
+    --line: #E3DED2;
+    --muted: #6B6459;
+    --white: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--charcoal);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 32px; }
+
+  .cover { padding: 64px 32px 48px; border-bottom: 3px solid var(--charcoal); }
+  .eyebrow-note { color: var(--brick); font-weight: 600; font-size: 14px; margin: 0 0 10px; }
+  h1.doc-title { font-weight: 700; font-size: 40px; margin: 0 0 14px; letter-spacing: -0.01em; line-height: 1.1; }
+  .cover p.dek { color: var(--muted); font-size: 16px; max-width: 60ch; margin: 0; }
+  .version-tag { display: inline-block; font-size: 12.5px; font-weight: 600; color: var(--muted); border: 1px solid var(--line); padding: 3px 10px; border-radius: 3px; margin-top: 18px; }
+
+  section { padding: 48px 32px; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: none; }
+  h2.section-title { font-weight: 700; font-size: 26px; margin: 0 0 6px; }
+  p.section-dek { color: var(--muted); font-size: 15px; margin: 0 0 32px; max-width: 62ch; }
+
+  /* Color swatches */
+  .swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .swatch { background: var(--paper); }
+  .swatch .chip { height: 84px; display: flex; align-items: flex-end; padding: 8px; }
+  .swatch .chip span { font-size: 11.5px; font-weight: 700; padding: 2px 6px; border-radius: 2px; }
+  .swatch .info { padding: 12px 14px; }
+  .swatch .name { font-weight: 700; font-size: 13.5px; }
+  .swatch .hex { font-size: 13px; color: var(--muted); margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .swatch .role { font-size: 12.5px; color: var(--muted); margin-top: 8px; line-height: 1.4; }
+
+  .contrast-table { width: 100%; border-collapse: collapse; margin-top: 24px; font-size: 14px; }
+  .contrast-table th, .contrast-table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  .contrast-table th { font-weight: 700; color: var(--muted); font-size: 12.5px; }
+  .pass { color: #4A7A3D; font-weight: 700; }
+  .fail { color: var(--brick); font-weight: 700; }
+
+  /* Type specimens */
+  .specimen { padding: 20px 0; border-bottom: 1px dashed var(--line); display: flex; align-items: baseline; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+  .specimen:last-child { border-bottom: none; }
+  .specimen .sample { flex: 1; min-width: 260px; }
+  .specimen .meta { font-size: 13px; color: var(--muted); text-align: right; white-space: nowrap; }
+  .specimen .meta div { margin-bottom: 2px; }
+
+  .t-h1 { font-weight: 700; font-size: 48px; line-height: 1.15; letter-spacing: -0.01em; }
+  .t-h2 { font-weight: 600; font-size: 32px; line-height: 1.2; }
+  .t-h3 { font-weight: 600; font-size: 24px; line-height: 1.3; }
+  .t-quote { font-weight: 500; font-style: italic; font-size: 24px; line-height: 1.45; color: var(--moss); }
+  .t-body { font-weight: 400; font-size: 16px; line-height: 1.65; max-width: 56ch; }
+  .t-small { font-weight: 400; font-size: 12px; line-height: 1.5; color: var(--muted); letter-spacing: 0.01em; }
+
+  /* Grid scale bars */
+  .scale-row { display: flex; align-items: center; gap: 16px; margin-bottom: 10px; }
+  .scale-bar { background: var(--moss); height: 20px; }
+  .scale-label { font-size: 13px; color: var(--muted); width: 130px; flex-shrink: 0; font-variant-numeric: tabular-nums; }
+
+  .margin-diagram { border: 1px solid var(--line); background: var(--white); padding: 0; margin-top: 8px; overflow: hidden; }
+  .margin-row { display: flex; height: 60px; }
+  .margin-side { background: repeating-linear-gradient(45deg, var(--line), var(--line) 4px, transparent 4px, transparent 8px); flex-shrink: 0; }
+  .margin-content { background: #FDFBF8; flex: 1; display: flex; align-items: center; justify-content: center; font-size: 12.5px; color: var(--muted); font-weight: 600; }
+  .margin-caption { font-size: 13px; color: var(--muted); padding: 10px 4px 0; }
+
+  /* Buttons */
+  .btn-group { margin-bottom: 32px; }
+  .btn-group-label { font-weight: 700; font-size: 14px; margin-bottom: 12px; }
+  .btn-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+  .btn {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 13px 26px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    box-shadow: none;
+    min-height: 44px;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+  .btn-primary { background: var(--moss); color: var(--paper); }
+  .btn-primary:hover { background: var(--brick); color: var(--white); }
+  .btn-primary:active { background: #4A5738; }
+  .btn-primary:disabled { opacity: 0.4; cursor: not-allowed; }
+  .btn-primary.focus { outline: 2px solid var(--brick); outline-offset: 2px; }
+
+  .btn-secondary { background: transparent; color: var(--charcoal); border: 1.5px solid var(--charcoal); padding: 11.5px 24px; }
+  .btn-secondary:hover { background: var(--charcoal); color: var(--paper); }
+  .btn-secondary:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  .btn-ghost { background: transparent; color: var(--charcoal); border: none; padding: 13px 4px; text-decoration: underline; text-underline-offset: 3px; }
+  .btn-ghost:hover { color: var(--brick); }
+
+  .state-note { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
+
+  /* Form elements */
+  .form-demo { max-width: 380px; margin-top: 8px; }
+  .field { margin-bottom: 18px; }
+  .field label { display: block; font-size: 13.5px; font-weight: 600; margin-bottom: 6px; }
+  .field input { width: 100%; min-height: 44px; padding: 0 14px; border: 1px solid var(--line); border-radius: 3px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; background: var(--white); }
+  .field input:focus { outline: none; border-color: var(--moss); border-width: 2px; }
+  .field.error input { border-color: var(--brick); }
+  .field .err-msg { font-size: 12.5px; color: var(--brick); margin-top: 5px; }
+
+  /* Nav mock */
+  .nav-mock { background: var(--charcoal); padding: 20px 28px; display: flex; gap: 28px; align-items: center; border-radius: 3px; flex-wrap: wrap; }
+  .nav-mock a { color: var(--paper); text-decoration: none; font-weight: 600; font-size: 15px; position: relative; padding-bottom: 4px; }
+  .nav-mock a.active::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 6px; height: 6px; border-radius: 50%; background: var(--brick); }
+
+  /* Icon row */
+  .icon-row { display: flex; gap: 28px; margin-top: 8px; flex-wrap: wrap; }
+  .icon-item { display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 12.5px; color: var(--muted); }
+  .icon-item svg { stroke: var(--charcoal); }
+
+  /* Rules list */
+  .rules { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .rule-col.avoid { padding-right: 28px; }
+  .rule-col.do { padding-left: 28px; border-left: 1px solid var(--line); }
+  .rule-head { font-weight: 700; font-size: 13.5px; letter-spacing: 0.02em; margin-bottom: 14px; }
+  .rule-head.avoid { color: var(--brick); }
+  .rule-head.do { color: #4A7A3D; }
+  .rule-list { margin: 0; padding: 0; list-style: none; }
+  .rule-list li { font-size: 14px; padding: 8px 0; border-bottom: 1px dashed var(--line); line-height: 1.45; }
+  .rule-list li:last-child { border-bottom: none; }
+
+  footer { padding: 32px; text-align: center; font-size: 13px; color: var(--muted); }
+
+  @media (max-width: 640px) {
+    .swatches { grid-template-columns: repeat(2, 1fr); }
+    .rules { grid-template-columns: 1fr; }
+    .rule-col.do { border-left: none; border-top: 1px solid var(--line); padding-left: 0; padding-top: 20px; }
+    h1.doc-title { font-size: 30px; }
+    .t-h1 { font-size: 36px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="cover">
+    <div class="wrap">
+      <p class="eyebrow-note">The Roadsides · Build Reference</p>
+      <h1 class="doc-title">Design System</h1>
+      <p class="dek">Locked typography, color, spacing, and component rules. Every page pulls from this document — no page introduces a new size, weight, color, or component style outside what's defined here.</p>
+      <span class="version-tag">v2 — moss/brick palette, Plus Jakarta Sans</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">Color</h2>
+      <p class="section-dek">One primary, one tertiary highlight, warm neutrals. The tertiary color never fills a button or a large surface — highlight text and eyebrows only.</p>
+      <div class="swatches">
+        <div class="swatch">
+          <div class="chip" style="background:var(--moss);"><span style="background:var(--paper); color:var(--charcoal);">Primary</span></div>
+          <div class="info"><div class="name">Moss</div><div class="hex">#5C6B47</div><div class="role">Buttons, links, section markers, key stats.</div></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:var(--brick);"><span style="background:var(--paper); color:var(--charcoal);">Tertiary</span></div>
+          <div class="info"><div class="name">Brick</div><div class="hex">#96432E</div><div class="role">Highlight text, eyebrows, hover accents only — never a button fill.</div></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:var(--charcoal);"><span style="background:var(--paper); color:var(--charcoal);">Text</span></div>
+          <div class="info"><div class="name">Charcoal</div><div class="hex">#25231F</div><div class="role">Body text, dark surfaces, nav background.</div></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:var(--paper); border-bottom:1px solid var(--line);"><span style="background:var(--charcoal); color:var(--paper);">Base</span></div>
+          <div class="info"><div class="name">Paper</div><div class="hex">#FAF8F5</div><div class="role">Primary background, all pages.</div></div>
+        </div>
+      </div>
+
+      <table class="contrast-table">
+        <tr><th>Pairing</th><th>Ratio</th><th>Result</th></tr>
+        <tr><td>Moss text on Paper</td><td>5.43:1</td><td class="pass">Pass AA</td></tr>
+        <tr><td>Brick text on Paper</td><td>6.31:1</td><td class="pass">Pass AA</td></tr>
+        <tr><td>Charcoal text on Paper</td><td>14.80:1</td><td class="pass">Pass AAA</td></tr>
+        <tr><td>Paper text on Moss (primary button)</td><td>5.43:1</td><td class="pass">Pass AA</td></tr>
+        <tr><td>Charcoal text on Moss</td><td>2.73:1</td><td class="fail">Fail — never use</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">Typography</h2>
+      <p class="section-dek">Plus Jakarta Sans, one family throughout, warm and humanist. Weight and size carry the hierarchy instead of switching typefaces. Scale alternates 1.5&thinsp;/&thinsp;1.33 step ratios rather than a literal golden ratio — chosen because it stays clean on a 4px sub-grid, which strict 1.618 scaling does not.</p>
+
+      <div class="specimen">
+        <div class="sample"><span class="t-h1">Baby steps, multiplied.</span></div>
+        <div class="meta"><div>H1 / Hero</div><div>48px / 1.15 / weight 700</div></div>
+      </div>
+      <div class="specimen">
+        <div class="sample"><span class="t-h2">Our work on the ground</span></div>
+        <div class="meta"><div>H2</div><div>32px / 1.2 / weight 600</div></div>
+      </div>
+      <div class="specimen">
+        <div class="sample"><span class="t-h3">Recognition</span></div>
+        <div class="meta"><div>H3</div><div>24px / 1.3 / weight 600</div></div>
+      </div>
+      <div class="specimen">
+        <div class="sample"><span class="t-quote">"Every correct move we make, multiplied by 7.9 billion, changes this world."</span></div>
+        <div class="meta"><div>Pull-quote</div><div>24px / 1.45 / weight 500 italic</div></div>
+      </div>
+      <div class="specimen">
+        <div class="sample"><span class="t-body">The Roadsides works sector by sector — plantation, walkability, and dust reduction along real streets in Faridabad, one stretch at a time.</span></div>
+        <div class="meta"><div>Body</div><div>16px / 1.65 / weight 400</div></div>
+      </div>
+      <div class="specimen">
+        <div class="sample"><span class="t-small">Founded 2024 · Section 8 registered</span></div>
+        <div class="meta"><div>Small / caption</div><div>12px / 1.5 / weight 400</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">Spacing &amp; Layout</h2>
+      <p class="section-dek">8px base unit for all spacing (margins, padding, gaps) — a separate system from the 4px type sub-grid above. Two grids, two jobs.</p>
+
+      <div class="scale-row"><div class="scale-label">8px</div><div class="scale-bar" style="width:8px;"></div></div>
+      <div class="scale-row"><div class="scale-label">16px</div><div class="scale-bar" style="width:16px;"></div></div>
+      <div class="scale-row"><div class="scale-label">24px</div><div class="scale-bar" style="width:24px;"></div></div>
+      <div class="scale-row"><div class="scale-label">32px</div><div class="scale-bar" style="width:32px;"></div></div>
+      <div class="scale-row"><div class="scale-label">48px</div><div class="scale-bar" style="width:48px;"></div></div>
+      <div class="scale-row"><div class="scale-label">64px</div><div class="scale-bar" style="width:64px;"></div></div>
+      <div class="scale-row"><div class="scale-label">96px</div><div class="scale-bar" style="width:96px;"></div></div>
+
+      <p class="t-h3" style="margin: 32px 0 4px; font-size: 17px;">Page margins (side gutters)</p>
+      <div class="margin-diagram">
+        <div class="margin-row">
+          <div class="margin-side" style="width: 14%;"></div>
+          <div class="margin-content">Content — max 1600px</div>
+          <div class="margin-side" style="width: 14%;"></div>
+        </div>
+      </div>
+      <p class="margin-caption">1920px viewport: 160px side margin, 1600px max content width. Tablet (768–1024px): 64px margin. Mobile (&lt;640px): 24px margin. Full-bleed elements (hero imagery, color-block sections) ignore this margin entirely.</p>
+
+      <p class="t-h3" style="margin: 32px 0 4px; font-size: 17px;">Container widths</p>
+      <p class="t-body">Institutional pages: 1200px reading container within the outer margin. Blog article body text: 720px max-width specifically, for line-length readability.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">Radius, Borders &amp; Shadows</h2>
+      <p class="section-dek">One radius value everywhere. Hairline borders instead of shadows for separation.</p>
+      <p class="t-body"><strong>Radius:</strong> 3px, universal — buttons, cards, inputs, images. No exceptions, no per-component variation.</p>
+      <p class="t-body"><strong>Borders:</strong> 1px, <code>#E3DED2</code>, used for card outlines and section dividers.</p>
+      <p class="t-body"><strong>Shadows:</strong> none, anywhere, ever. If a shadow appears during build, it's a mistake to fix, not a style to keep.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">Buttons</h2>
+      <p class="section-dek">Flat fills, 3px radius, 44px minimum height for tap targets. Text describes the action plainly — never ends in an arrow.</p>
+
+      <div class="btn-group">
+        <div class="btn-group-label">Primary</div>
+        <div class="btn-row">
+          <button class="btn btn-primary">Get involved</button>
+          <button class="btn btn-primary" style="background:var(--brick); color:var(--white);">Hover</button>
+          <button class="btn btn-primary" style="background:#4A5738; color:var(--paper);">Active</button>
+          <button class="btn btn-primary" disabled>Disabled</button>
+          <button class="btn btn-primary focus">Focus-visible</button>
+        </div>
+        <p class="state-note">Fill: Moss → Brick (hover) → darker Moss (active). Text: Paper throughout — charcoal text on Moss fails contrast (2.73:1) and must never be used. Focus: 2px Brick outline, 2px offset.</p>
+      </div>
+
+      <div class="btn-group">
+        <div class="btn-group-label">Secondary</div>
+        <div class="btn-row">
+          <button class="btn btn-secondary">Read our work</button>
+          <button class="btn btn-secondary" style="background:var(--charcoal); color:var(--paper);">Hover</button>
+          <button class="btn btn-secondary" disabled>Disabled</button>
+        </div>
+        <p class="state-note">Outline: 1.5px Charcoal. Hover: fills Charcoal, text turns Paper.</p>
+      </div>
+
+      <div class="btn-group">
+        <div class="btn-group-label">Ghost</div>
+        <div class="btn-row">
+          <button class="btn btn-ghost">See all posts</button>
+          <button class="btn btn-ghost" style="color:var(--brick);">Hover</button>
+        </div>
+        <p class="state-note">Text + underline only, no border or fill at any state. Hover shifts to Brick.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">Form Elements</h2>
+      <p class="section-dek">Flat inputs, visible focus state, inline errors in Brick. Used on Get Involved and newsletter signup.</p>
+      <div class="form-demo">
+        <div class="field">
+          <label>Full name</label>
+          <input type="text" placeholder="Focus this field to see the state">
+        </div>
+        <div class="field error">
+          <label>Email address</label>
+          <input type="text" value="not-an-email">
+          <div class="err-msg">Enter a valid email address.</div>
+        </div>
+      </div>
+      <p class="t-small">All inputs: 44px minimum height, 1px border (#E3DED2), 3px radius. Focus: 2px Moss border. Error: Brick border + inline message below the field, never a color-only signal.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">Navigation</h2>
+      <p class="section-dek">Five items — Gallery folded into Our Work as a section, not a separate click.</p>
+      <div class="nav-mock">
+        <a href="#" class="active">About</a>
+        <a href="#">Founder</a>
+        <a href="#">Our Work</a>
+        <a href="#">Insights</a>
+        <a href="#">Contact</a>
+      </div>
+      <p class="t-small" style="margin-top: 12px;">Charcoal background, Paper text. Active page marked with a small Brick dot beneath the label — not a background pill. Mobile: full-screen slide-in panel, same five items, no mobile-only content.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">Iconography &amp; Imagery</h2>
+      <p class="section-dek">One icon style, real photography over illustration wherever possible.</p>
+      <div class="icon-row">
+        <div class="icon-item"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2v20M2 12h20" stroke-linecap="round"/></svg>Line, 1.5px stroke</div>
+        <div class="icon-item"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9"/></svg>Single set (Lucide)</div>
+        <div class="icon-item"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/></svg>3px radius, matching UI</div>
+      </div>
+      <p class="t-body" style="margin-top: 20px;"><strong>Imagery:</strong> 16:9 for hero, 4:5 for card/portrait imagery. Consistent color grade across all photography (see hero image direction). 3px corner radius. Real photography for all "proof" content — Our Work, Founder, Recognition. Never a fabricated before/after.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">Motion</h2>
+      <p class="section-dek">One deliberate animation, not motion on every element.</p>
+      <p class="t-body">The hero image's ambient micro-motion (leaves, dappled light) is the one sustained animation on the site. Everywhere else: instant or 200ms ease transitions on hover only. No scroll-triggered fade-up/slide-in applied uniformly to every section — that pattern alone is one of the most common signs of a templated AI-built site.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">What to Avoid</h2>
+      <p class="section-dek">Checked against known tells of a generic, templated, AI-built site.</p>
+      <div class="rules">
+        <div class="rule-col avoid">
+          <div class="rule-head avoid">AVOID</div>
+          <ul class="rule-list">
+            <li>ALL-CAPS tracked-out eyebrow labels above every heading</li>
+            <li>Numbered markers (01/02/03) on content that isn't a real sequence</li>
+            <li>Identical cards with the same shadow, icon-heading-line pattern repeated block after block</li>
+            <li>Gradient washes as background decoration (the hero's photographic lighting is the one exception)</li>
+            <li>Button or link text ending in an arrow (→)</li>
+            <li>Fade-up/slide-in scroll animation applied to every section</li>
+            <li>Fake initials-in-circle avatars, or testimonials with no real name/photo</li>
+            <li>Round, unsourced stats ("10K+", "98%") — every number must be real and specific</li>
+            <li>Logo walls with no context per logo</li>
+            <li>Default favicon or leftover site-builder branding</li>
+            <li>Emoji in headings</li>
+            <li>Vague buzzwords ("seamless," "scalable," "next-generation") without specifics underneath</li>
+          </ul>
+        </div>
+        <div class="rule-col do">
+          <div class="rule-head do">DO</div>
+          <ul class="rule-list">
+            <li>Left-align body text and most section content</li>
+            <li>Vary block structure between entries in a list (Our Work, Recognition) rather than repeating one template</li>
+            <li>Say what a link does in plain words ("Read the case study")</li>
+            <li>Include a real registered address and working contact info in the footer</li>
+            <li>Give every Recognition item real, specific context — publication, date, what it was for</li>
+            <li>Keep Brick rare and purposeful — highlight text and eyebrows only</li>
+            <li>Provide one-click access to a real human (WhatsApp/contact) from the homepage</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Intent Studios · Design system v2 for theroadsides.co.in · Reference this document before every new page
+  </footer>
+
+</body>
+</html>
