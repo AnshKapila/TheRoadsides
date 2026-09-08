@@ -135,30 +135,35 @@ export default function Home() {
             <div className="relative h-[36px] w-[140px]">
               <Image src="/zourney.png" alt="Zourney" fill className="object-contain mix-blend-multiply" unoptimized />
             </div>
-            <div className="relative h-[48px] w-[120px]">
+            <div className="relative h-[96px] w-[240px]">
               <Image src="/advaita.png" alt="Advaita Awards" fill className="object-contain mix-blend-multiply" unoptimized />
             </div>
           </div>
         </div>
       </section>
 
-      {/* 7. Blog Preview */}
-      <section className="py-[64px] px-[32px]">
+      {/* 7. Insights Preview */}
+      <section className="py-[64px] px-[32px] bg-[var(--white)] rounded-[3px] mx-[16px] my-[32px] border border-[var(--line)]">
         <div className="container mx-auto max-w-7xl">
-          <div className="text-center max-w-2xl mx-auto mb-[48px]">
-            <div className="flex items-center justify-center gap-[8px] mb-[12px]">
-              <span className="w-3 h-3 rounded-[3px] bg-[var(--moss)]" />
-              <span className="text-[var(--charcoal)] font-semibold text-[14px]">Insights</span>
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-[48px] gap-[32px]">
+            <div className="max-w-2xl text-left">
+              <div className="flex items-center gap-[8px] mb-[12px]">
+                <span className="w-3 h-3 rounded-[3px] bg-[var(--moss)]" />
+                <span className="text-[var(--charcoal)] font-semibold text-[14px]">Insights</span>
+              </div>
+              <h2 className="text-[32px] font-semibold tracking-tight mb-[16px] leading-[1.2]">Stories and perspectives.</h2>
+              <p className="text-[16px] text-[var(--muted)] leading-[1.65]">Excerpts from &quot;Baby Steps to Green Revolution&quot; and on-ground case studies.</p>
             </div>
-            <h2 className="text-[32px] font-semibold tracking-tight mb-[16px] leading-[1.2]">Stories and perspectives.</h2>
-            <p className="text-[16px] text-[var(--muted)] leading-[1.65]">Excerpts from &quot;Baby Steps to Green Revolution&quot; and on-ground case studies.</p>
+            <Link href="/insights" className="inline-flex items-center justify-center bg-[var(--moss)] text-[var(--paper)] font-semibold px-[26px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] transition-colors shrink-0 min-h-[44px]">
+              Read All Insights <ArrowRight className="ml-2 w-4 h-4" />
+            </Link>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[32px]">
             {[
-              { tag: 'From the Book', title: 'The Power of Consistency', desc: 'How small, daily environmental habits multiply across communities to create lasting impact.', img: 'gallery_6.jpg' },
-              { tag: 'On-Ground Stories', title: 'Nurturing After Planting', desc: 'Why our work in Faridabad doesn\'t stop on planting day, and how we maintain saplings year-round.', img: 'gallery_7.jpg' },
-              { tag: 'Founder\'s Perspective', title: 'India\'s Urban Future Needs a Shift', desc: 'Our cities are growing fast. Why the focus must return to the immediate roadsides we navigate daily.', img: 'gallery_8.jpg' }
+              { tag: 'From the Book', title: 'The Power of Consistency', desc: 'How small, daily environmental habits multiply across communities to create lasting impact.', img: 'gallery_144.jpg' },
+              { tag: 'On-Ground Stories', title: 'Nurturing After Planting', desc: 'Why our work in Faridabad doesn\'t stop on planting day, and how we maintain saplings year-round.', img: 'gallery_158.jpg' },
+              { tag: 'Founder\'s Perspective', title: 'India\'s Urban Future Needs a Shift', desc: 'Our cities are growing fast. Why the focus must return to the immediate roadsides we navigate daily.', img: 'gallery_172.jpg' }
             ].map((post, i) => (
               <Link href="/insights" key={i} className="group block">
                 <article className="h-full flex flex-col">
@@ -175,14 +180,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 8. Gallery Preview */}
-      <section className="py-[64px] px-[32px] bg-[var(--white)] rounded-[3px] mx-[16px] mb-[64px] border border-[var(--line)]">
-        <div className="container mx-auto max-w-7xl text-center">
-          <div className="flex items-center justify-center gap-[8px] mb-[12px]">
-            <span className="w-3 h-3 rounded-[3px] bg-[var(--moss)]" />
-            <span className="text-[var(--charcoal)] font-semibold text-[14px]">Gallery</span>
+      {/* 8. Gallery Masonry */}
+      <section className="py-[64px] px-[32px] bg-[var(--charcoal)] text-[var(--paper)]">
+        <div className="container mx-auto max-w-7xl">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-[48px] gap-[32px]">
+            <div className="max-w-2xl text-left">
+              <div className="flex items-center gap-[8px] mb-[12px]">
+                <span className="w-3 h-3 rounded-[3px] bg-[var(--moss)]" />
+                <span className="text-[var(--white)] font-semibold text-[14px]">Gallery</span>
+              </div>
+              <h2 className="text-[32px] font-semibold tracking-tight leading-[1.2]">Community in Action</h2>
+            </div>
+            <Link href="/gallery" className="inline-flex items-center justify-center bg-[var(--moss)] text-[var(--paper)] font-semibold px-[26px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] transition-colors shrink-0 min-h-[44px]">
+              View Full Gallery <ArrowRight className="ml-2 w-4 h-4" />
+            </Link>
           </div>
-          <h2 className="text-[32px] font-semibold tracking-tight mb-[48px] leading-[1.2]">Community in Action</h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-[24px] h-auto lg:h-[600px]">
             <div className="lg:col-span-8 relative bg-[var(--paper)] border border-[var(--line)] rounded-[3px] overflow-hidden group cursor-pointer flex items-center justify-center aspect-video lg:aspect-auto">
