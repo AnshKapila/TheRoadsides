@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --color-moss: #5C6B47;
+  --color-brick: #96432E;
+  --color-charcoal: #25231F;
+  --color-paper: #FAF8F5;
+  --color-line: #E3DED2;
+  --color-muted: #6B6459;
+  --color-white: #FFFFFF;
+}
 
 @layer base {
   :root {
@@ -26,6 +33,8 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold tracking-tight text-charcoal;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--charcoal);
   }
 }

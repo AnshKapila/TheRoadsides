@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Play, HeartHandshake, Leaf, Users } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 import ScrollRevealText from "@/components/ScrollRevealText";
 
 export default function Home() {
@@ -41,15 +41,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. Impact Numbers Snapshot */}
-      <section className="py-24 px-6 bg-brand-light">
-        <div className="container mx-auto max-w-7xl">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
-            <div>
-              <div className="flex items-center gap-2 mb-3">
-                <span className="w-3 h-3 rounded-full bg-brand-primary" />
-                <span className="text-brand-dark font-medium text-sm">Our Impact</span>
-              </div>
       {/* 2. Impact Numbers */}
       <section className="py-[64px] px-[32px]">
         <div className="container mx-auto max-w-7xl">
@@ -78,7 +69,7 @@ export default function Home() {
 
             {/* Card 3 */}
             <div className="relative rounded-[3px] overflow-hidden aspect-square md:aspect-[4/5] bg-[var(--charcoal)] flex flex-col justify-end p-[32px] group">
-              <Image src="/gallery/gallery_1.jpg" alt="Impact 3" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
+              <Image src="/gallery/gallery_2.jpg" alt="Impact 3" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <div className="relative z-10">
                 <div className="text-[48px] font-bold text-[var(--white)] tracking-[-0.01em] leading-[1.15] mb-[8px]">[XX]</div>
@@ -91,13 +82,10 @@ export default function Home() {
       </section>
 
       {/* 3. Mission */}
-      <section className="py-40 md:py-56 px-6 bg-white flex flex-col items-center justify-center">
-        <ScrollRevealText text='"For the people... of the people... a combined united commitment... by the people of India... a conscious effort by one and all towards our cities, towns, roads, and roadsides."' />
-        
-        <div className="text-center mt-12">
-          <h4 className="text-xl md:text-2xl font-bold text-brand-dark tracking-tight mb-2">The Roadsides</h4>
-          <p className="text-lg md:text-xl text-brand-dark/60 font-medium">Vibrant Walkable Roadsides Foundation</p>
-        </div>
+      <section className="py-[64px] px-[32px]">
+        <ScrollRevealText 
+          text="Every correct move we make, multiplied by 7.9 billion, changes this world."
+        />
       </section>
 
       {/* 4. Our Work Preview */}
@@ -121,7 +109,7 @@ export default function Home() {
             <Link href="/work" className="group block">
               <article className="bg-[var(--paper)] rounded-[3px] p-[16px] h-full flex flex-col border border-[var(--line)] hover:border-[var(--charcoal)] transition-colors duration-300">
                 <div className="aspect-[4/3] bg-[var(--white)] rounded-[3px] flex items-center justify-center overflow-hidden relative mb-[32px]">
-                  <Image src="/gallery/gallery_1.jpg" alt="Ballabgarh Plantation" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+                  <Image src="/gallery/gallery_3.jpg" alt="Ballabgarh Plantation" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                 </div>
                 <div className="px-[24px] pb-[24px] flex flex-col flex-grow">
                   <span className="text-[var(--brick)] text-[12px] font-semibold uppercase tracking-[0.01em] mb-[12px]">Plantation & Nurturing</span>
@@ -138,7 +126,7 @@ export default function Home() {
             <Link href="/work" className="group block">
               <article className="bg-[var(--paper)] rounded-[3px] p-[16px] h-full flex flex-col border border-[var(--line)] hover:border-[var(--charcoal)] transition-colors duration-300">
                 <div className="aspect-[4/3] bg-[var(--white)] rounded-[3px] flex items-center justify-center overflow-hidden relative mb-[32px]">
-                  <Image src="/gallery/gallery_1.jpg" alt="Textile Waste" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+                  <Image src="/gallery/gallery_4.jpg" alt="Textile Waste" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                 </div>
                 <div className="px-[24px] pb-[24px] flex flex-col flex-grow">
                   <span className="text-[var(--brick)] text-[12px] font-semibold uppercase tracking-[0.01em] mb-[12px]">Circular Economy</span>
@@ -159,7 +147,7 @@ export default function Home() {
         <div className="container mx-auto max-w-7xl">
           <div className="bg-[var(--charcoal)] rounded-[3px] p-[16px] grid grid-cols-1 md:grid-cols-2 gap-[16px]">
             <div className="bg-[var(--white)] rounded-[3px] min-h-[500px] flex items-center justify-center relative overflow-hidden">
-              <Image src="/gallery/gallery_1.jpg" alt="Founder" fill className="object-cover opacity-80" unoptimized />
+              <Image src="/gallery/gallery_5.jpg" alt="Founder" fill className="object-cover opacity-80" unoptimized />
             </div>
             <div className="p-[48px] flex flex-col justify-center">
               <div className="flex items-center gap-[8px] mb-[16px]">
@@ -171,7 +159,7 @@ export default function Home() {
                 It started by noticing what everyone else walks past. An alumnus of IIM Calcutta and Wharton Online with a deep background in ESG strategy, Seema founded The Roadsides to translate corporate sustainability principles into hyperlocal, citizen-led action.
               </p>
               <Link href="/founder" className="inline-flex items-center justify-center bg-[var(--moss)] text-[var(--paper)] font-semibold px-[26px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--white)] transition-colors w-fit text-[16px] min-h-[44px]">
-                Read Seema's Story
+                Read Seema&apos;s Story
               </Link>
             </div>
           </div>
@@ -206,7 +194,7 @@ export default function Home() {
               <span className="text-[var(--charcoal)] font-semibold text-[14px]">Insights</span>
             </div>
             <h2 className="text-[32px] font-semibold tracking-tight mb-[16px] leading-[1.2]">Stories and perspectives.</h2>
-            <p className="text-[16px] text-[var(--muted)] leading-[1.65]">Excerpts from "Baby Steps to Green Revolution" and on-ground case studies.</p>
+            <p className="text-[16px] text-[var(--muted)] leading-[1.65]">Excerpts from &quot;Baby Steps to Green Revolution&quot; and on-ground case studies.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[32px]">
