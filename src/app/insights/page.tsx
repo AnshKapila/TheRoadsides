@@ -17,13 +17,13 @@ export default function InsightsPage() {
       <section className="bg-[var(--paper)] border-b border-[var(--line)] py-[64px] px-[32px]">
         <div className="container mx-auto max-w-7xl">
           <div className="flex items-center gap-[8px] mb-[16px]">
-            <span className="w-3 h-3 rounded-[3px] bg-[var(--moss)]" />
+            <span className="w-3 h-3 rounded-[3px] bg-[var(--primary-green)]" />
             <span className="text-[var(--charcoal)] font-semibold text-[14px]">Insights</span>
           </div>
           <h1 className="text-[48px] font-bold tracking-[-0.01em] leading-[1.15] text-[var(--charcoal)] mb-[24px]">
             Stories & Perspectives
           </h1>
-          <p className="text-[24px] font-medium leading-[1.45] text-[var(--moss)] italic max-w-3xl">
+          <p className="text-[24px] font-medium leading-[1.45] text-[var(--primary-green)] italic max-w-3xl">
             &quot;Excerpts from our work on the ground, and thoughts on the future of urban ecology.&quot;
           </p>
         </div>
@@ -36,7 +36,7 @@ export default function InsightsPage() {
             {posts.map((post, i) => (
               <Link href="#" key={i} className="group block">
                 <article className="h-full flex flex-col">
-                  <div className="aspect-[4/3] bg-[var(--white)] rounded-[3px] mb-[24px] overflow-hidden relative border border-[var(--line)]">
+                  <div className="aspect-[4/3] bg-[var(--paper)] rounded-[3px] mb-[24px] overflow-hidden relative border border-[var(--line)]">
                     <Image src={`/gallery/${post.img}`} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                   </div>
                   <span className="text-[var(--brick)] text-[12px] font-semibold uppercase tracking-[0.01em] mb-[12px]">{post.tag}</span>

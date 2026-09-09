@@ -11,7 +11,7 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0 bg-[#1a1a1a] overflow-hidden">
           <Image src="/hero-bg.jpg" alt="Roadside sapling" fill priority className="object-cover scale-[1.15]" unoptimized />
-          <div className="absolute inset-0 bg-black/50" /> 
+          <div className="absolute inset-0 bg-[var(--charcoal)]/50" /> 
         </div>
         
         <div className="container mx-auto max-w-7xl relative z-10 pt-10">
@@ -20,7 +20,7 @@ export default function Home() {
               Together, We Create Impact
             </h2>
             
-            <h1 className="text-[var(--white)] text-[48px] font-bold tracking-[-0.01em] leading-[1.15] mb-6">
+            <h1 className="text-[var(--paper)] text-[48px] font-bold tracking-[-0.01em] leading-[1.15] mb-6">
               Unite. Act.<br />
               Transform
             </h1>
@@ -30,10 +30,10 @@ export default function Home() {
             </p>
             
             <div className="flex flex-wrap items-center gap-[14px]">
-              <Link href="/get-involved" className="inline-flex items-center justify-center bg-[var(--moss)] text-[var(--paper)] font-semibold px-[26px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--white)] transition-colors text-[16px] min-h-[44px]">
+              <Link href="/get-involved" className="inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--paper)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--charcoal)] transition-colors text-[16px] min-h-[44px]">
                 Donate Now <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
-              <Link href="/about" className="inline-flex items-center justify-center bg-transparent border-[1.5px] border-[var(--white)] text-[var(--white)] font-semibold px-[24px] py-[11.5px] rounded-[3px] hover:bg-[var(--white)] hover:text-[var(--charcoal)] transition-colors text-[16px] min-h-[44px]">
+              <Link href="/about" className="inline-flex items-center gap-[8px] justify-center bg-transparent border-[1.5px] border-[var(--white)] text-[var(--paper)] font-semibold px-[24px] py-[11.5px] rounded-[3px] hover:bg-[var(--paper)] hover:text-[var(--charcoal)] transition-colors text-[16px] min-h-[44px]">
                 Learn About Us
               </Link>
             </div>
@@ -50,8 +50,8 @@ export default function Home() {
               <Image src="/gallery/gallery_0.jpg" alt="Impact 1" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <div className="relative z-10">
-                <div className="text-[48px] font-bold text-[var(--white)] tracking-[-0.01em] leading-[1.15] mb-[8px]">[XX]</div>
-                <div className="text-[24px] font-semibold text-[var(--white)] leading-[1.3] mb-[8px]">Sectors Covered</div>
+                <div className="text-[48px] font-bold text-[var(--paper)] tracking-[-0.01em] leading-[1.15] mb-[8px]">[XX]</div>
+                <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">Sectors Covered</div>
                 <div className="text-[var(--paper)] text-[16px] leading-[1.65]">Across Faridabad and beyond.</div>
               </div>
             </div>
@@ -61,8 +61,8 @@ export default function Home() {
               <Image src="/gallery/gallery_1.jpg" alt="Impact 2" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <div className="relative z-10">
-                <div className="text-[48px] font-bold text-[var(--white)] tracking-[-0.01em] leading-[1.15] mb-[8px]">[XX,XXX]</div>
-                <div className="text-[24px] font-semibold text-[var(--white)] leading-[1.3] mb-[8px]">Trees Planted</div>
+                <div className="text-[48px] font-bold text-[var(--paper)] tracking-[-0.01em] leading-[1.15] mb-[8px]">[XX,XXX]</div>
+                <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">Trees Planted</div>
                 <div className="text-[var(--paper)] text-[16px] leading-[1.65]">Nurtured for long-term survival.</div>
               </div>
             </div>
@@ -72,8 +72,8 @@ export default function Home() {
               <Image src="/gallery/gallery_103.jpg" alt="Impact 3" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <div className="relative z-10">
-                <div className="text-[48px] font-bold text-[var(--white)] tracking-[-0.01em] leading-[1.15] mb-[8px]">[XX]</div>
-                <div className="text-[24px] font-semibold text-[var(--white)] leading-[1.3] mb-[8px]">Community Events</div>
+                <div className="text-[48px] font-bold text-[var(--paper)] tracking-[-0.01em] leading-[1.15] mb-[8px]">[XX]</div>
+                <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">Community Events</div>
                 <div className="text-[var(--paper)] text-[16px] leading-[1.65]">Mobilizing local citizens.</div>
               </div>
             </div>
@@ -92,21 +92,19 @@ export default function Home() {
       <section className="py-[64px] px-[32px]">
         <div className="container mx-auto max-w-7xl">
           <div className="bg-[var(--charcoal)] rounded-[3px] p-[16px] flex flex-col md:flex-row gap-[32px] h-auto lg:h-[60vh]">
-            <div className="bg-[var(--white)] rounded-[3px] w-full md:w-auto md:h-full aspect-square relative overflow-hidden shrink-0 mx-auto md:mx-0">
+            <div className="bg-[var(--paper)] rounded-[3px] w-full md:w-auto md:h-full aspect-square relative overflow-hidden shrink-0 mx-auto md:mx-0">
               <Image src="/founder.jpg" alt="Founder" fill className="object-cover opacity-80" unoptimized />
             </div>
             <div className="py-[32px] md:py-[0] md:pr-[48px] flex flex-col justify-center flex-grow overflow-y-auto">
               <div className="flex items-center gap-[8px] mb-[16px]">
-                <span className="w-3 h-3 rounded-[3px] bg-[var(--moss)]" />
-                <span className="text-[var(--white)] font-semibold text-[14px]">Our Founder</span>
+                <span className="w-3 h-3 rounded-[3px] bg-[var(--primary-green)]" />
+                <span className="text-[var(--paper)] font-semibold text-[14px]">Our Founder</span>
               </div>
-              <h2 className="text-[32px] font-semibold text-[var(--white)] mb-[24px] leading-[1.2]">Seema Chowdhry Dhawan</h2>
+              <h2 className="text-[32px] font-semibold text-[var(--paper)] mb-[24px] leading-[1.2]">Seema Chowdhry Dhawan</h2>
               <p className="text-[16px] text-[var(--paper)] mb-[40px] leading-[1.65] font-normal">
                 It started by noticing what everyone else walks past. An alumnus of IIM Calcutta and Wharton Online with a deep background in ESG strategy, Seema founded The Roadsides to translate corporate sustainability principles into hyperlocal, citizen-led action.
               </p>
-              <Link href="/founder" className="inline-flex items-center justify-center bg-[var(--moss)] text-[var(--paper)] font-semibold px-[26px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--white)] transition-colors w-fit text-[16px] min-h-[44px]">
-                Read Seema&apos;s Story
-              </Link>
+              <Link href="/founder" className="inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--paper)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--charcoal)] transition-colors w-fit text-[16px] min-h-[44px]"> Read Seema&apos;s Story <BookOpen className="w-[18px] h-[18px]" strokeWidth={2.5} /></Link>
             </div>
           </div>
         </div>
@@ -143,20 +141,18 @@ export default function Home() {
       </section>
 
       {/* 7. Insights Preview */}
-      <section className="py-[64px] px-[32px] bg-[var(--white)] rounded-[3px] mx-[16px] my-[32px] border border-[var(--line)]">
+      <section className="py-[64px] px-[32px] bg-[var(--paper)] rounded-[3px] mx-[16px] my-[32px] border border-[var(--line)]">
         <div className="container mx-auto max-w-7xl">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-[48px] gap-[32px]">
             <div className="max-w-2xl text-left">
               <div className="flex items-center gap-[8px] mb-[12px]">
-                <span className="w-3 h-3 rounded-[3px] bg-[var(--moss)]" />
+                <span className="w-3 h-3 rounded-[3px] bg-[var(--primary-green)]" />
                 <span className="text-[var(--charcoal)] font-semibold text-[14px]">Insights</span>
               </div>
               <h2 className="text-[32px] font-semibold tracking-tight mb-[16px] leading-[1.2]">Stories and perspectives.</h2>
               <p className="text-[16px] text-[var(--muted)] leading-[1.65]">Excerpts from &quot;Baby Steps to Green Revolution&quot; and on-ground case studies.</p>
             </div>
-            <Link href="/insights" className="inline-flex items-center justify-center bg-[var(--moss)] text-[var(--paper)] font-semibold px-[26px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] transition-colors shrink-0 min-h-[44px]">
-              Read All Insights <ArrowRight className="ml-2 w-4 h-4" />
-            </Link>
+            <Link href="/insights" className="inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] transition-colors shrink-0 min-h-[44px]"> Read All Insights <Newspaper className="w-[18px] h-[18px]" strokeWidth={2.5} /></Link>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[32px]">
@@ -167,7 +163,7 @@ export default function Home() {
             ].map((post, i) => (
               <Link href="/insights" key={i} className="group block">
                 <article className="h-full flex flex-col">
-                  <div className="aspect-[4/3] bg-[var(--white)] rounded-[3px] mb-[24px] overflow-hidden relative border border-[var(--line)]">
+                  <div className="aspect-[4/3] bg-[var(--paper)] rounded-[3px] mb-[24px] overflow-hidden relative border border-[var(--line)]">
                     <Image src={`/gallery/${post.img}`} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                   </div>
                   <span className="text-[var(--brick)] text-[12px] font-semibold uppercase tracking-[0.01em] mb-[12px]">{post.tag}</span>
@@ -186,21 +182,19 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-[48px] gap-[32px]">
             <div className="max-w-2xl text-left">
               <div className="flex items-center gap-[8px] mb-[12px]">
-                <span className="w-3 h-3 rounded-[3px] bg-[var(--moss)]" />
-                <span className="text-[var(--white)] font-semibold text-[14px]">Gallery</span>
+                <span className="w-3 h-3 rounded-[3px] bg-[var(--primary-green)]" />
+                <span className="text-[var(--paper)] font-semibold text-[14px]">Gallery</span>
               </div>
               <h2 className="text-[32px] font-semibold tracking-tight leading-[1.2]">Community in Action</h2>
             </div>
-            <Link href="/gallery" className="inline-flex items-center justify-center bg-[var(--moss)] text-[var(--paper)] font-semibold px-[26px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] transition-colors shrink-0 min-h-[44px]">
-              View Full Gallery <ArrowRight className="ml-2 w-4 h-4" />
-            </Link>
+            <Link href="/gallery" className="inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] transition-colors shrink-0 min-h-[44px]"> View Full Gallery <ImageIcon className="w-[18px] h-[18px]" strokeWidth={2.5} /></Link>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-[24px] h-auto lg:h-[600px]">
             <div className="lg:col-span-8 relative bg-[var(--paper)] border border-[var(--line)] rounded-[3px] overflow-hidden group cursor-pointer flex items-center justify-center aspect-video lg:aspect-auto">
               <Image src="/gallery/gallery_133.jpg" alt="Video Thumbnail" fill className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" unoptimized />
               <div className="absolute inset-0 bg-[var(--charcoal)]/20 group-hover:bg-[var(--charcoal)]/30 transition-colors flex items-center justify-center">
-                <div className="w-[64px] h-[64px] bg-[var(--moss)] rounded-[3px] flex items-center justify-center text-[var(--paper)] transition-transform">
+                <div className="w-[64px] h-[64px] bg-[var(--primary-green)] rounded-[3px] flex items-center justify-center text-[var(--charcoal)] transition-transform">
                   <Play className="w-[32px] h-[32px] ml-1 fill-current" />
                 </div>
               </div>
@@ -213,7 +207,7 @@ export default function Home() {
               <div className="bg-[var(--paper)] border border-[var(--line)] rounded-[3px] overflow-hidden relative">
                 <Image src="/gallery/gallery_141.jpg" alt="Gallery Photo" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
               </div>
-              <Link href="/gallery" className="bg-[var(--charcoal)] rounded-[3px] flex items-center justify-center text-[var(--paper)] hover:bg-[var(--moss)] transition-colors group">
+              <Link href="/gallery" className="bg-[var(--charcoal)] rounded-[3px] flex items-center justify-center text-[var(--paper)] hover:bg-[var(--primary-green)] transition-colors group">
                 <div className="flex flex-col items-center">
                   <span className="font-semibold text-[16px] mb-[8px]">View Full Gallery</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -235,7 +229,7 @@ export default function Home() {
                 <h2 className="text-[48px] font-bold text-[var(--charcoal)] tracking-[-0.01em] leading-[1.15] mb-[32px] max-w-md">
                   Join us in creating safer, cleaner, greener environments.
                 </h2>
-                <Link href="/get-involved" className="inline-flex items-center justify-center bg-[var(--moss)] text-[var(--paper)] px-[26px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--white)] transition-colors text-[16px] font-semibold w-fit min-h-[44px]">
+                <Link href="/get-involved" className="inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--paper)] px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--charcoal)] transition-colors text-[16px] font-semibold w-fit min-h-[44px]">
                   Get involved <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </div>
@@ -245,7 +239,7 @@ export default function Home() {
                 <Image src="/gallery/gallery_122.jpg" alt="Donate" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-black/60" />
                 <div className="relative z-10">
-                  <h3 className="text-[32px] font-bold text-[var(--white)] tracking-tight mb-[16px] leading-[1.2]">Donate</h3>
+                  <h3 className="text-[32px] font-bold text-[var(--paper)] tracking-tight mb-[16px] leading-[1.2]">Donate</h3>
                   <p className="text-[var(--paper)] text-[16px] leading-[1.65] font-normal">
                     Your contributions directly fund our on-ground planting, nurturing, and civic improvement initiatives.
                   </p>
@@ -264,7 +258,7 @@ export default function Home() {
                 <Image src="/gallery/gallery_126.jpg" alt="Volunteer" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-black/60" />
                 <div className="relative z-10">
-                  <h3 className="text-[32px] font-bold text-[var(--white)] tracking-tight mb-[16px] leading-[1.2]">Volunteer</h3>
+                  <h3 className="text-[32px] font-bold text-[var(--paper)] tracking-tight mb-[16px] leading-[1.2]">Volunteer</h3>
                   <p className="text-[var(--paper)] text-[16px] leading-[1.65] font-normal">
                     Join our community drives and help us execute sustainable practices at the hyperlocal level.
                   </p>
@@ -283,7 +277,7 @@ export default function Home() {
                 <Image src="/gallery/gallery_130.jpg" alt="Partner With Us" fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-black/60" />
                 <div className="relative z-10">
-                  <h3 className="text-[32px] font-bold text-[var(--white)] tracking-tight mb-[16px] leading-[1.2]">Partner With Us</h3>
+                  <h3 className="text-[32px] font-bold text-[var(--paper)] tracking-tight mb-[16px] leading-[1.2]">Partner With Us</h3>
                   <p className="text-[var(--paper)] text-[16px] leading-[1.65] font-normal">
                     We offer advisory services and collaborate with organizations committed to sustainable development.
                   </p>
