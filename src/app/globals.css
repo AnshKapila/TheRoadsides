@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-moss: #5C6B47;
+  --color-primary-green: #C0DA3B;
   --color-brick: #96432E;
   --color-charcoal: #25231F;
   --color-paper: #FAF8F5;
@@ -14,7 +14,7 @@
 @layer base {
   :root {
     /* Design System v2 Tokens */
-    --moss: #5C6B47;
+    --primary-green: #C0DA3B;
     --brick: #96432E;
     --charcoal: #25231F;
     --paper: #FAF8F5;

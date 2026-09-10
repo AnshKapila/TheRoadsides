@@ -7,7 +7,7 @@ export default function ContactPage() {
       <section className="bg-[var(--paper)] border-b border-[var(--line)] py-[64px] px-[32px]">
         <div className="container mx-auto max-w-7xl">
           <div className="flex items-center gap-[8px] mb-[16px]">
-            <span className="w-3 h-3 rounded-[3px] bg-[var(--primary-green)]" />
+            <span className="w-3 h-3 rounded-[3px] group bg-[var(--primary-green)]" />
             <span className="text-[var(--charcoal)] font-semibold text-[14px]">Contact Us</span>
           </div>
           <h1 className="text-[48px] font-bold tracking-[-0.01em] leading-[1.15] text-[var(--charcoal)] mb-[24px]">
@@ -71,7 +71,10 @@ export default function ContactPage() {
                   <label htmlFor="message" className="block text-[14px] font-semibold text-[var(--charcoal)] mb-[8px]">Message</label>
                   <textarea id="message" rows={5} className="w-full bg-[var(--paper)] border border-[var(--line)] rounded-[3px] px-[16px] py-[12px] text-[16px] focus:outline-none focus:border-[var(--primary-green)] transition-colors resize-y" placeholder="How can we help you?"></textarea>
                 </div>
-                <button type="button" className="inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] px-[32px] py-[16px] rounded-[3px] hover:bg-[var(--brick)] transition-colors text-[16px] font-semibold min-h-[48px] mt-[16px]"> Submit Message <Send className="w-[18px] h-[18px]" strokeWidth={2.5} /></button>
+                <button type="button" className="inline-flex items-center gap-[8px] justify-center group bg-[var(--primary-green)] text-[var(--charcoal)] px-[32px] py-[16px] rounded-[3px] hover:bg-[var(--brick)] transition-colors text-[16px] font-semibold min-h-[48px] mt-[16px]"> Submit Message <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+              <Send className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
+              <Send className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
+            </span></button>
               </form>
             </div>
 

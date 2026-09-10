@@ -39,8 +39,11 @@ export default function Header() {
           <Link href="/contact" className="hover:text-[var(--primary-green)] transition-colors">Contact</Link>
         </nav>
 
-        <Link href="/get-involved" className="bg-[var(--primary-green)] text-[var(--charcoal)] px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--paper)] transition-colors text-[16px] font-semibold tracking-wide min-h-[44px] flex items-center justify-center gap-[8px]">
-          Get Involved <Heart className="w-[18px] h-[18px]" strokeWidth={2.5} />
+        <Link href="/get-involved" className="group bg-[var(--primary-green)] text-[var(--charcoal)] px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--paper)] transition-colors text-[16px] font-semibold tracking-wide min-h-[44px] flex items-center justify-center gap-[8px]">
+          Get Involved <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+              <Heart className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
+              <Heart className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
+            </span>
         </Link>
       </div>
     </header>

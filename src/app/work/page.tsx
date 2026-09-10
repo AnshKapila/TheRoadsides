@@ -36,7 +36,7 @@ export default function WorkPage() {
       <section className="bg-[var(--paper)] border-b border-[var(--line)] py-[64px] px-[32px]">
         <div className="container mx-auto max-w-7xl">
           <div className="flex items-center gap-[8px] mb-[16px]">
-            <span className="w-3 h-3 rounded-[3px] bg-[var(--primary-green)]" />
+            <span className="w-3 h-3 rounded-[3px] group bg-[var(--primary-green)]" />
             <span className="text-[var(--charcoal)] font-semibold text-[14px]">Our Work</span>
           </div>
           <h1 className="text-[48px] font-bold tracking-[-0.01em] leading-[1.15] text-[var(--charcoal)] mb-[24px]">
@@ -77,8 +77,11 @@ export default function WorkPage() {
           <p className="text-[16px] text-[var(--paper)]/80 leading-[1.65] mb-[32px] max-w-2xl mx-auto">
             Want to transform a roadside in your neighborhood? We provide the expertise, you provide the community.
           </p>
-          <Link href="/contact" className="inline-flex items-center justify-center bg-[var(--primary-green)] text-[var(--charcoal)] px-[32px] py-[16px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--paper)] transition-colors text-[16px] font-semibold min-h-[48px] gap-[8px]">
-            Partner With Us <Leaf className="w-[18px] h-[18px]" strokeWidth={2.5} />
+          <Link href="/contact" className="inline-flex items-center justify-center group bg-[var(--primary-green)] text-[var(--charcoal)] px-[32px] py-[16px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--paper)] transition-colors text-[16px] font-semibold min-h-[48px] gap-[8px]">
+            Partner With Us <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+              <Leaf className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
+              <Leaf className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
+            </span>
           </Link>
         </div>
       </section>
