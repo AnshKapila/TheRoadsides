@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Send } from "lucide-react";
 
 export default function ContactPage() {
   return (

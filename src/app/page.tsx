@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Play, BookOpen, Newspaper, ImageIcon } from "lucide-react";
 import ScrollRevealText from "@/components/ScrollRevealText";
 
 export default function Home() {
