@@ -71,10 +71,12 @@ export default function ContactPage() {
                   <label htmlFor="message" className="block text-[14px] font-semibold text-[var(--charcoal)] mb-[8px]">Message</label>
                   <textarea id="message" rows={5} className="w-full bg-[var(--paper)] border border-[var(--line)] rounded-[3px] px-[16px] py-[12px] text-[16px] focus:outline-none focus:border-[var(--primary-green)] transition-colors resize-y" placeholder="How can we help you?"></textarea>
                 </div>
-                <button type="button" className="inline-flex items-center gap-[8px] justify-center group bg-[var(--primary-green)] text-[var(--charcoal)] px-[32px] py-[16px] rounded-[3px] hover:bg-[var(--brick)] transition-colors text-[16px] font-semibold min-h-[48px] mt-[16px]"> Submit Message <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
-              <Send className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
-              <Send className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
-            </span></button>
+                <button type="button" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
+                  Submit Message <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+    <Send className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
+    <Send className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
+  </span>
+                </button>
               </form>
             </div>
 

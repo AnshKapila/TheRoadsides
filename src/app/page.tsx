@@ -30,9 +30,12 @@ export default function Home() {
             </p>
             
             <div className="flex flex-wrap items-center gap-[14px]">
-              <Link href="/get-involved" className="inline-flex items-center gap-[8px] justify-center group bg-[var(--primary-green)] text-[var(--paper)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--charcoal)] transition-colors text-[16px] min-h-[44px]">
-                Donate Now <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
+              <Link href="/get-involved" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
+                  Donate Now <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+    <ArrowRight className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
+    <ArrowRight className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
+  </span>
+                </Link>
               <Link href="/about" className="inline-flex items-center gap-[8px] justify-center bg-transparent border-[1.5px] border-[var(--white)] text-[var(--paper)] font-semibold px-[24px] py-[11.5px] rounded-[3px] hover:bg-[var(--paper)] hover:text-[var(--charcoal)] transition-colors text-[16px] min-h-[44px]">
                 Learn About Us
               </Link>
@@ -104,10 +107,12 @@ export default function Home() {
               <p className="text-[16px] text-[var(--paper)] mb-[40px] leading-[1.65] font-normal">
                 It started by noticing what everyone else walks past. An alumnus of IIM Calcutta and Wharton Online with a deep background in ESG strategy, Seema founded The Roadsides to translate corporate sustainability principles into hyperlocal, citizen-led action.
               </p>
-              <Link href="/founder" className="inline-flex items-center gap-[8px] justify-center group bg-[var(--primary-green)] text-[var(--paper)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--charcoal)] transition-colors w-fit text-[16px] min-h-[44px]"> Read Seema&apos;s Story <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
-              <BookOpen className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
-              <BookOpen className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
-            </span></Link>
+              <Link href="/founder" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
+                Read Seema&apos;s Story <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+    <BookOpen className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
+    <BookOpen className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
+  </span>
+              </Link>
             </div>
           </div>
         </div>
@@ -155,10 +160,12 @@ export default function Home() {
               <h2 className="text-[32px] font-semibold tracking-tight mb-[16px] leading-[1.2]">Stories and perspectives.</h2>
               <p className="text-[16px] text-[var(--muted)] leading-[1.65]">Excerpts from &quot;Baby Steps to Green Revolution&quot; and on-ground case studies.</p>
             </div>
-            <Link href="/insights" className="inline-flex items-center gap-[8px] justify-center group bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] transition-colors shrink-0 min-h-[44px]"> Read All Insights <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
-              <Newspaper className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
-              <Newspaper className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
-            </span></Link>
+            <Link href="/insights" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
+              Read All Insights <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+    <Newspaper className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
+    <Newspaper className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
+  </span>
+            </Link>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[32px]">
@@ -193,10 +200,12 @@ export default function Home() {
               </div>
               <h2 className="text-[32px] font-semibold tracking-tight leading-[1.2]">Community in Action</h2>
             </div>
-            <Link href="/gallery" className="inline-flex items-center gap-[8px] justify-center group bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] transition-colors shrink-0 min-h-[44px]"> View Full Gallery <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
-              <ImageIcon className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
-              <ImageIcon className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
-            </span></Link>
+            <Link href="/gallery" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
+              View Full Gallery <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+    <ImageIcon className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
+    <ImageIcon className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
+  </span>
+            </Link>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-[24px] h-auto lg:h-[600px]">
@@ -216,12 +225,15 @@ export default function Home() {
               <div className="bg-[var(--paper)] border border-[var(--line)] rounded-[3px] overflow-hidden relative">
                 <Image src="/gallery/gallery_141.jpg" alt="Gallery Photo" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
               </div>
-              <Link href="/gallery" className="bg-[var(--charcoal)] rounded-[3px] flex items-center justify-center text-[var(--paper)] hover:bg-[var(--primary-green)] transition-colors group">
-                <div className="flex flex-col items-center">
-                  <span className="font-semibold text-[16px] mb-[8px]">View Full Gallery</span>
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </Link>
+              <Link href="/gallery" className="bg-[var(--charcoal)] rounded-[3px] flex items-center justify-center text-[var(--paper)] hover:bg-[var(--primary-green)] hover:text-[var(--charcoal)] transition-colors group duration-300">
+                  <div className="flex flex-col items-center">
+                    <span className="font-semibold text-[16px] mb-[8px]">View Full Gallery</span>
+                    <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+    <ArrowRight className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
+    <ArrowRight className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
+  </span>
+                  </div>
+                </Link>
             </div>
           </div>
         </div>
@@ -238,8 +250,11 @@ export default function Home() {
                 <h2 className="text-[48px] font-bold text-[var(--charcoal)] tracking-[-0.01em] leading-[1.15] mb-[32px] max-w-md">
                   Join us in creating safer, cleaner, greener environments.
                 </h2>
-                <Link href="/get-involved" className="inline-flex items-center gap-[8px] justify-center group bg-[var(--primary-green)] text-[var(--paper)] px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--brick)] hover:text-[var(--charcoal)] transition-colors text-[16px] font-semibold w-fit min-h-[44px]">
-                  Get involved <ArrowRight className="ml-2 w-4 h-4" />
+                <Link href="/get-involved" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
+                  Get Involved <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+    <ArrowRight className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
+    <ArrowRight className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
+  </span>
                 </Link>
               </div>
               
