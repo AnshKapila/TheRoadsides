@@ -164,199 +164,26 @@
 
   <section>
     <div class="wrap">
-      <h2 class="section-title">Color</h2>
-      <div style="margin-bottom: 24px; padding: 16px; border-left: 4px solid var(--charcoal); background: #eee;"><p class="t-body" style="margin:0;"><strong>GLOBAL RULE:</strong> Whenever "black" or "white" is requested, use Charcoal (#25231F) and Paper (#FAF8F5). Never use true #000000 or #FFFFFF unless explicit.</p></div>
-        <p class="section-dek">One primary, one tertiary highlight, warm neutrals. The tertiary color never fills a button or a large surface — highlight text and eyebrows only.</p>
-      <div class="swatches">
-        <div class="swatch">
-          <div class="chip" style="background:var(--primary-green);"><span style="background:var(--paper); color:var(--charcoal);">Primary</span></div>
-          <div class="info"><div class="name">Primary Green</div><div class="hex">#C0DA3B</div><div class="role">Buttons, links, section markers, key stats.</div></div>
-        </div>
-        <div class="swatch">
-          <div class="chip" style="background:var(--brick);"><span style="background:var(--paper); color:var(--charcoal);">Tertiary</span></div>
-          <div class="info"><div class="name">Brick</div><div class="hex">#96432E</div><div class="role">Highlight text, eyebrows, hover accents only — never a button fill.</div></div>
-        </div>
-        <div class="swatch">
-          <div class="chip" style="background:var(--charcoal);"><span style="background:var(--paper); color:var(--charcoal);">Text</span></div>
-          <div class="info"><div class="name">Charcoal</div><div class="hex">#25231F</div><div class="role">Body text, dark surfaces, nav background.</div></div>
-        </div>
-        <div class="swatch">
-          <div class="chip" style="background:var(--paper); border-bottom:1px solid var(--line);"><span style="background:var(--charcoal); color:var(--paper);">Base</span></div>
-          <div class="info"><div class="name">Paper</div><div class="hex">#FAF8F5</div><div class="role">Primary background, all pages.</div></div>
-        </div>
-      </div>
+      <h2 class="section-title">Motion &amp; Micro-Interactions</h2>
+      <p class="section-dek">Purposeful, content-aware motion. Never repeat one identical fade-up-on-scroll effect down the whole page. Motion should feel alive, varied, and tied to what each piece of content actually is.</p>
+      
+      <p class="t-body"><strong>Decision Authority:</strong> Use judgment per section. A hero doesn't need to move like a footer; a stat block shouldn't animate like a pull-quote. Mix patterns across the page.</p>
 
-      <table class="contrast-table">
-        <tr><th>Pairing</th><th>Ratio</th><th>Result</th></tr>
-        <tr><td>Primary Green text on Paper</td><td>1.49:1</td><td class="fail">Fail — never use</td></tr>
-        <tr><td>Brick text on Paper</td><td>6.31:1</td><td class="pass">Pass AA</td></tr>
-        <tr><td>Charcoal text on Paper</td><td>14.80:1</td><td class="pass">Pass AAA</td></tr>
-        <tr><td>Paper text on Primary Green (primary button)</td><td>1.58:1</td><td class="fail">Fail — never use</td></tr>
-        <tr><td>Charcoal text on Primary Green</td><td>9.96:1</td><td class="pass">Pass AAA</td></tr>
-      </table>
-    </div>
-  </section>
+      <ul class="t-body" style="margin-left: 20px; margin-top: 16px;">
+        <li style="margin-bottom: 8px;"><strong>Scroll entry, text blocks:</strong> fade + slight upward rise (8-16px), 400-500ms, ease-out</li>
+        <li style="margin-bottom: 8px;"><strong>Scroll entry, images/cards:</strong> fade + slight scale (0.98 &rarr; 1), 400-500ms</li>
+        <li style="margin-bottom: 8px;"><strong>Scroll entry, grouped items:</strong> staggered entry, 60-100ms delay between siblings</li>
+        <li style="margin-bottom: 8px;"><strong>Hover, image/content cards:</strong> subtle image scale to 1.03-1.05; heading stays visible, description reveals on hover only (fade + slight rise)</li>
+        <li style="margin-bottom: 8px;"><strong>Hover, buttons:</strong> color-shift per button spec, plus small icon shift (translateX 2-4px)</li>
+        <li style="margin-bottom: 8px;"><strong>Hover, text links:</strong> underline animates in from the left</li>
+        <li style="margin-bottom: 8px;"><strong>Pull-quotes:</strong> arrive a beat after surrounding content (slightly delayed fade) to give a distinct moment</li>
+      </ul>
 
-  <section>
-    <div class="wrap">
-      <h2 class="section-title">Typography</h2>
-      <p class="section-dek">Plus Jakarta Sans, one family throughout, warm and humanist. Weight and size carry the hierarchy instead of switching typefaces. Scale alternates 1.5&thinsp;/&thinsp;1.33 step ratios rather than a literal golden ratio — chosen because it stays clean on a 4px sub-grid, which strict 1.618 scaling does not.</p>
-
-      <div class="specimen">
-        <div class="sample"><span class="t-h1">Baby steps, multiplied.</span></div>
-        <div class="meta"><div>H1 / Hero</div><div>48px / 1.15 / weight 700</div></div>
-      </div>
-      <div class="specimen">
-        <div class="sample"><span class="t-h2">Our work on the ground</span></div>
-        <div class="meta"><div>H2</div><div>32px / 1.2 / weight 600</div></div>
-      </div>
-      <div class="specimen">
-        <div class="sample"><span class="t-h3">Recognition</span></div>
-        <div class="meta"><div>H3</div><div>24px / 1.3 / weight 600</div></div>
-      </div>
-      <div class="specimen">
-        <div class="sample"><span class="t-quote">"Every correct move we make, multiplied by 7.9 billion, changes this world."</span></div>
-        <div class="meta"><div>Pull-quote</div><div>24px / 1.45 / weight 500 italic</div></div>
-      </div>
-      <div class="specimen">
-        <div class="sample"><span class="t-body">The Roadsides works sector by sector — plantation, walkability, and dust reduction along real streets in Faridabad, one stretch at a time.</span></div>
-        <div class="meta"><div>Body</div><div>16px / 1.65 / weight 400</div></div>
-      </div>
-      <div class="specimen">
-        <div class="sample"><span class="t-small">Founded 2024 · Section 8 registered</span></div>
-        <div class="meta"><div>Small / caption</div><div>12px / 1.5 / weight 400</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <h2 class="section-title">Spacing &amp; Layout</h2>
-      <p class="section-dek">8px base unit for all spacing (margins, padding, gaps) — a separate system from the 4px type sub-grid above. Two grids, two jobs.</p>
-
-      <div class="scale-row"><div class="scale-label">8px</div><div class="scale-bar" style="width:8px;"></div></div>
-      <div class="scale-row"><div class="scale-label">16px</div><div class="scale-bar" style="width:16px;"></div></div>
-      <div class="scale-row"><div class="scale-label">24px</div><div class="scale-bar" style="width:24px;"></div></div>
-      <div class="scale-row"><div class="scale-label">32px</div><div class="scale-bar" style="width:32px;"></div></div>
-      <div class="scale-row"><div class="scale-label">48px</div><div class="scale-bar" style="width:48px;"></div></div>
-      <div class="scale-row"><div class="scale-label">64px</div><div class="scale-bar" style="width:64px;"></div></div>
-      <div class="scale-row"><div class="scale-label">96px</div><div class="scale-bar" style="width:96px;"></div></div>
-
-      <p class="t-h3" style="margin: 32px 0 4px; font-size: 17px;">Page margins (side gutters)</p>
-      <div class="margin-diagram">
-        <div class="margin-row">
-          <div class="margin-side" style="width: 14%;"></div>
-          <div class="margin-content">Content — max 1600px</div>
-          <div class="margin-side" style="width: 14%;"></div>
-        </div>
-      </div>
-      <p class="margin-caption">1920px viewport: 160px side margin, 1600px max content width. Tablet (768–1024px): 64px margin. Mobile (&lt;640px): 24px margin. Full-bleed elements (hero imagery, color-block sections) ignore this margin entirely.</p>
-
-      <p class="t-h3" style="margin: 32px 0 4px; font-size: 17px;">Container widths</p>
-      <p class="t-body">Institutional pages: 1200px reading container within the outer margin. Blog article body text: 720px max-width specifically, for line-length readability.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <h2 class="section-title">Radius, Borders &amp; Shadows</h2>
-      <p class="section-dek">One radius value everywhere. Hairline borders instead of shadows for separation.</p>
-      <p class="t-body"><strong>Radius:</strong> 3px, universal — buttons, cards, inputs, images. No exceptions, no per-component variation.</p>
-      <p class="t-body"><strong>Borders:</strong> 1px, <code>#E3DED2</code>, used for card outlines and section dividers.</p>
-      <p class="t-body"><strong>Shadows:</strong> none, anywhere, ever. If a shadow appears during build, it's a mistake to fix, not a style to keep.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <h2 class="section-title">Buttons</h2>
-      <p class="section-dek">Flat fills, 3px radius, 44px minimum height. 32px horizontal padding for Primary and Secondary. Primary and Secondary buttons must include a contextual trailing icon (not a generic arrow) with an 8px gap. Ghost remains text-only.</p>
-
-      <div class="btn-group">
-        <div class="btn-group-label">Primary</div>
-        <div class="btn-row">
-          <button class="btn btn-primary">Get involved</button>
-          <button class="btn btn-primary" style="background:var(--brick); color:var(--white);">Hover</button>
-          <button class="btn btn-primary" style="background:#4A5738; color:var(--paper);">Active</button>
-          <button class="btn btn-primary" disabled>Disabled</button>
-          <button class="btn btn-primary focus">Focus-visible</button>
-        </div>
-        <p class="state-note">Fill: Primary Green → Brick (hover) → darker Primary Green (active). Text: Charcoal text on Primary Green (9.96:1). Paper text fails contrast and must never be used. Focus: 2px Brick outline, 2px offset.</p>
-      </div>
-
-      <div class="btn-group">
-        <div class="btn-group-label">Secondary</div>
-        <div class="btn-row">
-          <button class="btn btn-secondary">Read our work</button>
-          <button class="btn btn-secondary" style="background:var(--charcoal); color:var(--paper);">Hover</button>
-          <button class="btn btn-secondary" disabled>Disabled</button>
-        </div>
-        <p class="state-note">Outline: 1.5px Charcoal. Hover: fills Charcoal, text turns Paper.</p>
-      </div>
-
-      <div class="btn-group">
-        <div class="btn-group-label">Ghost</div>
-        <div class="btn-row">
-          <button class="btn btn-ghost">See all posts</button>
-          <button class="btn btn-ghost" style="color:var(--brick);">Hover</button>
-        </div>
-        <p class="state-note">Text + underline only, no border or fill at any state. Hover shifts to Brick.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <h2 class="section-title">Form Elements</h2>
-      <p class="section-dek">Flat inputs, visible focus state, inline errors in Brick. Used on Get Involved and newsletter signup.</p>
-      <div class="form-demo">
-        <div class="field">
-          <label>Full name</label>
-          <input type="text" placeholder="Focus this field to see the state">
-        </div>
-        <div class="field error">
-          <label>Email address</label>
-          <input type="text" value="not-an-email">
-          <div class="err-msg">Enter a valid email address.</div>
-        </div>
-      </div>
-      <p class="t-small">All inputs: 44px minimum height, 1px border (#E3DED2), 3px radius. Focus: 2px Primary Green border. Error: Brick border + inline message below the field, never a color-only signal.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <h2 class="section-title">Navigation</h2>
-      <p class="section-dek">Five items — Gallery folded into Our Work as a section, not a separate click.</p>
-      <div class="nav-mock">
-        <a href="#" class="active">About</a>
-        <a href="#">Founder</a>
-        <a href="#">Our Work</a>
-        <a href="#">Insights</a>
-        <a href="#">Contact</a>
-      </div>
-      <p class="t-small" style="margin-top: 12px;">Charcoal background, Paper text. Active page marked with a small Brick dot beneath the label — not a background pill. Mobile: full-screen slide-in panel, same five items, no mobile-only content.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <h2 class="section-title">Iconography &amp; Imagery</h2>
-      <p class="section-dek">One icon style, real photography over illustration wherever possible.</p>
-      <div class="icon-row">
-        <div class="icon-item"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2v20M2 12h20" stroke-linecap="round"/></svg>Line, 1.5px stroke</div>
-        <div class="icon-item"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9"/></svg>Single set (Lucide)</div>
-        <div class="icon-item"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/></svg>3px radius, matching UI</div>
-      </div>
-      <p class="t-body" style="margin-top: 20px;"><strong>Imagery:</strong> 16:9 for hero, 4:5 for card/portrait imagery. Consistent color grade across all photography (see hero image direction). 3px corner radius. Real photography for all "proof" content — Our Work, Founder, Recognition. Never a fabricated before/after.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <h2 class="section-title">Motion</h2>
-      <p class="section-dek">One deliberate animation, not motion on every element.</p>
-      <p class="t-body">The hero image's ambient micro-motion (leaves, dappled light) is the one sustained animation on the site. Everywhere else: instant or 200ms ease transitions on hover only. No scroll-triggered fade-up/slide-in applied uniformly to every section — that pattern alone is one of the most common signs of a templated AI-built site.</p>
+      <p class="t-body" style="margin-top: 20px;"><strong>Timing:</strong> Hover/micro-interactions 150-300ms; scroll-entry animations 400-600ms. Easing: ease-out for things entering, ease-in-out for hover states.</p>
+      
+      <p class="t-body" style="margin-top: 16px;"><strong>Accessibility:</strong> Respect <code>prefers-reduced-motion</code> &mdash; provide a static fallback (content simply present, no animation).</p>
+      
+      <p class="t-body" style="margin-top: 16px; color: var(--brick);"><strong>AVOID:</strong> Applying the identical animation pattern to every section with no variation. Motion must be content-aware.</p>
     </div>
   </section>
 

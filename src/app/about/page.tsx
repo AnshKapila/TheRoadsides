@@ -62,6 +62,39 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Book Feature */}
+      <section className="py-[64px] px-[32px] bg-[var(--paper)] border-t border-[var(--line)]">
+        <div className="container mx-auto max-w-7xl">
+          <div className="flex flex-col md:flex-row gap-[48px] items-center">
+            <div className="w-full md:w-1/3 md:max-w-xs aspect-[3/4] bg-[var(--charcoal)] rounded-[3px] relative overflow-hidden border border-[var(--line)] shadow-lg group shrink-0">
+              <Image src="/gallery/gallery_122.jpg" alt="Book Cover" fill className="object-cover group-hover:scale-[1.03] transition-transform duration-[800ms] ease-out" unoptimized />
+            </div>
+            <div className="w-full md:w-2/3">
+              <div className="flex items-center gap-[8px] mb-[16px]">
+                <span className="w-3 h-3 rounded-[3px] bg-[var(--brick)]" />
+                <span className="text-[var(--charcoal)] font-semibold text-[14px] uppercase tracking-wider">From the Founder</span>
+              </div>
+              <h2 className="text-[32px] md:text-[40px] font-bold text-[var(--charcoal)] leading-[1.2] mb-[24px]">
+                The Power of Consistency
+              </h2>
+              <p className="text-[16px] text-[var(--muted)] leading-[1.65] mb-[24px]">
+                In her debut book, Seema Chowdhry Dhawan explores the philosophy that drives The Roadsides: how small, daily environmental habits multiply across communities to create lasting impact.
+              </p>
+              <p className="text-[16px] text-[var(--muted)] leading-[1.65] mb-[32px]">
+                Drawing from personal anecdotes of turning barren urban patches into thriving micro-ecosystems, the book serves as both a memoir and a manual for aspiring environmentalists looking to create change right in their own neighborhoods.
+              </p>
+              <Link href="/founder" className="group inline-flex items-center gap-[8px] justify-center bg-transparent border-[1.5px] border-[var(--primary-green)] text-[var(--primary-green)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--primary-green)] hover:text-[var(--charcoal)] transition-all duration-300 text-[16px] min-h-[44px]">
+                Read More About the Founder
+                <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+                  <ArrowRight className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
+                  <ArrowRight className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="bg-[var(--charcoal)] py-[64px] px-[32px]">
         <div className="container mx-auto max-w-4xl text-center">

@@ -52,7 +52,7 @@ export default function Home() {
             {/* Card 1 */}
             <MotionBlurReveal delay={0}>
               <div className="relative rounded-[3px] overflow-hidden aspect-square md:aspect-[4/5] bg-[var(--charcoal)] flex flex-col justify-end p-[32px] group h-full">
-                <Image src="/gallery/gallery_0.jpg" alt="Impact 1" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
+                <Image src="/gallery/founded_bg.jpg" alt="Impact 1" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                 <div className="relative z-10">
                   <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">Founded 2024</div>
@@ -64,7 +64,7 @@ export default function Home() {
             {/* Card 2 */}
             <MotionBlurReveal delay={150}>
               <div className="relative rounded-[3px] overflow-hidden aspect-square md:aspect-[4/5] bg-[var(--charcoal)] flex flex-col justify-end p-[32px] group h-full">
-                <Image src="/gallery/gallery_1.jpg" alt="Impact 2" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
+                <Image src="/gallery/initiatives_bg.jpg" alt="Impact 2" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                 <div className="relative z-10">
                   <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">2 flagship on-ground initiatives</div>
@@ -91,7 +91,7 @@ export default function Home() {
       {/* 3. Mission */}
       <section className="py-[64px] px-[32px]">
         <ScrollRevealText 
-          text="Every correct move we make, multiplied by 7.9 billion, changes this world."
+          text="Every small, correct choice we make in how we live and move through our surroundings, multiplied across 7.9 billion people, has the power to change this world for good."
         />
       </section>
 
