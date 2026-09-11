@@ -56,7 +56,7 @@ export default function RootLayout({
                 <h4 className="text-[var(--paper)] font-bold mb-[24px] tracking-[0.01em] uppercase text-[12px]">Connect</h4>
                 <ul className="flex flex-col gap-[16px] mb-[32px]">
                   <li><Link href="/contact" className="text-[var(--paper)]/70 hover:text-[var(--primary-green)] transition-colors font-medium text-[16px]">Contact Us</Link></li>
-                  <li><Link href="/get-involved" className="text-[var(--paper)]/70 hover:text-[var(--primary-green)] transition-colors font-medium text-[16px]">Get Involved</Link></li>
+                  <li><Link href="/get-involved" className="text-[var(--paper)]/70 hover:text-[var(--primary-green)] transition-colors font-medium text-[16px]">Join Us</Link></li>
                   <li><a href="#" className="text-[var(--paper)]/70 hover:text-[var(--primary-green)] transition-colors font-medium text-[16px]">LinkedIn</a></li>
                 </ul>
               </div>

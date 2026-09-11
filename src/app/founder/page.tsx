@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Heart } from "lucide-react";
+import { ArrowRight, Heart , Handshake} from "lucide-react";
 
 export default function FounderPage() {
   return (
@@ -91,10 +91,9 @@ export default function FounderPage() {
           <p className="text-[16px] text-[var(--paper)] leading-[1.65] mb-[32px] max-w-2xl mx-auto">
             The Roadsides is built on the power of community. Whether you want to volunteer for our next drive, or partner with us for a corporate initiative, your contribution matters.
           </p>
-          <Link href="/get-involved" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
-            Get Involved Today <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
-    <Heart className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
-    <Heart className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
+          <Link href="/get-involved" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">Join Us Today<span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+    <Handshake className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
+    <Handshake className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
   </span>
           </Link>
         </div>

@@ -10,7 +10,7 @@ export default function GetInvolvedPage() {
         <div className="container mx-auto max-w-7xl">
           <div className="flex items-center gap-[8px] mb-[16px]">
             <span className="w-3 h-3 rounded-[3px] group bg-[var(--primary-green)]" />
-            <span className="text-[var(--charcoal)] font-semibold text-[14px]">Get Involved</span>
+            <span className="text-[var(--charcoal)] font-semibold text-[14px]">Join Us</span>
           </div>
           <h1 className="text-[48px] font-bold tracking-[-0.01em] leading-[1.15] text-[var(--charcoal)] mb-[24px]">
             Be Part of the Solution

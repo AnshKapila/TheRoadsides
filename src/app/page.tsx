@@ -243,7 +243,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 9. Get Involved */}
+      {/* 9. Join Us */}
       <section className="py-[64px] px-[32px]">
         <div className="container mx-auto max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-[24px] lg:h-[750px]">
@@ -254,8 +254,7 @@ export default function Home() {
                 <h2 className="text-[48px] font-bold text-[var(--charcoal)] tracking-[-0.01em] leading-[1.15] mb-[32px] max-w-md">
                   Join us in creating safer, cleaner, greener environments.
                 </h2>
-                <Link href="/get-involved" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
-                  Get Involved <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+                <Link href="/get-involved" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">Join Us<span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
     <ArrowRight className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
     <ArrowRight className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
   </span>

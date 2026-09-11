@@ -1,6 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const LinkedinIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    <rect width="4" height="12" x="2" y="9" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+);
+
 export default function InsightsPage() {
   const posts = [
     { tag: 'From the Book', title: 'The Power of Consistency', desc: 'How small, daily environmental habits multiply across communities to create lasting impact.', img: 'gallery_122.jpg' },
@@ -45,6 +62,28 @@ export default function InsightsPage() {
                 </article>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+      {/* LinkedIn CTA Banner */}
+      <section className="px-[32px] pb-[64px]">
+        <div className="container mx-auto max-w-7xl">
+          <div className="bg-[var(--charcoal)] rounded-[3px] p-[48px] flex flex-col md:flex-row items-center justify-between gap-[32px]">
+            <div className="max-w-2xl text-left">
+              <h2 className="text-[32px] font-bold text-[var(--paper)] tracking-tight mb-[12px] leading-[1.2]">
+                Stay connected with our story.
+              </h2>
+              <p className="text-[16px] text-[var(--line)] leading-[1.65]">
+                Join us over on LinkedIn to know the stories firsthand, understand what we are doing, and stay connected with our community&apos;s growth.
+              </p>
+            </div>
+            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--paper)] hover:text-[var(--charcoal)] transition-all duration-300 text-[16px] min-h-[44px] shrink-0">
+              Follow on LinkedIn
+              <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+                <LinkedinIcon className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" />
+                <LinkedinIcon className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" />
+              </span>
+            </Link>
           </div>
         </div>
       </section>
