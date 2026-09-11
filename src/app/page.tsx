@@ -17,6 +17,7 @@ export default function Home() {
         
         <div className="container mx-auto max-w-7xl relative z-10 pt-10">
           <div className="max-w-2xl">
+            <MotionBlurReveal delay={0}>
             <h2 className="text-[var(--brick-dark)] font-semibold text-[14px] mb-[10px] tracking-wide uppercase">
               Together, We Create Impact
             </h2>
@@ -41,6 +42,7 @@ export default function Home() {
                 Learn About Us
               </Link>
             </div>
+          </MotionBlurReveal>
           </div>
         </div>
       </section>
@@ -314,6 +316,43 @@ export default function Home() {
                   <span className="bg-[var(--paper)] text-[var(--charcoal)] px-[16px] py-[6px] rounded-[3px] text-[13px] font-semibold">Collaboration</span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 10. Contact Us */}
+      <section className="py-[64px] px-[32px]">
+        <div className="container mx-auto max-w-7xl">
+          <div className="bg-[var(--charcoal)] rounded-[3px] p-[32px] md:p-[48px] flex flex-col md:flex-row gap-[48px] items-center">
+            <MotionBlurReveal delay={0}>
+              <div className="w-full flex flex-col">
+                <h2 className="text-[48px] font-bold text-[var(--paper)] tracking-[-0.01em] leading-[1.15] mb-[16px]">
+                  Get in Touch
+                </h2>
+                <p className="text-[16px] text-[var(--line)] leading-[1.65] mb-[32px]">
+                  Have a question or want to partner with us? Send us a message and our team will get back to you shortly.
+                </p>
+                <form className="flex flex-col gap-[24px]">
+                  <input type="text" placeholder="Name" className="bg-transparent border-b border-[var(--line)]/30 text-[var(--paper)] py-[12px] px-[4px] focus:outline-none focus:border-[var(--primary-green)] transition-colors placeholder:text-[var(--line)]/50" />
+                  <input type="email" placeholder="Email" className="bg-transparent border-b border-[var(--line)]/30 text-[var(--paper)] py-[12px] px-[4px] focus:outline-none focus:border-[var(--primary-green)] transition-colors placeholder:text-[var(--line)]/50" />
+                  <textarea placeholder="Message" rows={4} className="bg-transparent border-b border-[var(--line)]/30 text-[var(--paper)] py-[12px] px-[4px] focus:outline-none focus:border-[var(--primary-green)] transition-colors placeholder:text-[var(--line)]/50 resize-none"></textarea>
+                  <button type="button" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--paper)] hover:text-[var(--charcoal)] transition-all duration-300 text-[16px] min-h-[44px] w-fit mt-[16px]">
+                    Submit Message
+                    <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+                      <ArrowRight className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
+                      <ArrowRight className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
+                    </span>
+                  </button>
+                </form>
+              </div>
+            </MotionBlurReveal>
+            <div className="w-full md:w-full">
+              <MotionBlurReveal delay={150}>
+                <div className="w-full aspect-[4/5] md:aspect-square rounded-[3px] overflow-hidden relative border border-[var(--line)]/20">
+                  <Image src="/gallery/gallery_126.jpg" alt="Contact Us" fill className="object-cover hover:scale-105 transition-transform duration-700" unoptimized />
+                </div>
+              </MotionBlurReveal>
             </div>
           </div>
         </div>
