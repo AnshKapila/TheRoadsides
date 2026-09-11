@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Play, BookOpen, Newspaper, ImageIcon } from "lucide-react";
 import ScrollRevealText from "@/components/ScrollRevealText";
+import MotionBlurReveal from "@/components/MotionBlurReveal";
 
 export default function Home() {
   return (
@@ -44,42 +45,45 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. Impact Numbers */}
+      {/* 2. Impact Numbers & Core Info */}
       <section className="py-[64px] px-[32px]">
         <div className="container mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
             {/* Card 1 */}
-            <div className="relative rounded-[3px] overflow-hidden aspect-square md:aspect-[4/5] bg-[var(--charcoal)] flex flex-col justify-end p-[32px] group">
-              <Image src="/gallery/gallery_0.jpg" alt="Impact 1" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
-              <div className="relative z-10">
-                <div className="text-[48px] font-bold text-[var(--paper)] tracking-[-0.01em] leading-[1.15] mb-[8px]">[XX]</div>
-                <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">Sectors Covered</div>
-                <div className="text-[var(--paper)] text-[16px] leading-[1.65]">Across Faridabad and beyond.</div>
+            <MotionBlurReveal delay={0}>
+              <div className="relative rounded-[3px] overflow-hidden aspect-square md:aspect-[4/5] bg-[var(--charcoal)] flex flex-col justify-end p-[32px] group h-full">
+                <Image src="/gallery/gallery_0.jpg" alt="Impact 1" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+                <div className="relative z-10">
+                  <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">Founded 2024</div>
+                  <div className="text-[var(--line)] text-[16px] leading-[1.65]">A Section 8 registered nonprofit, built from one person&apos;s initiative into a growing on-ground movement.</div>
+                </div>
               </div>
-            </div>
+            </MotionBlurReveal>
 
             {/* Card 2 */}
-            <div className="relative rounded-[3px] overflow-hidden aspect-square md:aspect-[4/5] bg-[var(--charcoal)] flex flex-col justify-end p-[32px] group">
-              <Image src="/gallery/gallery_1.jpg" alt="Impact 2" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
-              <div className="relative z-10">
-                <div className="text-[48px] font-bold text-[var(--paper)] tracking-[-0.01em] leading-[1.15] mb-[8px]">[XX,XXX]</div>
-                <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">Trees Planted</div>
-                <div className="text-[var(--paper)] text-[16px] leading-[1.65]">Nurtured for long-term survival.</div>
+            <MotionBlurReveal delay={150}>
+              <div className="relative rounded-[3px] overflow-hidden aspect-square md:aspect-[4/5] bg-[var(--charcoal)] flex flex-col justify-end p-[32px] group h-full">
+                <Image src="/gallery/gallery_1.jpg" alt="Impact 2" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+                <div className="relative z-10">
+                  <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">2 flagship on-ground initiatives</div>
+                  <div className="text-[var(--line)] text-[16px] leading-[1.65]">A plantation and nurturing drive in Ballabgarh–Faridabad, and a 2025 textile waste recovery program with The Modern School, K.L. Mehta College, and Saahas Zero Waste.</div>
+                </div>
               </div>
-            </div>
+            </MotionBlurReveal>
 
             {/* Card 3 */}
-            <div className="relative rounded-[3px] overflow-hidden aspect-square md:aspect-[4/5] bg-[var(--charcoal)] flex flex-col justify-end p-[32px] group">
-              <Image src="/gallery/gallery_103.jpg" alt="Impact 3" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
-              <div className="relative z-10">
-                <div className="text-[48px] font-bold text-[var(--paper)] tracking-[-0.01em] leading-[1.15] mb-[8px]">[XX]</div>
-                <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">Community Events</div>
-                <div className="text-[var(--paper)] text-[16px] leading-[1.65]">Mobilizing local citizens.</div>
+            <MotionBlurReveal delay={300}>
+              <div className="relative rounded-[3px] overflow-hidden aspect-square md:aspect-[4/5] bg-[var(--charcoal)] flex flex-col justify-end p-[32px] group h-full">
+                <Image src="/gallery/gallery_103.jpg" alt="Impact 3" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+                <div className="relative z-10">
+                  <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">Recognized by the UN Environment Programme</div>
+                  <div className="text-[var(--line)] text-[16px] leading-[1.65]">Official host of a World Environment Day 2026 event in Faridabad — alongside features in CEO India Magazine and YourZourney.</div>
+                </div>
               </div>
-            </div>
+            </MotionBlurReveal>
           </div>
         </div>
       </section>
