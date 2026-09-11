@@ -4,6 +4,9 @@
 @theme {
   --color-primary-green: #C0DA3B;
   --color-brick: #96432E;
+  --color-brick-dark: #CC7059;
+  --color-moss: #5C6B47;
+  --color-moss-dark: #7E9361;
   --color-charcoal: #25231F;
   --color-paper: #FAF8F5;
   --color-line: #E3DED2;
@@ -16,6 +19,9 @@
     /* Design System v2 Tokens */
     --primary-green: #C0DA3B;
     --brick: #96432E;
+    --brick-dark: #CC7059;
+    --moss: #5C6B47;
+    --moss-dark: #7E9361;
     --charcoal: #25231F;
     --paper: #FAF8F5;
     --line: #E3DED2;

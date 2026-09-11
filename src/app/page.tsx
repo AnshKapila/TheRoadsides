@@ -17,7 +17,7 @@ export default function Home() {
         
         <div className="container mx-auto max-w-7xl relative z-10 pt-10">
           <div className="max-w-2xl">
-            <h2 className="text-[var(--brick)] font-semibold text-[14px] mb-[10px] tracking-wide uppercase">
+            <h2 className="text-[var(--brick-dark)] font-semibold text-[14px] mb-[10px] tracking-wide uppercase">
               Together, We Create Impact
             </h2>
             
