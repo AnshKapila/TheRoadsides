@@ -5,10 +5,16 @@ import { ArrowRight, Leaf } from "lucide-react";
 export default function WorkPage() {
   const initiatives = [
     {
+      title: "Sarhaul Village, Gurugram Drives",
+      tag: "Civic Sense & Waste Management",
+      desc: "Executing targeted on-ground initiatives centered around waste segregation, meticulous management, and widespread civic sensitization. Empowering local communities to take charge of their immediate surroundings and actively report civic issues using the Swachhata App for sustainable urban transformation.",
+      img: "sarhaul_5.jpg"
+    },
+    {
       title: "Ballabgarh & Faridabad Drives",
       tag: "Plantation & Nurturing",
       desc: "Going beyond just planting saplings to establishing a system of continued nurturing, in partnership with local community and environmental groups.",
-      img: "gallery_107.jpg"
+      img: "founded_bg.jpg"
     },
     {
       title: "2025 Textile Waste Initiative",
