@@ -5,6 +5,18 @@ import { ArrowRight, Leaf } from "lucide-react";
 export default function WorkPage() {
   const initiatives = [
     {
+      title: "DAV Institute of Management NSS Event",
+      tag: "Awareness & Education",
+      desc: "Partnered with the National Service Scheme (NSS) at the DAV Institute of Management in March 2026 for a dedicated awareness drive. We engaged with the student body to impart critical knowledge on waste management protocols and the broader importance of civic sense in maintaining healthy urban ecosystems.",
+      img: "dav_institute_nss.jpg"
+    },
+    {
+      title: "ISHRAE Gurugram Felicitation",
+      tag: "Recognition & Awards",
+      desc: "Honored by the ISHRAE Gurugram Chapter for our ongoing commitment to creating sustainable, green urban spaces and driving impactful community-level environmental action.",
+      img: "ishrae_recognition.jpg"
+    },
+    {
       title: "Sarhaul Village, Gurugram Drives",
       tag: "Civic Sense & Waste Management",
       desc: "Executing targeted on-ground initiatives centered around waste segregation, meticulous management, and widespread civic sensitization. Empowering local communities to take charge of their immediate surroundings and actively report civic issues using the Swachhata App for sustainable urban transformation.",
