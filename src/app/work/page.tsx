@@ -5,6 +5,12 @@ import { ArrowRight, Leaf } from "lucide-react";
 export default function WorkPage() {
   const initiatives = [
     {
+      title: "Likhega India World Record",
+      tag: "Recognition & Awards",
+      desc: "Recognized by the Asia and World Records at the Likhega India Conclave for 'Baby Steps to Green Revolution', contributing to the historic mission of publishing the maximum number of books in a single day.",
+      img: "likhega_india.jpg"
+    },
+    {
       title: "Mount Carmel 'Sociopreneur' Jury",
       tag: "Mentorship & Education",
       desc: "Invited to Mount Carmel School, Dwarka, as a jury member for 'Comonomics 4.0'. Watching class 7 and 8 students imagine real ideas for environmental change was genuinely inspiring. Two very different rooms recently—one learning from our brightest young trailblazers, one sharing the spotlight with established voices. The future does look promising.",
