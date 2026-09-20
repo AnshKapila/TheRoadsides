@@ -5,6 +5,12 @@ import { ArrowRight, Leaf } from "lucide-react";
 export default function WorkPage() {
   const initiatives = [
     {
+      title: "UNESCO Sustainability Event",
+      tag: "Global Discourse",
+      desc: "Our Founder, Seema Chowdhry Dhawan, participated in a high-level UNESCO event centered around sustainability, joining prominent thought leaders to discuss pressing environmental challenges and real-world solutions for a greener future.",
+      img: "unesco_event.png"
+    },
+    {
       title: "Likhega India World Record",
       tag: "Recognition & Awards",
       desc: "Recognized by the Asia and World Records at the Likhega India Conclave for 'Baby Steps to Green Revolution', contributing to the historic mission of publishing the maximum number of books in a single day.",
