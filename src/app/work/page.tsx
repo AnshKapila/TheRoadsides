@@ -5,6 +5,12 @@ import { ArrowRight, Leaf } from "lucide-react";
 export default function WorkPage() {
   const initiatives = [
     {
+      title: "Mount Carmel 'Sociopreneur' Jury",
+      tag: "Mentorship & Education",
+      desc: "Invited to Mount Carmel School, Dwarka, as a jury member for 'Comonomics 4.0'. Watching class 7 and 8 students imagine real ideas for environmental change was genuinely inspiring. Two very different rooms recently—one learning from our brightest young trailblazers, one sharing the spotlight with established voices. The future does look promising.",
+      img: "mount_carmel.png"
+    },
+    {
       title: "DAV Institute of Management NSS Event",
       tag: "Awareness & Education",
       desc: "Partnered with the National Service Scheme (NSS) at the DAV Institute of Management in March 2026 for a dedicated awareness drive. We engaged with the student body to impart critical knowledge on waste management protocols and the broader importance of civic sense in maintaining healthy urban ecosystems.",
@@ -55,13 +61,13 @@ export default function WorkPage() {
         <div className="container mx-auto max-w-7xl">
           <div className="flex items-center gap-[8px] mb-[16px]">
             <span className="w-3 h-3 rounded-[3px] group bg-[var(--primary-green)]" />
-            <span className="text-[var(--charcoal)] font-semibold text-[14px]">Our Work</span>
+            <span className="text-[var(--charcoal)] font-semibold text-[14px]">The Journey</span>
           </div>
           <h1 className="text-[48px] font-bold tracking-[-0.01em] leading-[1.15] text-[var(--charcoal)] mb-[24px]">
-            Action on the Ground
+            The Journey
           </h1>
           <p className="text-[24px] font-medium leading-[1.45] text-[var(--primary-green)] italic max-w-3xl">
-            &quot;Our initiatives turn philosophy into physical change. Here is where we dig in, plant, and nurture.&quot;
+            &quot;From learning from our brightest young trailblazers to sharing the spotlight with established voices in the field, the future does look promising.&quot;
           </p>
         </div>
       </section>
