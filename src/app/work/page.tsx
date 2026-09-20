@@ -39,24 +39,6 @@ export default function WorkPage() {
       tag: "Plantation & Nurturing",
       desc: "Going beyond just planting saplings to establishing a system of continued nurturing, in partnership with local community and environmental groups.",
       img: "founded_bg.jpg"
-    },
-    {
-      title: "2025 Textile Waste Initiative",
-      tag: "Circular Economy",
-      desc: "Mobilizing students and citizens for zero-waste practices alongside The Modern School, K.L. Mehta College for Women, and Saahas Zero Waste.",
-      img: "gallery_112.jpg"
-    },
-    {
-      title: "Highway Green Corridors",
-      tag: "Urban Infrastructure",
-      desc: "Transforming barren stretches along major state highways into vibrant micro-forests, improving air quality and aesthetic value.",
-      img: "gallery_133.jpg"
-    },
-    {
-      title: "Student Stewardship Program",
-      tag: "Education",
-      desc: "Empowering the next generation to take ownership of their local environment through dedicated adoption drives.",
-      img: "gallery_141.jpg"
     }
   ];
 
