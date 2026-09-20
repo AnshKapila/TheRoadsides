@@ -58,12 +58,12 @@ export default function FounderPage() {
                 </p>
               </div>
 
-              <div className="bg-[var(--paper)] border border-[var(--line)] rounded-[3px] p-[32px] my-[16px]">
-                <h3 className="text-[24px] font-bold text-[var(--charcoal)] mb-[16px]">Baby Steps to Green Revolution</h3>
-                <p className="mb-[24px]">
-                  Seema is also the author of <span className="italic font-medium">Baby Steps to Green Revolution</span>, a foundational text that outlines her philosophy of environmental stewardship. The book argues that small, correct daily actions—done consistently and multiplied across a population—create real, systemic change.
+              <div className="bg-[var(--charcoal)] rounded-[3px] p-[32px] my-[16px]">
+                <h3 className="text-[24px] font-bold text-[var(--paper)] mb-[16px]">Baby Steps to Green Revolution</h3>
+                <p className="mb-[24px] text-[var(--line)]">
+                  Seema is also the author of <span className="italic font-medium text-[var(--paper)]">Baby Steps to Green Revolution</span>, a foundational text that outlines her philosophy of environmental stewardship. The book argues that small, correct daily actions—done consistently and multiplied across a population—create real, systemic change.
                 </p>
-                <Link href="/insights" className="inline-flex items-center gap-[8px] text-[var(--brick)] font-semibold hover:text-[var(--primary-green)] transition-colors">
+                <Link href="/insights" className="inline-flex items-center gap-[8px] text-[var(--brick-dark)] font-semibold hover:text-[var(--primary-green)] transition-colors">
                   Read excerpts from the book <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </div>
