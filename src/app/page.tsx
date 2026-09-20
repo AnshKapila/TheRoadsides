@@ -31,15 +31,18 @@ export default function Home() {
               Your support powers life changing missions feeding families & rebuilding hope.
             </p>
             
-            <div className="flex flex-wrap items-center gap-[14px]">
-              <Link href="/get-involved" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
-                  Donate Now <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-[14px] w-full">
+              <Link href="/get-involved" className="group w-full sm:w-auto inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
+                  Join Us <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
     <ArrowRight className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
     <ArrowRight className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
   </span>
                 </Link>
-              <Link href="/about" className="inline-flex items-center gap-[8px] justify-center bg-transparent border-[1.5px] border-[var(--white)] text-[var(--paper)] font-semibold px-[24px] py-[11.5px] rounded-[3px] hover:bg-[var(--paper)] hover:text-[var(--charcoal)] transition-colors text-[16px] min-h-[44px]">
-                Learn About Us
+              <Link href="/about" className="group w-full sm:w-auto inline-flex items-center gap-[8px] justify-center bg-transparent border-[1.5px] border-[var(--white)] text-[var(--paper)] font-semibold px-[24px] py-[11.5px] rounded-[3px] hover:bg-[var(--paper)] hover:text-[var(--charcoal)] transition-colors text-[16px] min-h-[44px]">
+                Learn About Us <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+    <BookOpen className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
+    <BookOpen className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
+  </span>
               </Link>
             </div>
           </MotionBlurReveal>
@@ -113,7 +116,7 @@ export default function Home() {
               <p className="text-[16px] text-[var(--paper)] mb-[40px] leading-[1.65] font-normal">
                 It started by noticing what everyone else walks past. An alumnus of IIM Calcutta and Wharton Online with a deep background in ESG strategy, Seema founded The Roadsides to translate corporate sustainability principles into hyperlocal, citizen-led action.
               </p>
-              <Link href="/founder" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
+              <Link href="/founder" className="group w-full sm:w-auto inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
                 Read Seema&apos;s Story <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
     <BookOpen className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
     <BookOpen className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
@@ -166,7 +169,7 @@ export default function Home() {
               <h2 className="text-[32px] font-semibold tracking-tight mb-[16px] leading-[1.2]">Stories and perspectives.</h2>
               <p className="text-[16px] text-[var(--muted)] leading-[1.65]">Excerpts from &quot;Baby Steps to Green Revolution&quot; and on-ground case studies.</p>
             </div>
-            <Link href="/insights" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
+            <Link href="/insights" className="group w-full sm:w-auto inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
               Read All Insights <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
     <Newspaper className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
     <Newspaper className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
@@ -206,7 +209,7 @@ export default function Home() {
               </div>
               <h2 className="text-[32px] font-semibold tracking-tight leading-[1.2]">Community in Action</h2>
             </div>
-            <Link href="/gallery" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
+            <Link href="/gallery" className="group w-full sm:w-auto inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
               View Full Gallery <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
     <ImageIcon className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
     <ImageIcon className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
@@ -256,7 +259,7 @@ export default function Home() {
                 <h2 className="text-[48px] font-bold text-[var(--charcoal)] tracking-[-0.01em] leading-[1.15] mb-[32px] max-w-md">
                   Join us in creating safer, cleaner, greener environments.
                 </h2>
-                <Link href="/get-involved" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">Join Us<span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+                <Link href="/get-involved" className="group w-full sm:w-auto inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">Join Us<span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
     <ArrowRight className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
     <ArrowRight className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
   </span>
