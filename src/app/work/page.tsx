@@ -5,6 +5,12 @@ import { ArrowRight, Leaf } from "lucide-react";
 export default function WorkPage() {
   const initiatives = [
     {
+      title: "Venture Day Gurgaon by Cohrrt",
+      tag: "Ecosystem & Networking",
+      desc: "April 2025. Participated in Venture Day, a curated knowledge-sharing platform bridging the gap between startup founders, investors, and business professionals. It was an incredible space to gain practical insights into the startup ecosystem, share our own journey with The Roadsides, and explore strategies for sustainable, meaningful growth through real, collaborative conversations.",
+      img: "venture_day.png"
+    },
+    {
       title: "UNESCO Sustainability Event",
       tag: "Global Discourse",
       desc: "Our Founder, Seema Chowdhry Dhawan, participated in a high-level UNESCO event centered around sustainability, joining prominent thought leaders to discuss pressing environmental challenges and real-world solutions for a greener future.",
