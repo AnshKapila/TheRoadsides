@@ -2,9 +2,32 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Heart , Handshake} from "lucide-react";
 
+export const metadata = {
+  title: "Founder Seema Chowdhry Dhawan | The Roadsides",
+  description: "Meet Seema Chowdhry Dhawan, founder of The Roadsides, sustainability strategist, and world record author of 'Baby Steps to Green Revolution'.",
+};
+
 export default function FounderPage() {
   return (
     <div className="flex flex-col pt-24 min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Seema Chowdhry Dhawan",
+            "jobTitle": "Founder",
+            "worksFor": {
+              "@type": "NGO",
+              "name": "The Roadsides"
+            },
+            "alumniOf": ["IIM Calcutta", "Wharton Online"],
+            "knowsAbout": ["ESG Strategy", "Sustainability", "Environmental Stewardship"],
+            "award": "Likhega India World Record Author for Baby Steps to Green Revolution"
+          })
+        }}
+      />
       {/* Page Header */}
       <section className="bg-[var(--paper)] border-b border-[var(--line)] py-[64px] px-[32px]">
         <div className="container mx-auto max-w-7xl">

@@ -4,6 +4,11 @@ import { ArrowRight, Play, BookOpen, Newspaper, ImageIcon } from "lucide-react";
 import ScrollRevealText from "@/components/ScrollRevealText";
 import MotionBlurReveal from "@/components/MotionBlurReveal";
 
+export const metadata = {
+  title: "Urban Environmental Restoration | The Roadsides",
+  description: "Join The Roadsides, a recognized NGO in Faridabad leading tree plantation drives, textile waste initiatives, and environmental awareness campaigns.",
+};
+
 export default function Home() {
   return (
     <div className="flex flex-col">

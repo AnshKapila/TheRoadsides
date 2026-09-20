@@ -1,6 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Insights & Environmental Case Studies | The Roadsides",
+  description: "Read excerpts from 'Baby Steps to Green Revolution', expert perspectives on ESG strategy, and real-world case studies on urban sustainability.",
+};
+
 const LinkedinIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

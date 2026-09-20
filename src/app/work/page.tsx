@@ -2,6 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Leaf } from "lucide-react";
 
+export const metadata = {
+  title: "The Journey & Initiatives | The Roadsides",
+  description: "Explore our on-ground impact: from waste segregation in Gurugram to UN Environment Programme recognitions and educational drives at Mount Carmel School.",
+};
+
 export default function WorkPage() {
   const initiatives = [
     {

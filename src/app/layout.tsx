@@ -9,11 +9,22 @@ const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "The Roadsides | Vibrant Walkable Roadsides Foundation",
-  description: "A Section 8 Not-For-Profit creating safer, cleaner, greener roadside environments.",
-  icons: {
-    icon: "/logo.png",
+  metadataBase: new URL('https://the-roadsides.vercel.app'),
+  title: {
+    default: "The Roadsides | Vibrant Walkable Roadsides Foundation",
+    template: "%s | The Roadsides"
   },
+  description: "The Roadsides is a Section 8 Not-For-Profit based in Faridabad, India, dedicated to urban ecological restoration, waste management, and citizen-led environmental action.",
+  openGraph: {
+    title: "The Roadsides",
+    description: "Transforming urban environments through ecological restoration and citizen-led action.",
+    url: "https://the-roadsides.vercel.app",
+    siteName: "The Roadsides",
+    images: [{ url: "/hero-bg.jpg", width: 1200, height: 630 }],
+    locale: "en_IN",
+    type: "website",
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
@@ -28,6 +39,31 @@ export default function RootLayout({
 
         {/* Main Content */}
         <main className="flex-grow">
+          
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "NGO",
+              "name": "The Roadsides (Vibrant Walkable Roadsides Foundation)",
+              "url": "https://the-roadsides.vercel.app",
+              "logo": "https://the-roadsides.vercel.app/logo.png",
+              "description": "A Section 8 Not-For-Profit in Faridabad, Haryana, India, focused on urban ecological restoration, waste management, and environmental awareness.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Faridabad",
+                "addressRegion": "Haryana",
+                "addressCountry": "IN"
+              },
+              "founder": {
+                "@type": "Person",
+                "name": "Seema Chowdhry Dhawan",
+                "jobTitle": "Founder"
+              }
+            })
+          }}
+        />
           {children}
         </main>
 

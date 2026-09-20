@@ -2,6 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Heart , Handshake} from "lucide-react";
 
+export const metadata = {
+  title: "About Our Foundation | The Roadsides",
+  description: "Learn about The Roadsides' mission, our recognition by the UN Environment Programme, and our citizen-led model for sustainable urban ecosystems.",
+};
+
 export default function AboutPage() {
   return (
     <div className="flex flex-col pt-24 min-h-screen">
