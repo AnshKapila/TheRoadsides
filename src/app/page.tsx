@@ -63,7 +63,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                 <div className="relative z-10">
                   <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">A Section 8 Company</div>
-                  <div className="text-[var(--line)] text-[16px] leading-[1.65]">Founded in 2024</div>
+                  <div className="text-[var(--line)] text-[16px] leading-[1.65]">Founded in 2024, built from one person's initiative into a growing on-ground movement.</div>
                 </div>
               </div>
             </MotionBlurReveal>
