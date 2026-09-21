@@ -71,11 +71,11 @@ export default function Home() {
             {/* Card 2 */}
             <MotionBlurReveal delay={150}>
               <div className="relative rounded-[3px] overflow-hidden aspect-square md:aspect-[4/5] bg-[var(--charcoal)] flex flex-col justify-end p-[32px] group h-full">
-                <Image src="/gallery/initiatives_bg.jpg" alt="Impact 2" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
+                <Image src="/gallery/initiatives_bg_2.jpg" alt="Impact 2" fill className="object-cover object-right opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                 <div className="relative z-10">
                   <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">flagship on-ground initiatives</div>
-                  <div className="text-[var(--line)] text-[16px] leading-[1.65]">A plantation and nurturing drive in Ballabgarh-Faridabad, a waste segregation initiative in Gurugram, and a 2025 textile waste recovery program with The Modern School, K.L. Mehta College, and Saahas Zero Waste.</div>
+                  <div className="text-[var(--line)] text-[16px] leading-[1.65]">Leading waste segregation and civic awareness in Gurugram, alongside sustainable plantation and nurturing drives in Faridabad.</div>
                 </div>
               </div>
             </MotionBlurReveal>
