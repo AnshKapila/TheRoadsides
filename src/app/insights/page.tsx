@@ -24,14 +24,7 @@ const LinkedinIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 export default function InsightsPage() {
-  const posts = [
-    { tag: 'From the Book', title: 'The Power of Consistency', desc: 'How small, daily environmental habits multiply across communities to create lasting impact.', img: 'gallery_122.jpg' },
-    { tag: 'On-Ground Stories', title: 'Nurturing After Planting', desc: 'Why our work in Faridabad doesn\'t stop on planting day, and how we maintain saplings year-round.', img: 'gallery_126.jpg' },
-    { tag: 'Founder\'s Perspective', title: 'India\'s Urban Future Needs a Shift', desc: 'Our cities are growing fast. Why the focus must return to the immediate roadsides we navigate daily.', img: 'gallery_130.jpg' },
-    { tag: 'Circular Economy', title: 'Textile Waste Integration', desc: 'Partnering with local schools to turn textile waste into a community resource.', img: 'gallery_144.jpg' },
-    { tag: 'Community', title: 'Mobilizing the Youth', desc: 'Engaging the next generation of environmental stewards in local colleges.', img: 'gallery_158.jpg' },
-    { tag: 'Strategy', title: 'Corporate Sustainability at the Hyperlocal Level', desc: 'Translating ESG goals into tangible, visible community projects.', img: 'gallery_172.jpg' },
-  ];
+  const posts: {tag: string, title: string, desc: string, img: string}[] = [];
 
   return (
     <div className="flex flex-col pt-24 min-h-screen">

@@ -91,9 +91,10 @@ export default function RootLayout({
               <div>
                 <h4 className="text-[var(--paper)] font-bold mb-[24px] tracking-[0.01em] uppercase text-[12px]">Connect</h4>
                 <ul className="flex flex-col gap-[16px] mb-[32px]">
-                  <li><Link href="/contact" className="text-[var(--paper)]/70 hover:text-[var(--primary-green)] transition-colors font-medium text-[16px]">Contact Us</Link></li>
-                  <li><Link href="/get-involved" className="text-[var(--paper)]/70 hover:text-[var(--primary-green)] transition-colors font-medium text-[16px]">Join Us</Link></li>
-                  <li><a href="#" className="text-[var(--paper)]/70 hover:text-[var(--primary-green)] transition-colors font-medium text-[16px]">LinkedIn</a></li>
+                  <li><a href="mailto:team@theroadsides.co.in" className="text-[var(--paper)]/70 hover:text-[var(--primary-green)] transition-colors font-medium text-[16px]">team@theroadsides.co.in</a></li>
+                  <li><a href="https://www.linkedin.com/company/the-roadsides/" target="_blank" rel="noopener noreferrer" className="text-[var(--paper)]/70 hover:text-[var(--primary-green)] transition-colors font-medium text-[16px]">LinkedIn</a></li>
+                  <li><a href="https://www.youtube.com/@TheRoadsides-w9r" target="_blank" rel="noopener noreferrer" className="text-[var(--paper)]/70 hover:text-[var(--primary-green)] transition-colors font-medium text-[16px]">YouTube</a></li>
+                  <li><a href="https://www.facebook.com/people/The-Roadsides/61563980740751/" target="_blank" rel="noopener noreferrer" className="text-[var(--paper)]/70 hover:text-[var(--primary-green)] transition-colors font-medium text-[16px]">Facebook</a></li>
                 </ul>
               </div>
             </div>

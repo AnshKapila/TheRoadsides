@@ -28,7 +28,7 @@ export default function Home() {
             </h2>
             
             <h1 className="text-[var(--paper)] text-[48px] font-bold tracking-[-0.01em] leading-[1.15] mb-6">
-              Making India's roadsides walkable, <br />green, and clean — <br />one street at a time.
+              Making India's roadsides walkable, green, and clean — one street at a time.
             </h1>
             
             <p className="text-[var(--paper)] text-[16px] leading-[1.65] max-w-md mb-10 font-normal">
@@ -64,8 +64,8 @@ export default function Home() {
                 <Image src="/gallery/founded_bg.jpg" alt="Impact 1" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                 <div className="relative z-10">
-                  <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">Founded 2024</div>
-                  <div className="text-[var(--line)] text-[16px] leading-[1.65]">A Section 8 registered nonprofit, built from one person&apos;s initiative into a growing on-ground movement.</div>
+                  <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">A Section 8 Company</div>
+                  <div className="text-[var(--line)] text-[16px] leading-[1.65]">Founded in 2024</div>
                 </div>
               </div>
             </MotionBlurReveal>
@@ -76,7 +76,7 @@ export default function Home() {
                 <Image src="/gallery/initiatives_bg.jpg" alt="Impact 2" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" unoptimized />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                 <div className="relative z-10">
-                  <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">3 flagship on-ground initiatives</div>
+                  <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">flagship on-ground initiatives</div>
                   <div className="text-[var(--line)] text-[16px] leading-[1.65]">A plantation and nurturing drive in Ballabgarh–Faridabad, a waste segregation initiative in Gurugram, and a 2025 textile waste recovery program with The Modern School, K.L. Mehta College, and Saahas Zero Waste.</div>
                 </div>
               </div>
