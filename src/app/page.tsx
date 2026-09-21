@@ -28,17 +28,16 @@ export default function Home() {
             </h2>
             
             <h1 className="text-[var(--paper)] text-[48px] font-bold tracking-[-0.01em] leading-[1.15] mb-6">
-              Unite. Act.<br />
-              Transform
+              Making India's roadsides walkable, <br />green, and clean — <br />one street at a time.
             </h1>
             
             <p className="text-[var(--paper)] text-[16px] leading-[1.65] max-w-md mb-10 font-normal">
-              Your support powers life changing missions feeding families & rebuilding hope.
+              The Roadsides began with one person noticing what everyone else walked past. We're still early — and we're building something real, sector by sector, in Faridabad and beyond.
             </p>
             
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-[14px] w-full">
               <Link href="/get-involved" className="group w-full sm:w-auto inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
-                  Join Us <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+                  Join the journey <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
     <ArrowRight className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
     <ArrowRight className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
   </span>
@@ -119,10 +118,10 @@ export default function Home() {
               </div>
               <h2 className="text-[32px] font-semibold text-[var(--paper)] mb-[24px] leading-[1.2]">Seema Chowdhry Dhawan</h2>
               <p className="text-[16px] text-[var(--paper)] mb-[40px] leading-[1.65] font-normal">
-                It started by noticing what everyone else walks past. An alumnus of IIM Calcutta and Wharton Online with a deep background in ESG strategy, Seema founded The Roadsides to translate corporate sustainability principles into hyperlocal, citizen-led action.
+                Seema Chowdhry Dhawan spent years in business strategy and ESG before she looked at a roadside and asked a different question. Wharton-trained, IIM Calcutta alumna, and now Vice President of WICCI's Corporate Sustainability Council in Faridabad — she's spent the last two years turning that question into an organization.
               </p>
               <Link href="/founder" className="group w-full sm:w-auto inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
-                Read Seema&apos;s Story <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+                Meet the founder <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
     <BookOpen className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
     <BookOpen className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
   </span>
@@ -171,11 +170,11 @@ export default function Home() {
                 <span className="w-3 h-3 rounded-[3px] group bg-[var(--primary-green)]" />
                 <span className="text-[var(--charcoal)] font-semibold text-[14px]">Insights</span>
               </div>
-              <h2 className="text-[32px] font-semibold tracking-tight mb-[16px] leading-[1.2]">Stories and perspectives.</h2>
-              <p className="text-[16px] text-[var(--muted)] leading-[1.65]">Excerpts from &quot;Baby Steps to Green Revolution&quot; and on-ground case studies.</p>
+              <h2 className="text-[32px] font-semibold tracking-tight mb-[16px] leading-[1.2]">Small habits. Real change.</h2>
+              <p className="text-[16px] text-[var(--muted)] leading-[1.65]">From the founder's own book, "Baby Steps to Green Revolution," and stories from the ground — practical ideas for anyone who wants to start close to home.</p>
             </div>
             <Link href="/insights" className="group w-full sm:w-auto inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
-              Read All Insights <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+              Read the latest <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
     <Newspaper className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
     <Newspaper className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
   </span>
@@ -212,10 +211,10 @@ export default function Home() {
                 <span className="w-3 h-3 rounded-[3px] group bg-[var(--primary-green)]" />
                 <span className="text-[var(--paper)] font-semibold text-[14px]">Gallery</span>
               </div>
-              <h2 className="text-[32px] font-semibold tracking-tight leading-[1.2]">Community in Action</h2>
+              <h2 className="text-[32px] font-semibold tracking-tight leading-[1.2]">What we've done on the ground</h2>
             </div>
-            <Link href="/gallery" className="group w-full sm:w-auto inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
-              View Full Gallery <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
+            <Link href="/work" className="group w-full sm:w-auto inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
+              Read our work <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
     <ImageIcon className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
     <ImageIcon className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
   </span>
@@ -239,9 +238,9 @@ export default function Home() {
               <div className="bg-[var(--paper)] border border-[var(--line)] rounded-[3px] overflow-hidden relative">
                 <Image src="/gallery/gallery_141.jpg" alt="Gallery Photo" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
               </div>
-              <Link href="/gallery" className="bg-[var(--charcoal)] rounded-[3px] flex items-center justify-center text-[var(--paper)] hover:bg-[var(--primary-green)] hover:text-[var(--charcoal)] transition-colors group duration-300">
+              <Link href="/work" className="bg-[var(--charcoal)] rounded-[3px] flex items-center justify-center text-[var(--paper)] hover:bg-[var(--primary-green)] hover:text-[var(--charcoal)] transition-colors group duration-300">
                   <div className="flex flex-col items-center">
-                    <span className="font-semibold text-[16px] mb-[8px]">View Full Gallery</span>
+                    <span className="font-semibold text-[16px] mb-[8px]">Read our work</span>
                     <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
     <ArrowRight className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
     <ArrowRight className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
@@ -262,7 +261,7 @@ export default function Home() {
               <div className="pt-[16px]">
                 <div className="text-[var(--charcoal)] text-[16px] font-semibold tracking-wide mb-[16px]">Be Part of the Solution</div>
                 <h2 className="text-[48px] font-bold text-[var(--charcoal)] tracking-[-0.01em] leading-[1.15] mb-[32px] max-w-md">
-                  Join us in creating safer, cleaner, greener environments.
+                  However you can — there's a way to start
                 </h2>
                 <Link href="/get-involved" className="group w-full sm:w-auto inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">Join Us<span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
     <ArrowRight className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
@@ -278,7 +277,7 @@ export default function Home() {
                 <div className="relative z-10">
                   <h3 className="text-[32px] font-bold text-[var(--paper)] tracking-tight mb-[16px] leading-[1.2]">Donate</h3>
                   <p className="text-[var(--paper)] text-[16px] leading-[1.65] font-normal">
-                    Your contributions directly fund our on-ground planting, nurturing, and civic improvement initiatives.
+                    Support the on-ground work directly. Every contribution funds real, specific projects — not overhead.
                   </p>
                 </div>
                 <div className="relative z-10 flex gap-[12px] flex-wrap mt-[32px]">
@@ -297,7 +296,7 @@ export default function Home() {
                 <div className="relative z-10">
                   <h3 className="text-[32px] font-bold text-[var(--paper)] tracking-tight mb-[16px] leading-[1.2]">Volunteer</h3>
                   <p className="text-[var(--paper)] text-[16px] leading-[1.65] font-normal">
-                    Join our community drives and help us execute sustainable practices at the hyperlocal level.
+                    Show up for a plantation drive, a cleanup, or a collection initiative near you.
                   </p>
                 </div>
                 <div className="relative z-10 flex gap-[12px] flex-wrap mt-[32px]">
@@ -316,7 +315,7 @@ export default function Home() {
                 <div className="relative z-10">
                   <h3 className="text-[32px] font-bold text-[var(--paper)] tracking-tight mb-[16px] leading-[1.2]">Partner With Us</h3>
                   <p className="text-[var(--paper)] text-[16px] leading-[1.65] font-normal">
-                    We offer advisory services and collaborate with organizations committed to sustainable development.
+                    Not yet eligible for formal CSR partnerships — but we're building relationships now for when we are. Tell us you're interested, and we'll reach out first.
                   </p>
                 </div>
                 <div className="relative z-10 flex gap-[12px] flex-wrap mt-[32px]">
