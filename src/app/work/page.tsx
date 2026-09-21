@@ -1,9 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight, Leaf } from "lucide-react";
+import WorkClient from "./WorkClient";
 
 export const metadata = {
-  title: "The Journey & Initiatives | The Roadsides",
+  title: "Collaborations and Endeavours | The Roadsides",
   description: "Explore our on-ground impact: from waste segregation in Gurugram to UN Environment Programme recognitions and educational drives at Mount Carmel School.",
 };
 
@@ -59,61 +57,5 @@ export default function WorkPage() {
     }
   ];
 
-  return (
-    <div className="flex flex-col pt-24 min-h-screen">
-      {/* Page Header */}
-      <section className="bg-[var(--paper)] border-b border-[var(--line)] py-[64px] px-[32px]">
-        <div className="container mx-auto max-w-7xl">
-          <div className="flex items-center gap-[8px] mb-[16px]">
-            <span className="w-3 h-3 rounded-[3px] group bg-[var(--primary-green)]" />
-            <span className="text-[var(--charcoal)] font-semibold text-[14px]">The Journey</span>
-          </div>
-          <h1 className="text-[48px] font-bold tracking-[-0.01em] leading-[1.15] text-[var(--charcoal)] mb-[24px]">
-            The Journey
-          </h1>
-          <p className="text-[24px] font-medium leading-[1.45] text-[var(--primary-green)] italic max-w-3xl">
-            &quot;From learning from our brightest young trailblazers to sharing the spotlight with established voices in the field, the future does look promising.&quot;
-          </p>
-        </div>
-      </section>
-
-      {/* Main Content */}
-      <section className="py-[64px] px-[32px]">
-        <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[32px]">
-            {initiatives.map((item, i) => (
-              <article key={i} className="bg-[var(--paper)] rounded-[3px] p-[16px] flex flex-col border border-[var(--line)] hover:border-[var(--charcoal)] transition-colors duration-300">
-                <div className="aspect-[4/3] bg-[var(--paper)] rounded-[3px] flex items-center justify-center overflow-hidden relative mb-[32px]">
-                  <Image src={`/gallery/${item.img}`} alt={item.title} fill className="object-cover transition-transform duration-700 hover:scale-105" unoptimized />
-                </div>
-                <div className="px-[24px] pb-[24px] flex flex-col flex-grow">
-                  <span className="text-[var(--brick)] text-[12px] font-semibold uppercase tracking-[0.01em] mb-[12px]">{item.tag}</span>
-                  <h3 className="text-[24px] font-bold mb-[16px] leading-[1.3] text-[var(--charcoal)]">{item.title}</h3>
-                  <p className="text-[var(--muted)] mb-[32px] flex-grow leading-[1.65] text-[16px] font-normal">{item.desc}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="bg-[var(--charcoal)] py-[64px] px-[32px]">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-[32px] font-bold text-[var(--paper)] tracking-tight mb-[24px] leading-[1.2]">
-            Start Your Own Initiative
-          </h2>
-          <p className="text-[16px] text-[var(--paper)]/80 leading-[1.65] mb-[32px] max-w-2xl mx-auto">
-            Want to transform a roadside in your neighborhood? We provide the expertise, you provide the community.
-          </p>
-          <Link href="/contact" className="group inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
-            Partner With Us <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
-    <Leaf className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
-    <Leaf className="absolute w-[18px] h-[18px] -translate-x-[150%] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" strokeWidth={2.5} />
-  </span>
-          </Link>
-        </div>
-      </section>
-    </div>
-  );
+  return <WorkClient initiatives={initiatives} />;
 }

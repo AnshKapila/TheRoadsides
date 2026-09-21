@@ -37,12 +37,9 @@ export default function ContactPage() {
                 <h2 className="text-[32px] font-bold text-[var(--charcoal)] leading-[1.2] mb-[24px]">Direct Contact</h2>
                 <p className="mb-[16px]">
                   <span className="font-semibold block mb-[4px]">Email:</span>
-                  <a href="mailto:contact@theroadsides.org" className="text-[var(--brick)] hover:text-[var(--primary-green)] transition-colors">contact@theroadsides.org</a>
+                  <a href="mailto:team@theroadsides.co.in" className="text-[var(--brick)] hover:text-[var(--primary-green)] transition-colors">team@theroadsides.co.in</a>
                 </p>
-                <p>
-                  <span className="font-semibold block mb-[4px]">Phone:</span>
-                  <a href="tel:+910000000000" className="text-[var(--brick)] hover:text-[var(--primary-green)] transition-colors">+91 000 000 0000</a>
-                </p>
+                
               </div>
             </div>
 
