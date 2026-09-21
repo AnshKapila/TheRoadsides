@@ -23,9 +23,7 @@ export default function Home() {
         <div className="container mx-auto max-w-7xl relative z-10 pt-10">
           <div className="max-w-2xl">
             <MotionBlurReveal delay={0}>
-            <h2 className="text-[var(--brick-dark)] font-semibold text-[14px] mb-[10px] tracking-wide uppercase">
-              Together, We Create Impact
-            </h2>
+            
             
             <h1 className="text-[var(--paper)] text-[48px] font-bold tracking-[-0.01em] leading-[1.15] mb-6">
               Making India's roadsides walkable, green, and clean.
@@ -367,3 +365,4 @@ export default function Home() {
     </div>
   );
 }
+
