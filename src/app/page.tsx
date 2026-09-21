@@ -28,11 +28,11 @@ export default function Home() {
             </h2>
             
             <h1 className="text-[var(--paper)] text-[48px] font-bold tracking-[-0.01em] leading-[1.15] mb-6">
-              Making India's roadsides walkable, green, and clean — one street at a time.
+              Making India's roadsides walkable, green, and clean.
             </h1>
             
             <p className="text-[var(--paper)] text-[16px] leading-[1.65] max-w-md mb-10 font-normal">
-              The Roadsides began with one person noticing what everyone else walked past. We're still early — and we're building something real, sector by sector, in Faridabad and beyond.
+              The Roadsides began with one person noticing what everyone else walked past. We're still early and we're building something real, sector by sector, in Faridabad and beyond.
             </p>
             
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-[14px] w-full">
@@ -77,7 +77,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                 <div className="relative z-10">
                   <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">flagship on-ground initiatives</div>
-                  <div className="text-[var(--line)] text-[16px] leading-[1.65]">A plantation and nurturing drive in Ballabgarh–Faridabad, a waste segregation initiative in Gurugram, and a 2025 textile waste recovery program with The Modern School, K.L. Mehta College, and Saahas Zero Waste.</div>
+                  <div className="text-[var(--line)] text-[16px] leading-[1.65]">A plantation and nurturing drive in Ballabgarh-Faridabad, a waste segregation initiative in Gurugram, and a 2025 textile waste recovery program with The Modern School, K.L. Mehta College, and Saahas Zero Waste.</div>
                 </div>
               </div>
             </MotionBlurReveal>
@@ -89,7 +89,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                 <div className="relative z-10">
                   <div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">Recognized by the UN Environment Programme</div>
-                  <div className="text-[var(--line)] text-[16px] leading-[1.65]">Official host of a World Environment Day 2026 event in Faridabad — alongside features in CEO India Magazine and YourZourney.</div>
+                  <div className="text-[var(--line)] text-[16px] leading-[1.65]">Official host of a World Environment Day 2026 event in Faridabad alongside features in CEO India Magazine and YourZourney.</div>
                 </div>
               </div>
             </MotionBlurReveal>
@@ -118,7 +118,7 @@ export default function Home() {
               </div>
               <h2 className="text-[32px] font-semibold text-[var(--paper)] mb-[24px] leading-[1.2]">Seema Chowdhry Dhawan</h2>
               <p className="text-[16px] text-[var(--paper)] mb-[40px] leading-[1.65] font-normal">
-                Seema Chowdhry Dhawan spent years in business strategy and ESG before she looked at a roadside and asked a different question. Wharton-trained, IIM Calcutta alumna, and now Vice President of WICCI's Corporate Sustainability Council in Faridabad — she's spent the last two years turning that question into an organization.
+                Seema Chowdhry Dhawan spent years in business strategy and ESG before she looked at a roadside and asked a different question. Wharton-trained, IIM Calcutta alumna, and now Vice President of WICCI's Corporate Sustainability Council in Faridabad she's spent the last two years turning that question into an organization.
               </p>
               <Link href="/founder" className="group w-full sm:w-auto inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
                 Meet the founder <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
@@ -171,7 +171,7 @@ export default function Home() {
                 <span className="text-[var(--charcoal)] font-semibold text-[14px]">Insights</span>
               </div>
               <h2 className="text-[32px] font-semibold tracking-tight mb-[16px] leading-[1.2]">Small habits. Real change.</h2>
-              <p className="text-[16px] text-[var(--muted)] leading-[1.65]">From the founder's own book, "Baby Steps to Green Revolution," and stories from the ground — practical ideas for anyone who wants to start close to home.</p>
+              <p className="text-[16px] text-[var(--muted)] leading-[1.65]">From the founder's own book, "Baby Steps to Green Revolution," and stories from the ground practical ideas for anyone who wants to start close to home.</p>
             </div>
             <Link href="/insights" className="group w-full sm:w-auto inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">
               Read the latest <span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
@@ -261,7 +261,7 @@ export default function Home() {
               <div className="pt-[16px]">
                 <div className="text-[var(--charcoal)] text-[16px] font-semibold tracking-wide mb-[16px]">Be Part of the Solution</div>
                 <h2 className="text-[48px] font-bold text-[var(--charcoal)] tracking-[-0.01em] leading-[1.15] mb-[32px] max-w-md">
-                  However you can — there's a way to start
+                  However you can there's a way to start
                 </h2>
                 <Link href="/get-involved" className="group w-full sm:w-auto inline-flex items-center gap-[8px] justify-center bg-[var(--primary-green)] text-[var(--charcoal)] font-semibold px-[32px] py-[13px] rounded-[3px] hover:bg-[var(--charcoal)] hover:text-[var(--primary-green)] transition-all duration-300 text-[16px] min-h-[44px]">Join Us<span className="relative w-[18px] h-[18px] overflow-hidden flex items-center justify-center shrink-0">
     <ArrowRight className="absolute w-[18px] h-[18px] transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" strokeWidth={2.5} />
@@ -277,7 +277,7 @@ export default function Home() {
                 <div className="relative z-10">
                   <h3 className="text-[32px] font-bold text-[var(--paper)] tracking-tight mb-[16px] leading-[1.2]">Donate</h3>
                   <p className="text-[var(--paper)] text-[16px] leading-[1.65] font-normal">
-                    Support the on-ground work directly. Every contribution funds real, specific projects — not overhead.
+                    Support the on-ground work directly. Every contribution funds real, specific projects not overhead.
                   </p>
                 </div>
                 <div className="relative z-10 flex gap-[12px] flex-wrap mt-[32px]">
@@ -315,7 +315,7 @@ export default function Home() {
                 <div className="relative z-10">
                   <h3 className="text-[32px] font-bold text-[var(--paper)] tracking-tight mb-[16px] leading-[1.2]">Partner With Us</h3>
                   <p className="text-[var(--paper)] text-[16px] leading-[1.65] font-normal">
-                    Not yet eligible for formal CSR partnerships — but we're building relationships now for when we are. Tell us you're interested, and we'll reach out first.
+                    Not yet eligible for formal CSR partnerships but we're building relationships now for when we are. Tell us you're interested, and we'll reach out first.
                   </p>
                 </div>
                 <div className="relative z-10 flex gap-[12px] flex-wrap mt-[32px]">

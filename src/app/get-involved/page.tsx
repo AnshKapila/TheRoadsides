@@ -16,7 +16,7 @@ export default function GetInvolvedPage() {
             Be Part of the Solution
           </h1>
           <p className="text-[24px] font-medium leading-[1.45] text-[var(--primary-green)] italic max-w-3xl">
-            &quot;Every contribution—time, resources, or partnership—multiplies our impact on the ground.&quot;
+            &quot;Every contributiontime, resources, or partnershipmultiplies our impact on the ground.&quot;
           </p>
         </div>
       </section>

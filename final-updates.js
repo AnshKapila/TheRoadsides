@@ -1,12 +1,22 @@
 const fs = require('fs');
+const path = require('path');
 
 // 1. Update page.tsx
 let page = fs.readFileSync('src/app/page.tsx', 'utf8');
 
-// Fix Hero: remove <br />
-page = page.replace(/Making India's roadsides walkable,\s*<br \/>\s*green, and clean [—\?"]+\s*<br \/>\s*one street at a time\./i, "Making India's roadsides walkable, green, and clean — one street at a time.");
-page = page.replace(/Making India's roadsides walkable, <br \/>green, and clean — <br \/>one street at a time\./g, "Making India's roadsides walkable, green, and clean — one street at a time.");
-page = page.replace(/Making India's roadsides walkable, <br \/>green, and clean \?" <br \/>one street at a time\./g, "Making India's roadsides walkable, green, and clean — one street at a time.");
+// Fix Hero: remove the last line entirely and remove <br />
+page = page.replace(
+  /Making India's roadsides walkable, <br \/>green, and clean [—\?\-"]* <br \/>one street at a time\./gi, 
+  "Making India's roadsides walkable, green, and clean."
+);
+page = page.replace(
+  /Making India's roadsides walkable, <br \/>green, and clean — <br \/>one street at a time\./gi, 
+  "Making India's roadsides walkable, green, and clean."
+);
+page = page.replace(
+  /Making India's roadsides walkable, green, and clean [—\?\-"]* one street at a time\./gi, 
+  "Making India's roadsides walkable, green, and clean."
+);
 
 // Fix Trust Strip: 
 page = page.replace(
@@ -17,16 +27,13 @@ page = page.replace(
   '<div className="text-[var(--line)] text-[16px] leading-[1.65]">A Section 8 registered nonprofit, built from one person&apos;s initiative into a growing on-ground movement.</div>',
   '<div className="text-[var(--line)] text-[16px] leading-[1.65]">Founded in 2024</div>'
 );
-
-// If it says "3 flagship on-ground initiatives", change to "flagship on-ground initiatives"
-// If it says "2 flagship initiatives, and counting", change to "flagship on-ground initiatives" (as requested by user removing numbers)
 page = page.replace(
   '<div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">3 flagship on-ground initiatives</div>',
   '<div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">flagship on-ground initiatives</div>'
 );
 page = page.replace(
   '<div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">2 flagship initiatives, and counting</div>',
-  '<div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">flagship initiatives, and counting</div>'
+  '<div className="text-[24px] font-semibold text-[var(--paper)] leading-[1.3] mb-[8px]">flagship on-ground initiatives</div>'
 );
 
 fs.writeFileSync('src/app/page.tsx', page);
@@ -56,19 +63,44 @@ fs.writeFileSync('src/app/layout.tsx', layout);
 
 // 3. Update insights/page.tsx (Clear blog posts, add "Blog")
 let insights = fs.readFileSync('src/app/insights/page.tsx', 'utf8');
-
-// Change Page Header
 insights = insights.replace(
   '<h1 className="text-[48px] font-bold text-[var(--charcoal)] tracking-[-0.01em] leading-[1.15] mb-[16px]">Insights</h1>',
   '<h1 className="text-[48px] font-bold text-[var(--charcoal)] tracking-[-0.01em] leading-[1.15] mb-[16px]">Insights & Blog</h1>'
 );
-
-// Clear the posts array
 insights = insights.replace(
-  /const posts = \[[^\]]*\];/s,
-  'const posts = [];'
+  /const posts: .*?\] = \[.*?\];/s,
+  'const posts: {tag: string, title: string, desc: string, img: string}[] = [];'
 );
-
+insights = insights.replace(
+  /const posts = \[.*?\];/s,
+  'const posts: {tag: string, title: string, desc: string, img: string}[] = [];'
+);
 fs.writeFileSync('src/app/insights/page.tsx', insights);
 
-console.log("Updates complete");
+// 4. Safely remove ALL em dashes from the whole src folder
+function walkDir(dir, callback) {
+  fs.readdirSync(dir).forEach(f => {
+    let dirPath = path.join(dir, f);
+    let isDirectory = fs.statSync(dirPath).isDirectory();
+    isDirectory ? walkDir(dirPath, callback) : callback(path.join(dir, f));
+  });
+}
+
+walkDir('src/app', function(filePath) {
+  if (filePath.endsWith('.tsx') || filePath.endsWith('.ts')) {
+    let content = fs.readFileSync(filePath, 'utf8');
+    
+    // Specifically fix the corrupted ' ?" ' characters that got injected previously.
+    // Replace ' ?" ' or ' ?" ' with a space
+    content = content.replace(/ \?" /g, ' ');
+    content = content.replace(/ \?" /g, ' ');
+    // Replace standalone em/en dashes surrounded by spaces
+    content = content.replace(/ [—\–] /g, ' ');
+    // Remove standalone em/en dashes
+    content = content.replace(/[—\–]/g, '');
+
+    fs.writeFileSync(filePath, content);
+  }
+});
+
+console.log("All updates complete.");

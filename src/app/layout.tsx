@@ -76,7 +76,7 @@ export default function RootLayout({
                   <Image src="/logo.png" alt="The Roadsides Logo" width={48} height={48} className="object-contain" />
                 </Link>
                 <p className="text-[var(--paper)]/60 max-w-sm leading-[1.65] text-[16px]">
-                  The Roadsides — Vibrant Walkable Roadsides Foundation. Section 8 registered, 2024. Faridabad, Haryana.
+                  The Roadsides Vibrant Walkable Roadsides Foundation. Section 8 registered, 2024. Faridabad, Haryana.
                 </p>
               </div>
               <div>

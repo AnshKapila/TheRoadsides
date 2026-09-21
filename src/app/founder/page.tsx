@@ -77,14 +77,14 @@ export default function FounderPage() {
                   An alumnus of IIM Calcutta and Wharton Online with a deep background in ESG strategy, Seema founded The Roadsides to translate corporate sustainability principles into hyperlocal, citizen-led action.
                 </p>
                 <p className="mb-[24px]">
-                  While working extensively in corporate strategy, she realized a critical gap in environmental action: large-scale initiatives often overlook the immediate environments people interact with every single day. The roadsides—often neglected, barren, or treated as waste-dumping grounds—presented an untethered opportunity for micro-ecological restoration.
+                  While working extensively in corporate strategy, she realized a critical gap in environmental action: large-scale initiatives often overlook the immediate environments people interact with every single day. The roadsidesoften neglected, barren, or treated as waste-dumping groundspresented an untethered opportunity for micro-ecological restoration.
                 </p>
               </div>
 
               <div className="bg-[var(--charcoal)] rounded-[3px] p-[32px] my-[16px]">
                 <h3 className="text-[24px] font-bold text-[var(--paper)] mb-[16px]">Baby Steps to Green Revolution</h3>
                 <p className="mb-[24px] text-[var(--line)]">
-                  Seema is also the author of <span className="italic font-medium text-[var(--paper)]">Baby Steps to Green Revolution</span>, a foundational text that outlines her philosophy of environmental stewardship. The book argues that small, correct daily actions—done consistently and multiplied across a population—create real, systemic change.
+                  Seema is also the author of <span className="italic font-medium text-[var(--paper)]">Baby Steps to Green Revolution</span>, a foundational text that outlines her philosophy of environmental stewardship. The book argues that small, correct daily actionsdone consistently and multiplied across a populationcreate real, systemic change.
                 </p>
                 <Link href="/insights" className="inline-flex items-center gap-[8px] text-[var(--brick-dark)] font-semibold hover:text-[var(--primary-green)] transition-colors">
                   Read excerpts from the book <ArrowRight className="ml-2 w-4 h-4" />
@@ -94,7 +94,7 @@ export default function FounderPage() {
               <div>
                 <h2 className="text-[32px] font-bold text-[var(--charcoal)] leading-[1.2] mb-[24px]">Vision for the Future</h2>
                 <p className="mb-[24px]">
-                  Under her leadership, The Roadsides has mobilized thousands of citizens, students, and corporate volunteers across Faridabad. Her approach moves beyond just planting saplings—it establishes a system of continued nurturing and circular economy practices.
+                  Under her leadership, The Roadsides has mobilized thousands of citizens, students, and corporate volunteers across Faridabad. Her approach moves beyond just planting saplingsit establishes a system of continued nurturing and circular economy practices.
                 </p>
                 <p>
                   By creating a model that pairs environmental restoration with community ownership, Seema aims to prove that India&apos;s urban future can be transformed one roadside at a time.

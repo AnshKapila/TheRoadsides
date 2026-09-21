@@ -30,7 +30,7 @@ export default function WorkPage() {
     {
       title: "Mount Carmel 'Sociopreneur' Jury",
       tag: "Mentorship & Education",
-      desc: "Invited to Mount Carmel School, Dwarka, as a jury member for 'Comonomics 4.0'. Watching class 7 and 8 students imagine real ideas for environmental change was genuinely inspiring. Two very different rooms recently—one learning from our brightest young trailblazers, one sharing the spotlight with established voices. The future does look promising.",
+      desc: "Invited to Mount Carmel School, Dwarka, as a jury member for 'Comonomics 4.0'. Watching class 7 and 8 students imagine real ideas for environmental change was genuinely inspiring. Two very different rooms recentlyone learning from our brightest young trailblazers, one sharing the spotlight with established voices. The future does look promising.",
       img: "mount_carmel.png"
     },
     {
