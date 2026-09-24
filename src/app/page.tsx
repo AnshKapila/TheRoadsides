@@ -16,7 +16,7 @@ export default function Home() {
       <section className="relative w-full min-h-screen flex items-center pt-32 pb-20 px-6">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0 bg-[#1a1a1a] overflow-hidden">
-          <Image src="/hero-bg.jpg" alt="Roadside sapling" fill priority className="object-cover scale-[1.15]" unoptimized />
+          <Image src="/hero-bg.jpg" alt="Roadside sapling" fill priority className="object-cover scale-[1.20]" unoptimized />
           <div className="absolute inset-0 bg-[var(--charcoal)]/50" /> 
         </div>
         
