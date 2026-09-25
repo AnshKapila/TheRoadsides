@@ -24,7 +24,15 @@ const LinkedinIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 export default function InsightsPage() {
-  const posts: {tag: string, title: string, desc: string, img: string}[] = [];
+  const posts: {tag: string, title: string, desc: string, img: string, link: string}[] = [
+    {
+      tag: "From the Book",
+      title: "The Proud 3 Dustbins Owner",
+      desc: "Why Waste is Actually Gold of Decent Value if Segregated at the Source of generation",
+      img: "/blog/dustbin-banner-1.png",
+      link: "/insights/the-proud-3-dustbins-owner"
+    }
+  ];
 
   return (
     <div className="flex flex-col pt-24 min-h-screen">
@@ -49,10 +57,10 @@ export default function InsightsPage() {
         <div className="container mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[48px]">
             {posts.map((post, i) => (
-              <Link href="#" key={i} className="group block">
+              <Link href={post.link} key={i} className="group block">
                 <article className="h-full flex flex-col">
                   <div className="aspect-[4/3] bg-[var(--paper)] rounded-[3px] mb-[24px] overflow-hidden relative border border-[var(--line)]">
-                    <Image src={`/gallery/${post.img}`} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
+                    <Image src={post.img} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
                   </div>
                   <span className="text-[var(--brick)] text-[12px] font-semibold uppercase tracking-[0.01em] mb-[12px]">{post.tag}</span>
                   <h3 className="text-[24px] font-bold mb-[12px] leading-[1.3] group-hover:text-[var(--brick)] transition-colors text-[var(--charcoal)]">{post.title}</h3>
