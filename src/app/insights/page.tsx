@@ -26,6 +26,13 @@ const LinkedinIcon = (props: React.SVGProps<SVGSVGElement>) => (
 export default function InsightsPage() {
   const posts: {tag: string, title: string, desc: string, img: string, link: string}[] = [
     {
+      tag: "Road Safety",
+      title: "Stray Cattle on Highways",
+      desc: "The Road Safety Gap Nobody Can Report.",
+      img: "/blog/cattle-banner-1.jpg",
+      link: "/insights/stray-cattle-on-highways"
+    },
+    {
       tag: "From the Book",
       title: "The Proud 3 Dustbins Owner",
       desc: "Why Waste is Actually Gold of Decent Value if Segregated at the Source of generation",
